@@ -1,0 +1,33 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Komplizierter Krampfanfall, Analgosedierung mit Esketamin",
+ "merke": "Beim Status hoch genug dosieren – nicht titrieren.",
+ "punkte": [
+  "Erw.: 0,1 mg/kg i.v. oder 10 mg i.m./nasal/buccal, einmalige Rep., max. 20 mg",
+  "Kinder buccal: 3–11 Mon 2,5 mg · 1–4 J 5 mg · 5–9 J 7,5 mg · ab 10 J 10 mg",
+  "Analgosedierung: Erw. 2 mg, Ältere/< 50 kg 1 mg langsam i.v.",
+  "KI: primär hypoxischer Krampfanfall"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Midazolam, S. 61",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Krampfanfall",
+  "Benzodiazepin",
+  "Status"
+ ],
+ "titel": "Midazolam",
+ "sh": {
+  "kern": "Anhaltender Krampfanfall, Analgosedierung mit Esketamin, Erregungszustand",
+  "punkte": [
+   "Mit Zugang: i.v. Erw. 5 mg · Kinder 10–20 kg 2,5 mg · > 20 kg 5 mg",
+   "Ohne Zugang i.n./i.m.: Erw. 10 mg · < 10 kg 2,5 · 10–20 kg 5 · > 20 kg 10 mg",
+   "Buccal: < 10 kg 2,5 · 10–20 kg 5 · 20–30 kg 7,5 · > 30 kg 10 mg",
+   "Einmalige Wiederholung nach 5 Min"
+  ],
+  "merke": "Alternative beim Kind: Diazepam rektal.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Midazolam S. 94; Algorithmus 18 S. 31"
+ }
+}

@@ -1,0 +1,367 @@
+{
+ "level": 3,
+ "patient": "Frau, 45 J. · liegt auf dem Sofa, atmet schnell, hält sich die rechte Brustseite",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Es sticht so beim Atmen.“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie kann sprechen.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Tachypnoe ist ein Leitsymptom."
+    },
+    "auskultation": {
+     "ergebnis": "Seitengleiches, unauffälliges Atemgeräusch",
+     "typ": "pflicht",
+     "warum": "Plötzlicher Beginn mit unauffälliger Auskultation spricht für eine LAE."
+    },
+    "cpap": {
+     "ergebnis": "CPAP/NIV vorbereitet",
+     "typ": "sinnvoll",
+     "warum": "Laut BPR NIV erwägen."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 94
+     },
+     "ergebnis": "O₂ 10 l/min über Maske",
+     "typ": "pflicht",
+     "warum": "Hypoxie führend: bedarfsgerecht, hier hochdosiert Sauerstoff."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoxie ist bei der LAE führend."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Schnelle, flache Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinustachykardie, SI-QIII-Typ",
+     "typ": "pflicht",
+     "warum": "Gehört zum BPR. Rechtsherzzeichen sind möglich, aber nicht beweisend."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Weitere notärztliche Versorgung nach Zustand."
+    },
+    "puls": {
+     "ergebnis": "112/min, regelmäßig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Für den sPESI-Score und die Kreislauflage."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Venöser Zugang laut BPR."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Heparin ist gegeben",
+     "id": "heparin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Heparin 5.000 I.E. i.v.",
+     "typ": "pflicht",
+     "warum": "Wells-Score ≥ 5 und sPESI ≥ 1: laut BPR Heparin 5.000 I.E. i.v. – vorher Kontraindikationen ausschließen (u. a. große OP oder schweres Trauma < 4 Wochen, Blutung).",
+     "mittel": [
+      {
+       "w": "heparin",
+       "d": "5.000 I.E. i.v."
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, leicht kaltschweißig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "3 Punkte – unwahrscheinlich",
+       "warum": "Die Thrombosezeichen und die fehlende Alternative zählen je 3 Punkte."
+      },
+      {
+       "text": "5 Punkte – grenzwertig",
+       "warum": "Rechne nach: 1,5 + 1,5 + 3 + 3."
+      }
+     ],
+     "frage": "Wells-Score: Immobilisation im Gips, HF über 100, Zeichen einer Venenthrombose, andere Diagnose unwahrscheinlicher. Wie viele Punkte?",
+     "nach": "",
+     "richtig": {
+      "text": "9 Punkte – LAE wahrscheinlich",
+      "warum": "OP oder Immobilisation 1,5 + HF > 100 1,5 + Zeichen einer TVT 3 + alternative Diagnose unwahrscheinlicher 3 = 9. Ab 5 Punkten gilt die LAE als wahrscheinlich."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "sPESI 0 – keine Therapie nötig",
+       "warum": "Herzfrequenz und Sättigung geben je einen Punkt."
+      },
+      {
+       "text": "Lyse durch den NotSan",
+       "warum": "Eine Lyse ist eine notärztliche Entscheidung."
+      }
+     ],
+     "frage": "sPESI: HF 112, SpO₂ 89 %. Was folgt daraus?",
+     "nach": "",
+     "richtig": {
+      "text": "sPESI ≥ 1 – zusammen mit Wells ≥ 5: Heparin",
+      "warum": "HF ≥ 110 und SpO₂ < 90 % ergeben 2 Punkte. Damit steigt das 30-Tage-Sterberisiko deutlich, Heparin ist begründet."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "A – wach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach und orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Rechte Wade geschwollen, überwärmt, druckschmerzhaft",
+     "typ": "pflicht",
+     "warum": "Zeichen einer tiefen Venenthrombose suchen."
+    },
+    "oberkoerper": {
+     "ergebnis": "Oberkörper hoch",
+     "typ": "sinnvoll",
+     "warum": "Erleichtert die Atmung."
+    },
+    "sampler": {
+     "ergebnis": "Gips seit 2 Wochen, keine OP, keine Blutung, nimmt die Pille, raucht",
+     "typ": "pflicht",
+     "warum": "Erweiterte Anamnese: Immobilität, OP, Thrombosen, Hormone, Tumor, Rauchen. Auch die Heparin-Kontraindikationen abfragen (z. B. große OP oder schweres Trauma in den letzten 4 Wochen, Blutung)."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Zügig in die Klinik mit CT und Intensivstation."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "hf": 128,
+      "spo2": 86
+     },
+     "ergebnis": "",
+     "id": "laufen",
+     "text": "Patientin zum RTW laufen lassen",
+     "typ": "gefahr",
+     "warum": "Bewegung kann weitere Thromben lösen und belastet das rechte Herz. Tragestuhl nutzen."
+    },
+    {
+     "ergebnis": "",
+     "id": "wade",
+     "text": "Wade massieren und hochlagern",
+     "typ": "falsch",
+     "warum": "Die Wade nicht massieren – das kann weitere Thromben lösen."
+    }
+   ],
+   "eindruck": "Die rechte Wade ist dicker als die linke.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Lungenarterienembolie, S. 149–150; SAA Heparin S. 56",
+ "regional": "Heparin nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Seit zwei Wochen trägt sie nach einem Bänderriss einen Gips am rechten Unterschenkel. Plötzlich stechende Schmerzen beim Einatmen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Akuter, stechender, atemabhängiger Schmerz",
+   "Dyspnoe, Tachykardie",
+   "Unauffällige Auskultation",
+   "OP, Immobilisation, Pille, TVT-Zeichen"
+  ],
+  "kern": "An die LAE denken",
+  "ns": [
+   "Venöser Zugang",
+   "Erwäge NIV",
+   "Wells ≥ 5 und sPESI ≥ 1: Heparin 5.000 I.E. i.v.",
+   "Heparin-KI prüfen: große OP/schweres Trauma < 4 Wo., Blutung"
+  ],
+  "tun": [
+   "O₂ bedarfsgerecht",
+   "12-Kanal-EKG",
+   "Wells- und sPESI-Score",
+   "Tragestuhl, Klinik"
+  ],
+  "vermeiden": [
+   "Laufen lassen",
+   "Wade massieren"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "Lungenarterienembolie",
+ "vitalwerte": {
+  "af": 28,
+  "bz": 104,
+  "dia": 76,
+  "gcs": 15,
+  "hf": 112,
+  "spo2": 89,
+  "sys": 118,
+  "temp": 36.9
+ },
+ "sh": {
+  "regional": "SH Algorithmus 11: Score-Systeme erwägen, z. B. den vereinfachten revidierten Genfer Score (statt Wells/sPESI). Heparin durch NotSan, Lyse im Schock durch NA.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 11 Lungenarterienembolie, S. 24; Algorithmus 3 NIV, S. 16; Infotabelle Heparin S. 88",
+  "steckbrief": {
+   "ns": [
+    "Venöser Zugang",
+    "V.a. LAE: Heparin 50–70 I.E./kg, üblich 5.000 I.E.",
+    "Score erwägen, z. B. Genfer ≥ 2 = wahrscheinlich",
+    "Hypotension: Volumen · Schock: Lyse durch NA erwägen"
+   ],
+   "tun": [
+    "O₂ angepasst, bei Luftnot hochdosiert",
+    "12-Kanal-EKG",
+    "Vereinfachter revidierter Genfer Score",
+    "Tragestuhl, Klinik"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "cpap": {
+      "ergebnis": "CPAP/NIV vorbereitet",
+      "typ": "sinnvoll",
+      "warum": "SpO₂ < 90 % trotz hochdosiertem O₂: NIV nach Algorithmus 3 erwägen."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "ekg12": {
+      "ergebnis": "Sinustachykardie, SI-QIII-Typ",
+      "typ": "pflicht",
+      "warum": "Rechtsherzzeichen sind möglich, aber nicht beweisend."
+     },
+     "rr": {
+      "ergebnis": "",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 11: Bei Hypotension Volumentherapie, im Schock Lyse durch den NA erwägen."
+     },
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "Venöser Zugang für Heparin und Volumen."
+     }
+    },
+    "eigene": {
+     "heparin": {
+      "ergebnis": "Heparin ist gegeben",
+      "id": "heparin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Heparin 5.000 I.E. i.v. (50–70 I.E./kg)",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 11: Bei V.a. LAE Heparin 50–70 I.E./kg, üblich 5.000 I.E. i.v. Der Genfer Score (≥ 2 = wahrscheinlich) hilft bei der Einschätzung. Vorher KI ausschließen: Blutung, Schlaganfall, Aortendissektion, HIT.",
+      "mittel": [
+       {
+        "w": "heparin",
+        "d": "5.000 I.E. i.v."
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "1 Punkt – unwahrscheinlich",
+        "warum": "Die HF ab 95/min zählt 2 Punkte, der Beinbefund 1 Punkt."
+       },
+       {
+        "text": "6 Punkte – sehr wahrscheinlich",
+        "warum": "Alter unter 65, keine OP oder Fraktur: Diese Punkte entfallen."
+       }
+      ],
+      "frage": "Vereinfachter revidierter Genfer Score: 45 J., keine OP oder Fraktur, rechte Wade geschwollen und druckschmerzhaft, HF 112. Wie viele Punkte?",
+      "nach": "",
+      "richtig": {
+       "text": "3 Punkte – LAE wahrscheinlich",
+       "warum": "Schmerz bei Palpation oder Schwellung des Beins 1 + HF ≥ 95/min 2 = 3. Ab 2 Punkten gilt die LAE als wahrscheinlich."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "10.000 I.E. als Bolus",
+        "warum": "5.000 I.E. ist in SH die übliche Höchstdosis."
+       },
+       {
+        "text": "Lyse durch den NotSan",
+        "warum": "Eine Lyse im Schock erwägt der Notarzt."
+       }
+      ],
+      "frage": "Welche Heparin-Dosis sieht SH vor?",
+      "nach": "",
+      "richtig": {
+       "text": "50–70 I.E./kg i.v., beim Erwachsenen üblicherweise 5.000 I.E.",
+       "warum": "SH-Infotabelle Heparin: 5.000 I.E. ist zugleich die Höchstdosis. Vorher KI ausschließen: Blutung, Schlaganfall, Aortendissektion, HIT."
+      },
+      "rolle": "ns"
+     }
+    }
+   },
+   "E": {
+    "aktionen": {
+     "sampler": {
+      "ergebnis": "Gips seit 2 Wochen, keine OP, keine Blutung, nimmt die Pille, raucht",
+      "typ": "pflicht",
+      "warum": "Erweiterte Anamnese: Immobilität, OP, Thrombosen, Hormone, Tumor, Rauchen – und die Heparin-KI abfragen (Blutung, Schlaganfall, Aortendissektion, HIT)."
+     }
+    }
+   }
+  }
+ }
+}

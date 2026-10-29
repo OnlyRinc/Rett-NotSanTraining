@@ -1,0 +1,24 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Starke Schmerzen (NRS ≥ 6) · BtM",
+ "merke": "Langsam geben – sonst Thoraxrigidität.",
+ "punkte": [
+  "50 µg-Schritte i.v. alle 3–4 Min, max. 2 µg/kg",
+  "nasal/i.m.: 2 µg/kg",
+  "Nicht unter 21 kg (ca. 6 J)",
+  "KI: Schwangerschaft, Atemdepression, Sopor/Koma",
+  "Überdosis: Kommandoatmung, O₂, Beatmung, ultima ratio Naloxon"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Fentanyl, S. 51",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Opioid",
+  "BtM",
+  "Schmerz"
+ ],
+ "titel": "Fentanyl",
+ "nurRegion": "saa"
+}

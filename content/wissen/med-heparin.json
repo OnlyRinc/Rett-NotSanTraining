@@ -1,0 +1,30 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "ACS, Lungenembolie, arterieller Verschluss",
+ "merke": "Achtung: verschiedene Konzentrationen.",
+ "punkte": [
+  "5.000 I.E. i.v., keine Repetition",
+  "KI: Schlaganfall/ICB, Aortensyndrom, Blutung, Ulkus, große OP oder schweres Trauma sowie ZNS-/Augen-OP < 4 Wochen, HIT"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Heparin, S. 56",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Antikoagulation",
+  "ACS",
+  "LAE"
+ ],
+ "titel": "Heparin",
+ "sh": {
+  "kern": "ACS, Lungenembolie, arterieller oder venöser Gefäßverschluss",
+  "punkte": [
+   "50–70 I.E./kg i.v.",
+   "Erwachsene üblicherweise 5.000 I.E. (Höchstdosis)",
+   "KI: HIT, V.a. akute Blutung, akuten Schlaganfall oder Aortendissektion",
+   "ACS: nach lokalem Protokoll"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Heparin S. 88"
+ }
+}

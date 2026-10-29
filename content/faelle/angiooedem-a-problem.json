@@ -1,0 +1,287 @@
+{
+ "level": 3,
+ "patient": "Frau, 68 J. · sitzt am Küchentisch, Zunge und Lippen sind stark geschwollen, kloßige Sprache",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Spricht kloßig, aber verständlich",
+     "typ": "pflicht",
+     "warum": "Kloßige Sprache zeigt eine Schwellung im Oropharynx."
+    },
+    "guedel": {
+     "danach": {
+      "spo2": 90
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Ein Guedel-Tubus kann die Schwellung verletzen und Würgen auslösen."
+    },
+    "mund": {
+     "ergebnis": "Zunge und Uvula stark geschwollen",
+     "typ": "pflicht",
+     "warum": "Ausmaß der Schwellung beurteilen – vorsichtig, ohne Spatel tief in den Rachen."
+    },
+    "wendl": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Bei einer wachen Patientin mit Zungenschwellung nicht nötig und belastend."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "spo2": 96
+     },
+     "ergebnis": "Schwellung lässt etwas nach",
+     "id": "adrenalin_vernebelt",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 4 mg vernebeln",
+     "typ": "pflicht",
+     "warum": "Ödem oder Schwellung im Oropharynx: laut BPR Epinephrin vernebeln, Repetition nach 10 Min möglich.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "4 mg vernebelt"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Die Zunge füllt fast den Mund aus.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "auskultation": {
+     "ergebnis": "Kein Giemen",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "danach": {
+      "spo2": 97
+     },
+     "ergebnis": "O₂ über Maske",
+     "typ": "pflicht",
+     "warum": "Laut BPR beim A-Problem Sauerstoff als Basismaßnahme."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Sättigung überwachen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet etwas angestrengt.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "lebenswichtig": true,
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Drohende Atemwegsverlegung – die Atemwegssicherung ist eine notärztliche Aufgabe."
+    },
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Ein normaler Blutdruck macht eine Anaphylaxie weniger wahrscheinlich – schließt sie aber nicht aus, kein Symptom ist obligatorisch."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Rosig, warm.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, ängstlich.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Keine Quaddeln, kein Juckreiz",
+     "typ": "pflicht",
+     "warum": "Urtikaria, Flush oder Juckreiz? Ihr Fehlen macht eine Anaphylaxie weniger wahrscheinlich, schließt sie aber nicht aus."
+    },
+    "flach": {
+     "danach": {
+      "spo2": 88
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Flach liegend fällt die geschwollene Zunge zurück."
+    },
+    "oberkoerper": {
+     "ergebnis": "Sitzt aufrecht",
+     "typ": "pflicht",
+     "warum": "Aufrecht sitzend atmet sie leichter."
+    },
+    "sampler": {
+     "ergebnis": "Nimmt seit Jahren Ramipril, keine Allergien",
+     "typ": "pflicht",
+     "warum": "Medikamente sind der Schlüssel: ACE-Hemmer lösen nicht-allergische Angioödeme aus."
+    },
+    "transport": {
+     "ergebnis": "Klinik mit HNO ist informiert",
+     "typ": "pflicht",
+     "warum": "Je nach Schweregrad abwägen: Atemwegssicherung durch den NA oder zügiger Transport."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf dem Tisch liegt eine Tablettenbox.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Anaphylaxie",
+       "warum": "Ohne Auslöser, Haut- und Kreislaufzeichen weniger wahrscheinlich – wird sie wahrscheinlich, gilt der BPR Anaphylaxie."
+      },
+      {
+       "text": "Fremdkörper",
+       "warum": "Die Schwellung kam langsam und ohne Essen."
+      }
+     ],
+     "frage": "Was ist die wahrscheinlichste Ursache?",
+     "nach": "sampler",
+     "richtig": {
+      "text": "Nicht-allergisches Angioödem durch den ACE-Hemmer",
+      "warum": "Keine Hautzeichen, normaler Blutdruck, kein Allergen – aber Ramipril. Laut BPR andere Ursachen bedenken: nicht-allergisches angioneurotisches Ödem, Tumor, Abszess."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR A-Problem beim Erwachsenen, S. 113; SAA Epinephrin S. 49",
+ "regional": "Epinephrin-Vernebelung nur durch NotSan nach Freigabe deines ÄLRD. Atemwegssicherung ist notärztlich.",
+ "rhythmus": "sinus",
+ "situation": "Die Schwellung kam über eine Stunde langsam. Kein Insektenstich, nichts Neues gegessen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Kloßige Sprache, Schluckstörung",
+   "Stridor, Dyspnoe",
+   "Ohne Urtikaria an ACE-Hemmer denken"
+  ],
+  "kern": "Schwellung im Mund = A-Problem",
+  "ns": [
+   "Epinephrin 4 mg vernebeln, Rep. nach 10 Min",
+   "Anaphylaxie wahrscheinlich: BPR Anaphylaxie"
+  ],
+  "tun": [
+   "O₂",
+   "Aufrecht sitzen lassen",
+   "Ursache: Allergie? Fremdkörper? Medikament?",
+   "NA, zügig in die Klinik"
+  ],
+  "vermeiden": [
+   "Flach lagern",
+   "Guedel-Tubus",
+   "Rachen mit Spatel inspizieren"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "A-Problem · Angioödem",
+ "vitalwerte": {
+  "af": 20,
+  "bz": 122,
+  "dia": 88,
+  "gcs": 15,
+  "hf": 94,
+  "spo2": 94,
+  "sys": 156,
+  "temp": 36.7
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus für das Angioödem. Laut Infotabelle ist die Adrenalin-Vernebelung für Anaphylaxie (Stridor, Bronchospastik) und Krupp vorgesehen – beim nicht-allergischen Angioödem NA hinzuziehen, Atemweg nach Algorithmus 28.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 28 Atemwegsmanagement, S. 42; Algorithmus 14 Anaphylaxie, S. 27; Infotabelle Adrenalin S. 69",
+  "steckbrief": {
+   "ns": [
+    "Anaphylaxie wahrscheinlich: Algorithmus 14 (Adrenalin i.m., bei Stridor 5 mg vernebeln)",
+    "Nicht-allergisch (ACE-Hemmer): NA, Atemweg nach Algorithmus 28"
+   ]
+  },
+  "phasen": {
+   "A": {
+    "eigene": {
+     "adrenalin_vernebelt": {
+      "danach": {
+       "spo2": 96
+      },
+      "ergebnis": "Schwellung lässt etwas nach",
+      "id": "adrenalin_vernebelt",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Adrenalin 5 mg vernebeln",
+      "typ": "neutral",
+      "warum": "Laut SH-Infotabelle bei Anaphylaxie (Stridor, Bronchospastik) und Krupp vorgesehen.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "5 mg vernebelt"
+       }
+      ]
+     }
+    }
+   },
+   "B": {
+    "aktionen": {
+     "o2": {
+      "danach": {
+       "spo2": 97
+      },
+      "ergebnis": "O₂ über Maske",
+      "typ": "pflicht",
+      "warum": "Basismaßnahme beim A-Problem: Sauerstoff (SH-Ziel bei pulmonal Gesunden SpO₂ ≥ 95 %)."
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Anaphylaxie",
+        "warum": "Ohne Auslöser, Haut- und Kreislaufzeichen weniger wahrscheinlich – wird sie wahrscheinlich, gilt Algorithmus 14."
+       },
+       {
+        "text": "Fremdkörper",
+        "warum": "Die Schwellung kam langsam und ohne Essen."
+       }
+      ],
+      "frage": "Was ist die wahrscheinlichste Ursache?",
+      "nach": "sampler",
+      "richtig": {
+       "text": "Nicht-allergisches Angioödem durch den ACE-Hemmer",
+       "warum": "Keine Hautzeichen, normaler Blutdruck, kein Allergen – aber Ramipril. Andere Ursachen bedenken: nicht-allergisches Angioödem, Tumor, Abszess."
+      }
+     }
+    }
+   }
+  },
+  "ohneAlg": true
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Schmerz ist, was der Patient angibt",
+ "merke": "Schmerztherapie nie verzögern, um Diagnostik zu gewinnen.",
+ "punkte": [
+  "NRS 0 kein · 1–2 leicht · 3–5 mäßig · 6–8 stark · 9–10 unerträglich",
+  "Zuerst ABCDE, unter E bereits genommene Schmerzmittel erfragen",
+  "NRS ≥ 3: Paracetamol oder Ibuprofen (NotSan, nach Kontraindikationen)",
+  "Koliken: ggf. Butylscopolamin",
+  "NRS ≥ 6: Opioid (ACS: Morphin), Trauma auch Esketamin/Midazolam",
+  "NRS ≥ 9: zuerst Opioid bzw. Esketamin",
+  "Unter Opioiden: Atemfrequenz überwachen, O₂ prüfen"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Schmerzen, S. 104–105",
+ "regional": true,
+ "tags": [
+  "Schmerz",
+  "Analgesie",
+  "NRS"
+ ],
+ "titel": "Schmerz – NRS und Stufen",
+ "sh": {
+  "punkte": [
+   "NRS > 4 gilt als zu lindernder Schmerz",
+   "Trauma, immobilisierender Rückenschmerz: Esketamin + Midazolam",
+   "Kardial oder Esketamin-KI: Opioid nach lokalem Protokoll",
+   "Bauch, Kopf, Mixed Pain: Metamizol, alternativ Paracetamol; Koliken Butylscopolamin",
+   "Ziel: NRS halbieren oder < 4, Reevaluation nach 15 Min"
+  ],
+  "merke": "Keine Opiate bei Kopfschmerz.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmen 19 und 20, S. 32–33"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Opioid-Intoxikation, wenn primäre Maßnahmen versagen",
+ "merke": "Wirkt kürzer als viele Opioide – Überwachung zwingend.",
+ "punkte": [
+  "Zuerst: Kommandoatmung, O₂, Beutel-Masken-Beatmung",
+  "0,1 mg fraktioniert i.v. alle 2 Min (Kinder 0,01 mg/kg)",
+  "Bis Spontanatmung und Schutzreflexe – nicht bis zum Aufwachen",
+  "i.m. und nasal möglich"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Naloxon, S. 64",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Opioid",
+  "Antidot",
+  "Intoxikation"
+ ],
+ "titel": "Naloxon",
+ "sh": {
+  "punkte": [
+   "Zuerst Atemweg, O₂, Beatmung",
+   "0,4 mg i.v., möglichst in 0,1-mg-Schritten",
+   "i.m. 0,4 mg in den Oberschenkel, ggf. bis 0,8 mg",
+   "Nasal 1,8–2 mg, ggf. Wiederholung nach 3–5 Min",
+   "Reanimation: 0,4 mg i.v. oder 0,8 mg i.m."
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Naloxon S. 97; Algorithmus 22 S. 35"
+ }
+}

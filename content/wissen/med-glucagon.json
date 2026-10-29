@@ -1,0 +1,30 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Hypoglykämie < 60 mg/dl, Patient nicht wach oder nicht schluckfähig (Fremdhilfe)",
+ "merke": "Charge dokumentieren.",
+ "punkte": [
+  "> 25 kg: 1 mg i.m.",
+  "< 25 kg: 0,5 mg i.m.",
+  "Nasal 3 mg ab 4 Jahren",
+  "KI: leere Glykogenspeicher (Alkohol, Leberversagen)"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Glucagon, S. 53",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Hypoglykämie",
+  "BZ"
+ ],
+ "titel": "Glucagon",
+ "sh": {
+  "kern": "Hypoglykämie < 60 mg/dl, orale Gabe nicht möglich – nach lokalem Protokoll",
+  "punkte": [
+   "Nasal 3 mg in ein Nasenloch",
+   "i.m. 1 mg",
+   "Nach Gabe immer Transport"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Glucagon S. 84; Algorithmus 17 S. 30"
+ }
+}

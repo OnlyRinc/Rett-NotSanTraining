@@ -1,0 +1,403 @@
+{
+ "level": 2,
+ "patient": "Mann, 40 J. · steht im Garten, Nachbarn halten seine Arme seit 15 Minuten unter den Gartenschlauch",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Meine Arme brennen!“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei – aber auf Inhalationstrauma achten."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Gesicht unverletzt, kein Ruß, Stimme normal",
+     "id": "inhalation",
+     "text": "Gesicht, Nasenhaare, Ruß und Stimme prüfen",
+     "typ": "pflicht",
+     "warum": "Hinweise auf ein Inhalationstrauma: verbranntes Gesicht, versengte Haare, Ruß, Heiserkeit, Stridor."
+    }
+   ],
+   "eindruck": "Spricht klar.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "auskultation": {
+     "ergebnis": "Unauffällig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 97 % – kein Sauerstoff nötig. Bei Verdacht auf CO-Vergiftung wäre es anders."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet etwas schneller.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "vel": {
+     "ergebnis": "Angewärmte VEL läuft",
+     "typ": "pflicht",
+     "warum": "Erwachsene: angewärmte VEL, maximal 1 l pro Stunde."
+    },
+    "zugang": {
+     "ergebnis": "Zugang am Handrücken in gesunder Haut",
+     "typ": "pflicht",
+     "warum": "i.v.-Zugang möglichst in nicht verbrannter Haut."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Kurzinfusion läuft",
+     "id": "paracetamol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Paracetamol 1.000 mg als Kurzinfusion",
+     "typ": "sinnvoll",
+     "warum": "BPR Schmerzen: ab NRS ≥ 3 zuerst Paracetamol oder Ibuprofen.",
+     "mittel": [
+      {
+       "w": "paracetamol",
+       "d": "1.000 mg als Kurzinfusion"
+      }
+     ]
+    },
+    {
+     "danach": {
+      "hf": 98
+     },
+     "ergebnis": "Schmerz sinkt auf NRS 4",
+     "id": "fentanyl",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Fentanyl 50 µg-Schritte i.v.",
+     "typ": "sinnvoll",
+     "warum": "NRS 8 (≥ 6) bei Trauma: zusätzlich Opioid oder Esketamin/Midazolam. Fentanyl titrieren alle 3–4 Min, max. 2 µg/kg.",
+     "mittel": [
+      {
+       "w": "fentanyl",
+       "d": "50 µg i.v., titriert"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "cortison",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Prednisolon gegen die Schwellung",
+     "typ": "falsch",
+     "warum": "Laut BPR keine Cortison-Gabe in jeglicher Form bei thermischen Verletzungen.",
+     "mittel": [
+      {
+       "w": "prednisolon",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Schmerzbedingt schneller Puls.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Brust und beide Unterarme: Blasen, teils weißlich",
+     "typ": "pflicht",
+     "warum": "Verbrennungsausmaß erfassen – Kleidung, die nicht klebt, entfernen."
+    },
+    "temp": {
+     "ergebnis": "35,8 °C",
+     "typ": "pflicht",
+     "warum": "Thermomonitoring – Ziel über 36 °C."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Geeignete Zielklinik nach regionalem Konzept, ggf. Zentrum für Schwerbrandverletzte."
+    },
+    "waerme": {
+     "ergebnis": "Rettungsdecke und Decken, RTW vorgeheizt",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Wärmeerhalt ist entscheidend – auch schon ab 30 % VKOF oder bei Inhalationstrauma."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Mit Metalline-Tüchern abgedeckt",
+     "id": "abdecken",
+     "text": "Steril und trocken abdecken",
+     "typ": "pflicht",
+     "warum": "Sterile, trockene, nicht verklebende Verbände – sie lindern auch den Schmerz."
+    },
+    {
+     "ergebnis": "",
+     "id": "salbe",
+     "text": "Brandsalbe oder Öl auftragen",
+     "typ": "falsch",
+     "warum": "Keine Hausmittel – nur steril und trocken abdecken."
+    }
+   ],
+   "eindruck": "Beide Unterarme und die Brust sind gerötet, mit Blasen.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Etwa 9 %",
+       "warum": "Eine Handfläche entspricht 1 %, nicht 0,5 %."
+      },
+      {
+       "text": "Etwa 36 %",
+       "warum": "Eine Handfläche entspricht 1 %, nicht 2 %."
+      }
+     ],
+     "frage": "Die verbrannten Flächen an Brust und Unterarmen entsprechen zusammen etwa 18 Handflächen des Patienten. Wie viel VKOF?",
+     "nach": "entkleiden",
+     "richtig": {
+      "text": "Etwa 18 %",
+      "warum": "Handflächenregel laut BPR: Die Hand des Patienten entspricht etwa 1 % seiner Körperoberfläche."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [
+    {
+     "danach": {
+      "temp": 35.9
+     },
+     "ergebnis": "Wasser abgestellt, er wird zugedeckt",
+     "id": "kuehlung",
+     "lebenswichtig": true,
+     "text": "Kühlung beenden",
+     "typ": "pflicht",
+     "warum": "Laut BPR keine aktive Kühlung durch den Rettungsdienst – eine laufende Kühlung beenden. Sonst droht Unterkühlung."
+    },
+    {
+     "danach": {
+      "temp": 34.9
+     },
+     "ergebnis": "",
+     "id": "weiterkuehlen",
+     "text": "Weiter mit kaltem Wasser kühlen",
+     "typ": "gefahr",
+     "warum": "Langes Kühlen führt zur Unterkühlung – die verschlechtert Gerinnung und Prognose."
+    }
+   ],
+   "eindruck": "Keine blutenden Wunden.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Thermische Verletzungen, S. 161–162; SAA VEL S. 71",
+ "regional": "VEL und Schmerzmittel nur durch NotSan nach Freigabe deines ÄLRD. Zielklinik (Brandverletztenzentrum) nach regionalem Zuweisungskonzept.",
+ "rhythmus": "sinus",
+ "situation": "Beim Grillen ist Brennspiritus aufgeflammt. Er zittert und klagt über starke Schmerzen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Rötung, Blasen, weiße Areale",
+   "Inhalationstrauma: Gesicht, Ruß, Heiserkeit",
+   "VKOF: Hand des Patienten = 1 %"
+  ],
+  "kern": "Kühlung beenden, warm halten",
+  "ns": [
+   "i.v. in gesunder Haut",
+   "Angewärmte VEL: Erw. max. 1 l/h, Kinder 10 ml/kg/h",
+   "Schmerztherapie (NRS ≥ 6: Opioid oder Esketamin)"
+  ],
+  "tun": [
+   "Kühlung beenden",
+   "Steril, trocken abdecken",
+   "Wärmeerhalt, RTW vorheizen",
+   "Zielklinik nach Konzept"
+  ],
+  "vermeiden": [
+   "Aktive Kühlung",
+   "Brandsalbe, Hausmittel",
+   "Cortison"
+  ]
+ },
+ "stichwort": "RD 2 · Verbrennung",
+ "titel": "Thermische Verletzung",
+ "vitalwerte": {
+  "af": 22,
+  "bz": 118,
+  "dia": 84,
+  "gcs": 15,
+  "hf": 112,
+  "spo2": 97,
+  "sys": 132,
+  "temp": 35.8
+ },
+ "sh": {
+  "regional": "SH: Empfehlungen zur Behandlung von Brandverletzten. Zentrum bei Grad 2 ≥ 10 %, Grad 3, Hände/Gesicht/Genitale, Strom, Chemie oder Inhalationstrauma.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Brandverletzte S. 65–66; Algorithmus 19 Schmerz, S. 32; Infotabellen Esketamin S. 81, Metamizol S. 92",
+  "steckbrief": {
+   "ns": [
+    "i.v. in gesunder Haut",
+    "Vorgewärmte Kristalloide 500–1.000 ml (Erw. 1.000 ml in 2 h)",
+    "Schmerz: Esketamin + Midazolam, begleitend Metamizol",
+    "Potentiell kritisch: initial O₂ 15 l/min"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "o2": {
+      "ergebnis": "O₂ 15 l/min über Maske mit Reservoir",
+      "typ": "pflicht",
+      "warum": "SH: Alle potentiell kritischen Brandverletzten erhalten zunächst 15 l/min Sauerstoff – bei 18 % VKOF Grad 2 ist er potentiell kritisch."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "vel": {
+      "ergebnis": "Angewärmte VEL läuft",
+      "typ": "pflicht",
+      "warum": "SH: Faustregel 500–1.000 ml vorgewärmte Kristalloide, Erwachsene 1.000 ml in den ersten 2 Stunden."
+     }
+    },
+    "eigene": {
+     "paracetamol": {
+      "ergebnis": "Kurzinfusion läuft",
+      "id": "paracetamol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Metamizol 1 g als Kurzinfusion (begleitend)",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 19: begleitend ein peripheres Analgetikum erwägen – Metamizol als Kurzinfusion über 10 Min, liegend.",
+      "mittel": [
+       {
+        "w": "metamizol",
+        "d": "1 g als Kurzinfusion"
+       }
+      ]
+     },
+     "fentanyl": {
+      "danach": {
+       "hf": 98
+      },
+      "ergebnis": "Schmerz sinkt auf NRS 4",
+      "id": "fentanyl",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Esketamin + Midazolam i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH: Verbrennung mit NRS > 4 → Esketamin (0,125–0,25 mg/kg i.v.) mit Midazolam. Wach, RR 132 – keine Kontraindikation.",
+      "mittel": [
+       {
+        "w": "esketamin",
+        "d": "0,125–0,25 mg/kg i.v. + Midazolam"
+       }
+      ]
+     },
+     "cortison": {
+      "ergebnis": "",
+      "id": "cortison",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Prednisolon gegen die Schwellung",
+      "typ": "falsch",
+      "warum": "Cortison ist bei thermischen Verletzungen nicht vorgesehen.",
+      "mittel": [
+       {
+        "w": "prednisolon",
+        "d": "*"
+       }
+      ]
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Etwa 9 %",
+        "warum": "Eine Handfläche entspricht 1 %, nicht 0,5 %."
+       },
+       {
+        "text": "Etwa 36 %",
+        "warum": "Eine Handfläche entspricht 1 %, nicht 2 %."
+       }
+      ],
+      "frage": "Die verbrannten Flächen an Brust und Unterarmen entsprechen zusammen etwa 18 Handflächen des Patienten. Wie viel VKOF?",
+      "nach": "entkleiden",
+      "richtig": {
+       "text": "Etwa 18 %",
+       "warum": "Handflächenregel: Die Hand des Patienten mit Fingern entspricht etwa 1 %. SH: gut für kleinere Flächen (< 15 %), sonst Neuner-Regel. Nur Grad 2 und 3 zählen."
+      }
+     }
+    }
+   },
+   "x": {
+    "eigene": {
+     "kuehlung": {
+      "danach": {
+       "temp": 35.9
+      },
+      "ergebnis": "Wasser abgestellt, er wird zugedeckt",
+      "id": "kuehlung",
+      "lebenswichtig": true,
+      "text": "Kühlung beenden",
+      "typ": "pflicht",
+      "warum": "SH: keine aktive Kühlung durch Fachpersonal – eine laufende Kühlung beenden, sonst droht Unterkühlung."
+     }
+    }
+   }
+  }
+ }
+}

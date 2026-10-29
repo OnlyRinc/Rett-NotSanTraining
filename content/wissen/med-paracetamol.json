@@ -1,0 +1,30 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Schmerzen NRS ≥ 3, Fieber beim Kind nach Fieberkrampf",
+ "merke": "Mindestens 6 Stunden Abstand zur letzten Gabe.",
+ "punkte": [
+  "> 50 kg: 1.000 mg als Kurzinfusion über 15 Min",
+  "15–50 kg: 15 mg/kg i.v.",
+  "Rektal: 7–12 kg 125 mg · 13–25 kg 250 mg · 26–43 kg 500 mg",
+  "KI: schwere Leberfunktionsstörung"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Paracetamol, S. 65",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Schmerz",
+  "Fieber"
+ ],
+ "titel": "Paracetamol",
+ "sh": {
+  "kern": "Fieber > 38,5 °C beim Krampfanfall, Analgesie bei KI für Metamizol",
+  "punkte": [
+   "Rektal: bis 6 Mon. 75 mg · bis 1 J 125 mg · 1–6 J 250 mg · Schulkind 500 mg",
+   "i.v.: > 50 kg 1 g · < 50 kg 500 mg",
+   "KI: Tageshöchstdosis 50 mg/kg bereits erreicht"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Paracetamol S. 100"
+ }
+}

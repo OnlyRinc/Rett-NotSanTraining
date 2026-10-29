@@ -1,0 +1,33 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Starke Schmerzen (NRS ≥ 6)",
+ "merke": "Achtung: verschiedene Konzentrationen. Bei Ketamin Dosis verdoppeln.",
+ "punkte": [
+  "i.v.: 0,125 mg/kg, Repetition, max. 0,25 mg/kg",
+  "nasal/i.m.: 1 mg/kg, einmalige Repetition",
+  "Mit Midazolam kombinieren (i.v.)",
+  "KI: ACS, Herzinsuffizienz, Hirndruck, RR > 180/100, Intoxikation, Schwangerschaft",
+  "Nicht unter 10 kg"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Esketamin, S. 50",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Schmerz",
+  "Analgesie"
+ ],
+ "titel": "Esketamin",
+ "sh": {
+  "kern": "Schmerz NRS > 4: Trauma, Verbrennung, muskuloskelettal",
+  "punkte": [
+   "i.v. 0,125–0,25 mg/kg, ggf. nach 3 Min steigern",
+   "nasal 0,5 mg/kg, Wiederholung nach 3 Min",
+   "Mit Midazolam kombinieren (Algorithmus 19)",
+   "KI: ACS, unbehandelte Hypertonie > 180/100 in Ruhe, Schwangerschaft, Bewusstseinsstörung, Drogen/Alkohol mit GCS < 12"
+  ],
+  "merke": "KI für Esketamin beim Trauma → Opioid nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Esketamin S. 81–82; Algorithmus 19 S. 32"
+ }
+}

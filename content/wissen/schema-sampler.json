@@ -1,0 +1,18 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Strukturierte Anamnese, sobald der Patient stabil ist",
+ "merke": "Bei Bewusstlosen: Angehörige, Medikamentenplan und Umgebung nutzen.",
+ "punkte": [
+  "S – Symptome",
+  "A – Allergien",
+  "M – Medikamente",
+  "P – Patientengeschichte (Vorerkrankungen)",
+  "L – Letzte Mahlzeit, letzter Stuhlgang, letzte Periode",
+  "E – Ereignis: Was ist passiert?",
+  "R – Risikofaktoren"
+ ],
+ "tags": [
+  "Anamnese"
+ ],
+ "titel": "SAMPLER"
+}

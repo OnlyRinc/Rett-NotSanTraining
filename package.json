@@ -1,0 +1,14 @@
+{
+  "name": "wachenalarm",
+  "private": true,
+  "description": "Gamifizierte Lern-App für Rettungs- und Notfallsanitäter",
+  "scripts": {
+    "check": "python3 scripts/check.py",
+    "build": "python3 scripts/build.py",
+    "start": "python3 scripts/build.py && python3 -m http.server 8000 -d dist",
+    "test": "python3 scripts/build.py && node tests/play.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

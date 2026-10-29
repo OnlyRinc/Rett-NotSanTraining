@@ -1,0 +1,21 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Die Klinik vorab informieren – kurz und vollständig",
+ "merke": "",
+ "punkte": [
+  "Z – Zeiten: Anmeldezeit, Ankunftszeit",
+  "O – Opening: Name, Alter, Geschlecht, was ist passiert, Verdachtsdiagnose, Dringlichkeit",
+  "A – Atemweg: frei, gefährdet, gesichert, Tracheostoma",
+  "B – Belüftung: O₂-pflichtig, CPAP/NIV, beatmet, Pneumothorax?",
+  "C – Kreislauf: stabil/instabil, Schock, Reanimation, Rhythmusstörung, Blutung",
+  "D – Defizite: wach, BE-FAST, erweckbar, Koma",
+  "E – Extras: Verletzungsmuster, Antikoagulation, Infektion/Isolation, Schwangerschaft"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), Handreichung Patientenanmeldung, S. 82",
+ "tags": [
+  "Voranmeldung",
+  "Klinik",
+  "Anmeldung"
+ ],
+ "titel": "Patientenanmeldung"
+}

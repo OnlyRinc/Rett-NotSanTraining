@@ -1,0 +1,28 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "STEMI/OMI mit tachykardem VHF > 100 oder vielen VES",
+ "merke": "Nicht gleichzeitig mit Nitro – beide senken den Blutdruck.",
+ "punkte": [
+  "2 mg i.v., Repetition 2 mg und 1 mg, max. 5 mg",
+  "KI: RRsys < 120, HF < 60, Herzinsuffizienz, AV-Block II/III, Hyperkaliämie-Zeichen",
+  "Nicht unter 18 Jahren"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Metoprolol, S. 60",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "ACS",
+  "Betablocker"
+ ],
+ "titel": "Metoprolol",
+ "sh": {
+  "kern": "Tachykarde Rhythmusstörung, ACS – nach lokalem Protokoll",
+  "punkte": [
+   "Initial 1–2 mg langsam i.v., Steigerung bis max. 10 mg",
+   "KI: Herzinsuffizienz, Schock, AV-Block II/III, HF < 50, RR < 120, Asthma"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Metoprolol S. 93; Algorithmus 1 S. 14"
+ }
+}

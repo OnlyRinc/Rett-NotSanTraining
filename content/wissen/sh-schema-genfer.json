@@ -1,0 +1,22 @@
+{
+ "kategorie": "Schemata",
+ "titel": "Genfer Score (vereinfacht, revidiert)",
+ "kern": "Wie wahrscheinlich ist eine Lungenembolie?",
+ "punkte": [
+  "Je 1 Punkt: Alter > 65 · frühere TVT/LAE · OP oder Fraktur im letzten Monat · aktive Krebserkrankung",
+  "Je 1 Punkt: einseitiger Beinschmerz · Palpationsschmerz/Schwellung Bein · Hämoptysen",
+  "HF 75–94/min: 1 Punkt · HF ≥ 95/min: 2 Punkte",
+  "0–1 unwahrscheinlich · ≥ 2 wahrscheinlich"
+ ],
+ "merke": "In SH als Beispiel-Score genannt (statt Wells/sPESI). Heparin ist nicht an den Score gebunden.",
+ "tags": [
+  "SH",
+  "LAE",
+  "Lungenembolie",
+  "Score"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmus 11 S. 24",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

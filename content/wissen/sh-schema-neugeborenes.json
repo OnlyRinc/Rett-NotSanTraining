@@ -1,0 +1,23 @@
+{
+ "kategorie": "Schemata",
+ "titel": "Neugeborenes versorgen",
+ "kern": "Trocknen, warm halten, Uhr starten",
+ "punkte": [
+  "HF < 100 oder Schnappatmung: 5 initiale Beatmungen",
+  "HF < 60: Herzdruckmassage 3:1",
+  "SpO₂ präduktal (rechte Hand): 2 Min 60 % · 3 Min 70 % · 4 Min 80 % · 5 Min 85 % · 10 Min 90 %",
+  "APGAR nach 1, 5 und 10 Min",
+  "Abnabeln frühestens nach 1 Min, ca. 20 cm, 2 Klemmen im Abstand von 3 cm"
+ ],
+ "merke": "Wärme ist beim Neugeborenen Therapie.",
+ "tags": [
+  "SH",
+  "Geburt",
+  "Neugeborenes",
+  "APGAR"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmen 35 und 36 S. 54–56",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

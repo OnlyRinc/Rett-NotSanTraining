@@ -1,0 +1,33 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Hypertensiver Notfall, Aortensyndrom, Schlaganfall",
+ "merke": "Senkung im Regelfall max. 20 % des Ausgangswerts.",
+ "punkte": [
+  "5 mg langsam i.v., Repetition möglich, max. 25 mg",
+  "Aortensyndrom: Ziel RRsys 100–120",
+  "Schlaganfall: nicht unter 180 systolisch",
+  "Nicht unter 12 Jahren",
+  "KI: Schwangerschaft, Aortenisthmusstenose"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Urapidil, S. 70",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Hypertonie",
+  "Blutdruck"
+ ],
+ "titel": "Urapidil",
+ "sh": {
+  "kern": "Hypertensiver Notfall > 180/110 mit Symptomen, auch bei AP, Lungenödem, Aortendissektion",
+  "punkte": [
+   "5–10 mg i.v., alle 3 Min nach RR-Kontrolle steigern bis 50 mg",
+   "Ziele: ACS < 180 · Lungenödem < 140 · Aortendissektion < 120",
+   "Schlaganfall: nur moderat auf 180/100",
+   "Max. 25 % senken (Ausnahmen: AP, Lungenödem)"
+  ],
+  "merke": "Wirkverstärkung zusammen mit Nitro.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Urapidil S. 107; Algorithmus 8 S. 21"
+ }
+}

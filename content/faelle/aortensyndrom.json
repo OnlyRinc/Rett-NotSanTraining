@@ -1,0 +1,413 @@
+{
+ "level": 3,
+ "patient": "Mann, 63 J. · liegt gekrümmt auf dem Boden, stöhnt, greift sich an den Rücken",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Es zerreißt mich im Rücken!“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht gepresst vor Schmerz.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "auskultation": {
+     "ergebnis": "Seitengleich, unauffällig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 96 % – keine Hypoxie, also kein Sauerstoff."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Sauerstoff nur bedarfsgerecht."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet schnell vor Schmerz.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinusrhythmus, keine ST-Hebungen",
+     "typ": "pflicht",
+     "warum": "Gehört zum BPR – Achtung, auch ST-Hebungen sind möglich."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Kritischer Patient mit Lebensgefahr."
+    },
+    "puls": {
+     "ergebnis": "98/min, rechts kräftig, links schwächer",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr2": {
+     "ergebnis": "Rechts 176/94, links 142/80 mmHg",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Beim Brustschmerz immer an beiden Armen messen – eine Differenz über 20 mmHg ist ein Hinweis auf das Aortensyndrom."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Venöser Zugang laut BPR."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Linker Leistenpuls deutlich schwächer",
+     "id": "pulsbeine",
+     "text": "Pulse an Leiste und Beinen tasten",
+     "typ": "pflicht",
+     "warum": "Fehlende oder einseitige Pulse sind ein starker Hinweis auf eine Dissektion."
+    },
+    {
+     "danach": {
+      "dia": 76,
+      "sys": 128
+     },
+     "ergebnis": "Urapidil ist gegeben",
+     "id": "urapidil",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Urapidil 5 mg langsam i.v.",
+     "typ": "pflicht",
+     "warum": "RRsys über 140: Urapidil titriert, Ziel 100–120 mmHg, nicht unter 80.",
+     "mittel": [
+      {
+       "w": "urapidil",
+       "d": "5 mg langsam i.v."
+      }
+     ]
+    },
+    {
+     "danach": {
+      "hf": 84
+     },
+     "ergebnis": "Schmerz sinkt auf NRS 5",
+     "id": "morphin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Morphin 2 mg fraktioniert i.v.",
+     "typ": "sinnvoll",
+     "warum": "NRS 9: Schmerztherapie senkt auch Blutdruck und Herzfrequenz.",
+     "mittel": [
+      {
+       "w": "morphin",
+       "d": "2 mg i.v., fraktioniert"
+      }
+     ]
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "ass",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "ASS 250 mg i.v.",
+     "typ": "gefahr",
+     "warum": "Beim V.a. Aortensyndrom ist ASS kontraindiziert – es verstärkt die Blutung.",
+     "mittel": [
+      {
+       "w": "ass",
+       "d": "*"
+      }
+     ]
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "heparin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Heparin 5.000 I.E. i.v.",
+     "typ": "gefahr",
+     "warum": "Heparin ist beim akuten Aortensyndrom kontraindiziert.",
+     "mittel": [
+      {
+       "w": "heparin",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, schwitzig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Herzinfarkt",
+       "warum": "Ein Infarkt macht keinen wandernden Schmerz und keine Pulsdifferenz. Gefährlich: ASS und Heparin beim Aortensyndrom."
+      },
+      {
+       "text": "Bandscheibenvorfall",
+       "warum": "Der Kreislaufbefund passt nicht."
+      }
+     ],
+     "frage": "Welche Verdachtsdiagnose?",
+     "nach": "rr2",
+     "richtig": {
+      "text": "Akutes Aortensyndrom",
+      "warum": "Reißender, wandernder Rückenschmerz plus RR-Differenz über 20 mmHg ist „Thoraxschmerz plus 1“."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Unter 180 mmHg reicht",
+       "warum": "Das gilt beim Lungenödem, nicht beim Aortensyndrom."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "So niedrig wie möglich",
+       "warum": "Unter 80 mmHg werden Organe unterversorgt."
+      }
+     ],
+     "frage": "Welcher systolische Zielwert gilt?",
+     "nach": "",
+     "richtig": {
+      "text": "100–120 mmHg",
+      "warum": "Laut BPR RRsys 100–120 mmHg, nicht unter 80. Hypertension und Tachykardie vermeiden."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "motorik": {
+     "ergebnis": "Keine Ausfälle",
+     "typ": "sinnvoll",
+     "warum": "Neurologische Ausfälle können bei einer Dissektion auftreten."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "opqrst": {
+     "ergebnis": "Schlagartig, reißend, zwischen den Schulterblättern, wandert nach unten, NRS 9",
+     "typ": "pflicht",
+     "warum": "Schmerzcharakter und Verlauf sind wegweisend."
+    },
+    "sampler": {
+     "ergebnis": "Bluthochdruck, Tabletten nicht genommen",
+     "typ": "pflicht",
+     "warum": "Erweiterte Anamnese: Hypertonie, Marfan, Kokain, Herzkatheter?"
+    },
+    "transport": {
+     "ergebnis": "Zielklinik ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Load and go: zügig in die Klinik mit Herz- oder Gefäßchirurgie."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "hf": 118,
+      "sys": 196
+     },
+     "ergebnis": "",
+     "id": "laufen",
+     "text": "Patient selbst zum RTW gehen lassen",
+     "typ": "gefahr",
+     "warum": "Belastung erhöht Blutdruck und Herzfrequenz – Rupturgefahr."
+    }
+   ],
+   "eindruck": "Er will sich aufsetzen.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine äußere Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Akutes Aortensyndrom, S. 114–115; SAA Urapidil S. 70",
+ "regional": "Zielklinik (Herz- oder Gefäßchirurgie) nach regionalem Zuweisungskonzept. Medikamente nur nach Freigabe durch deinen ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Beim Tragen einer Kiste plötzlich ein reißender Schmerz zwischen den Schulterblättern, der nach unten wandert.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Reißender, wandernder Schmerz",
+   "Rücken, zwischen den Schulterblättern",
+   "RR-Differenz > 20 mmHg",
+   "Pulsdefizit, neurologische Zeichen"
+  ],
+  "kern": "RR an beiden Armen",
+  "ns": [
+   "Venöser Zugang",
+   "Schmerztherapie",
+   "RRsys > 140: Urapidil 5 mg titriert",
+   "Ziel RRsys 100–120, nicht < 80"
+  ],
+  "tun": [
+   "RR beidseits, Pulse Leiste/Beine",
+   "12-Kanal-EKG",
+   "Load and go",
+   "Zentrum voranmelden"
+  ],
+  "vermeiden": [
+   "ASS oder Heparin",
+   "Laufen lassen"
+  ]
+ },
+ "stichwort": "RD 2 · Brustschmerz",
+ "titel": "Akutes Aortensyndrom",
+ "vitalwerte": {
+  "af": 20,
+  "bz": 118,
+  "dia": 94,
+  "gcs": 15,
+  "hf": 98,
+  "spo2": 96,
+  "sys": 176,
+  "temp": 36.5
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Urapidil ist laut SH-Infotabelle beim hypertensiven Notfall > 180/110 mmHg vorgesehen, auch bei V.a. Aortendissektion (Ziel < 120). ASS und Heparin sind bei V.a. Aortendissektion kontraindiziert.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Aortensyndrom; Infotabellen ASS S. 72, Heparin S. 88, Urapidil S. 107",
+  "steckbrief": {
+   "ns": [
+    "Venöser Zugang",
+    "Schmerztherapie nach lokalem Protokoll",
+    "RR > 180/110: Urapidil 5–10 mg, alle 3 Min bis 50 mg, Ziel < 120",
+    "Kein ASS, kein Heparin"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "eigene": {
+     "urapidil": {
+      "danach": {
+       "dia": 76,
+       "sys": 128
+      },
+      "ergebnis": "Urapidil ist gegeben",
+      "id": "urapidil",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Urapidil 5–10 mg langsam i.v.",
+      "typ": "neutral",
+      "warum": "SH-Infotabelle: Indikation erst ab > 180/110 mmHg, dann Ziel < 120. Bei 176/94 Rücksprache mit dem NA.",
+      "mittel": [
+       {
+        "w": "urapidil",
+        "d": "5–10 mg langsam i.v."
+       }
+      ]
+     },
+     "morphin": {
+      "danach": {
+       "hf": 84
+      },
+      "ergebnis": "Schmerz sinkt auf NRS 5",
+      "id": "morphin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Morphin 2 mg fraktioniert i.v.",
+      "typ": "sinnvoll",
+      "warum": "NRS 9: Schmerztherapie senkt auch Blutdruck und Herzfrequenz. In SH Opioid nach lokalem Protokoll.",
+      "mittel": [
+       {
+        "w": "morphin",
+        "d": "2 mg i.v., fraktioniert"
+       }
+      ]
+     },
+     "ass": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "ass",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "ASS 250 mg i.v.",
+      "typ": "gefahr",
+      "warum": "SH-Infotabelle: ASS ist bei Verdacht auf Aortendissektion kontraindiziert – es verstärkt die Blutung.",
+      "mittel": [
+       {
+        "w": "ass",
+        "d": "*"
+       }
+      ]
+     },
+     "heparin": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "heparin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Heparin 5.000 I.E. i.v.",
+      "typ": "gefahr",
+      "warum": "SH-Infotabelle: Heparin ist bei Verdacht auf akute Aortendissektion kontraindiziert.",
+      "mittel": [
+       {
+        "w": "heparin",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "1": {
+      "falsch": [
+       {
+        "text": "Unter 180 mmHg reicht",
+        "warum": "Unter 180 gilt beim ACS, nicht beim Aortensyndrom."
+       },
+       {
+        "schwer": "gefahr",
+        "text": "So niedrig wie möglich",
+        "warum": "Unter 80 mmHg werden Organe unterversorgt."
+       }
+      ],
+      "frage": "Welcher systolische Zielwert gilt?",
+      "nach": "",
+      "richtig": {
+       "text": "Unter 120 mmHg",
+       "warum": "SH-Infotabelle Urapidil: Zielwert bei V.a. Aortendissektion < 120 mmHg (SAA/BPR: 100–120, nicht unter 80)."
+      },
+      "rolle": "ns"
+     }
+    }
+   }
+  },
+  "ohneAlg": true
+ }
+}

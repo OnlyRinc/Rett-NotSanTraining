@@ -1,0 +1,23 @@
+{
+ "kategorie": "Schemata",
+ "titel": "SHIT – Instabilitätszeichen",
+ "kern": "Wann ist eine Brady- oder Tachykardie bedrohlich?",
+ "punkte": [
+  "S – Synkope oder Bewusstseinsstörung",
+  "H – Hypotension oder Schock",
+  "I – Insuffizienzzeichen",
+  "T – Thoraxschmerz oder ACS-Symptome",
+  "Entscheidend ist der klinische Eindruck eines schwer kranken Patienten"
+ ],
+ "merke": "Instabil: hochdosiert O₂, Reanimationsbereitschaft, Therapieelektroden kleben.",
+ "tags": [
+  "SH",
+  "Bradykardie",
+  "Tachykardie",
+  "instabil"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmen 4–7 S. 17–20",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

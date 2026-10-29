@@ -1,0 +1,567 @@
+{
+ "level": 2,
+ "patient": "Frau, 34 J. · sitzt auf der Terrasse, Gesicht gerötet und geschwollen, spricht heiser",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Heisere Stimme: „Mein Hals wird eng.“",
+     "typ": "pflicht",
+     "warum": "Heiserkeit und Engegefühl zeigen eine drohende Atemwegsverlegung."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Bei wachen Patienten löst das Würgen aus."
+    },
+    "mund": {
+     "ergebnis": "Lippen und Uvula geschwollen",
+     "typ": "sinnvoll",
+     "warum": "Schwellung von Zunge oder Uvula ist ein Warnzeichen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie spricht heiser und räuspert sich ständig.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "auskultation": {
+     "ergebnis": "Kein Giemen",
+     "typ": "sinnvoll",
+     "warum": "Giemen würde eine Bronchialobstruktion zeigen – dann Salbutamol vernebeln."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 95
+     },
+     "ergebnis": "O₂ über Maske",
+     "typ": "pflicht",
+     "warum": "SpO₂ unter 92 % bei Anaphylaxie: bedarfsgerecht Sauerstoff geben."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Sättigung zeigt, wie stark die Atmung betroffen ist."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet schnell, kein hörbares Pfeifen.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "lwRS": true,
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Anaphylaxie mit Kreislaufbeteiligung ist ein kritischer Notfall – Notarzt hinzuziehen.",
+     "warumRS": "Als RS darfst du kein Epinephrin geben – der Notarzt (oder ein NotSan) muss sofort kommen."
+    },
+    "puls": {
+     "ergebnis": "124/min, schwach tastbar",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "3 Sekunden",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypotonie unter 90 mmHg zeigt die Kreislaufbeteiligung."
+    },
+    "vel": {
+     "danach": {
+      "dia": 60,
+      "hf": 112,
+      "sys": 96
+     },
+     "ergebnis": "VEL läuft",
+     "typ": "pflicht",
+     "warum": "Volumen gegen die Gefäßweitstellung, Erwachsene 500–1.000 ml."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Für VEL und weitere Medikamente nach SAA."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "dia": 68,
+      "hf": 108,
+      "spo2": 95,
+      "sys": 108
+     },
+     "ergebnis": "Epinephrin in den Oberschenkel gespritzt",
+     "id": "adrenalin_im",
+     "lebenswichtig": true,
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 0,5 mg i.m.",
+     "typ": "pflicht",
+     "warum": "Ab Grad II mit Atem- oder Kreislaufproblem: Epinephrin i.m. ist das wichtigste Medikament. Erwachsene 0,5 mg i.m.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "0,5 mg i.m."
+      }
+     ]
+    },
+    {
+     "danach": {
+      "spo2": 96
+     },
+     "ergebnis": "Heiserkeit lässt nach",
+     "id": "adrenalin_vernebelt",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 4 mg vernebeln",
+     "typ": "sinnvoll",
+     "warum": "Bei Dysphonie, Uvulaschwellung oder Stridor zusätzlich zur i.m.-Gabe vernebeln.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "4 mg vernebelt"
+      }
+     ]
+    },
+    {
+     "ergebnis": "Dimetinden ist gegeben",
+     "id": "dimetinden",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Dimetinden 4–8 mg langsam i.v.",
+     "typ": "sinnvoll",
+     "warum": "Antihistaminikum nach der Epinephrin-Gabe – ersetzt sie nicht.",
+     "mittel": [
+      {
+       "w": "dimetinden",
+       "d": "4–8 mg i.v."
+      }
+     ]
+    },
+    {
+     "ergebnis": "Prednisolon ist gegeben",
+     "id": "prednisolon",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Prednisolon 250 mg i.v.",
+     "typ": "sinnvoll",
+     "warum": "Glukokortikoid bei Anaphylaxie, Wirkung tritt verzögert ein.",
+     "mittel": [
+      {
+       "w": "prednisolon",
+       "d": "250 mg i.v."
+      }
+     ]
+    },
+    {
+     "danach": {
+      "dia": 120,
+      "hf": 168,
+      "sys": 210
+     },
+     "ergebnis": "",
+     "id": "adrenalin_iv",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 1 mg als Bolus i.v.",
+     "typ": "gefahr",
+     "warum": "Epinephrin i.v. gehört nicht in die NotSan-SAA bei Anaphylaxie – nur i.m. Ein i.v.-Bolus kann Rhythmusstörungen und Infarkt auslösen.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "1 mg i.v. als Bolus"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, die Haut fühlt sich kühl an.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Antihistaminikum",
+       "warum": "Wirkt nicht schnell genug auf Atemweg und Kreislauf."
+      },
+      {
+       "text": "Cortison",
+       "warum": "Wirkt verzögert – nur unspezifische frühe Effekte nach 10–20 Minuten."
+      }
+     ],
+     "frage": "Welches Medikament ist hier lebensrettend?",
+     "nach": "",
+     "richtig": {
+      "text": "Epinephrin (Adrenalin) i.m.",
+      "warum": "Epinephrin wirkt gegen Schwellung, Bronchospasmus und Schock. Antihistaminika und Cortison wirken zu langsam."
+     },
+     "rolle": "rs"
+    },
+    {
+     "falsch": [
+      {
+       "text": "Zweite Dosis Dimetinden",
+       "warum": "Antihistaminika ersetzen kein Epinephrin."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Abwarten, Cortison wirkt gleich",
+       "warum": "Cortison wirkt verzögert – die Patientin braucht jetzt Epinephrin."
+      }
+     ],
+     "frage": "Nach 5 Minuten keine Stabilisierung. Was jetzt?",
+     "nach": "adrenalin_im",
+     "richtig": {
+      "text": "Epinephrin i.m. wiederholen",
+      "warum": "Laut BPR Repetition alle 5 Minuten, wenn sich der Zustand nicht stabilisiert."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "A – wach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, ängstlich.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Ausgedehnte Urtikaria an Hals, Brust und Armen",
+     "typ": "pflicht",
+     "warum": "Hautzeichen und weitere Stiche finden."
+    },
+    "sampler": {
+     "ergebnis": "Wespengift-Allergie bekannt, Notfallset liegt zu Hause",
+     "typ": "sinnvoll",
+     "warum": "Bekannte Allergie und Notfallset erfragen."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Nach einer Anaphylaxie immer in die Klinik – Spätreaktionen sind möglich."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "dia": 40,
+      "hf": 138,
+      "sys": 70
+     },
+     "ergebnis": "",
+     "id": "aufstehen",
+     "text": "Patientin zum RTW laufen lassen",
+     "typ": "gefahr",
+     "warum": "Bei Anaphylaxie mit Schock kann Aufstehen zum Kreislaufkollaps führen. Liegend transportieren."
+    }
+   ],
+   "eindruck": "Quaddeln an Hals und Armen, die Haut juckt.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Erst ab Grad IV",
+       "warum": "Grad IV ist der Kreislaufstillstand – dann wird reanimiert."
+      },
+      {
+       "text": "Schon bei Grad I",
+       "warum": "Bei reinen Hautzeichen ist kein Epinephrin vorgesehen."
+      }
+     ],
+     "frage": "Ab welchem Schweregrad gibt man laut BPR Epinephrin i.m.?",
+     "nach": "",
+     "richtig": {
+      "text": "Ab Grad II – also bei Atem- oder Kreislaufproblem",
+      "warum": "Grad I betrifft nur die Haut. Ab Grad II (z. B. Dyspnoe, Heiserkeit, Hypotonie) gehört Epinephrin i.m. dazu."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "tourniquet": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Keine Blutung – kein Tourniquet."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Stachel am Hals entfernt",
+     "id": "stachel",
+     "text": "Stachel entfernen, Allergenexposition stoppen",
+     "typ": "pflicht",
+     "warum": "Laut BPR zuerst die Allergenexposition stoppen."
+    }
+   ],
+   "eindruck": "Keine Blutung zu sehen.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Anaphylaxie, S. 118–119; SAA Epinephrin S. 49",
+ "regional": "Epinephrin, Dimetinden, Prednisolon und VEL nur durch NotSan nach Freigabe deines ÄLRD. Ob RS beim Adrenalin-Autoinjektor der Patientin helfen dürfen, ist lokal geregelt.",
+ "rhythmus": "sinus",
+ "situation": "Ehemann: Sie wurde vor 10 Minuten in den Hals gestochen. Sie ist gegen Wespen allergisch.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "A · Schwellung, Heiserkeit, Stridor",
+   "B · Dyspnoe, Giemen, SpO₂ < 92 %",
+   "C · RRsys < 90, Tachykardie, Rekap > 2 s",
+   "D · Vigilanzminderung",
+   "E · Urtikaria, Flush, Erbrechen"
+  ],
+  "kern": "Epinephrin i.m. zuerst",
+  "ns": [
+   "Epinephrin i.m.: > 12 J 0,5 mg · 6–12 J 0,3 mg · < 6 J 0,15 mg",
+   "Wiederholung alle 5 Min",
+   "Stridor: zusätzlich 4 mg Epinephrin vernebeln",
+   "Giemen: Salbutamol vernebeln",
+   "VEL, Dimetinden, Prednisolon 250 mg i.v."
+  ],
+  "tun": [
+   "Allergen stoppen",
+   "O₂ bedarfsgerecht",
+   "NA hinzuziehen",
+   "Liegend transportieren",
+   "Immer in die Klinik"
+  ],
+  "vermeiden": [
+   "Aufstehen lassen",
+   "Auf Antihistaminika verlassen",
+   "Abwarten bei Atemwegsbeteiligung"
+  ]
+ },
+ "stichwort": "RD 2 · Allergische Reaktion",
+ "titel": "Anaphylaxie",
+ "vitalwerte": {
+  "af": 26,
+  "bz": 105,
+  "dia": 50,
+  "gcs": 15,
+  "hf": 124,
+  "spo2": 91,
+  "sys": 84,
+  "temp": 36.9
+ },
+ "sh": {
+  "regional": "SH Algorithmus 14: Adrenalin, Infusion, H1-Blocker und Glukokortikoid durch NotSan. Glukokortikoid-Dosis nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 14 Anaphylaxie Erwachsene, S. 27; Infotabellen Adrenalin S. 69, Clemastin S. 76, Dimetinden S. 80, Prednisolon S. 101",
+  "steckbrief": {
+   "ns": [
+    "Adrenalin i.m.: Erw. und > 12 J 0,5 mg · 6–12 J 0,3 mg · < 6 J 0,15 mg",
+    "Keine Besserung nach 5 Min: Adrenalin i.m. + Infusion wiederholen",
+    "Stridor: Adrenalin 5 mg vernebeln",
+    "Bronchospasmus: Salbutamol + Ipratropium",
+    "Infusion 500–1.000 ml (Kind 20 ml/kg)",
+    "Dimetinden 4 mg oder Clemastin 2 mg, Prednisolon 50–100 mg"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "aktionen": {
+     "vel": {
+      "danach": {
+       "dia": 60,
+       "hf": 112,
+       "sys": 96
+      },
+      "ergebnis": "VEL läuft",
+      "typ": "pflicht",
+      "warum": "Anaphylaxie mit relevantem ABCD-Problem: kristalloide Infusion 500–1.000 ml (SH Algorithmus 14)."
+     },
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "Für Infusion, H1-Blocker und Glukokortikoid."
+     }
+    },
+    "eigene": {
+     "adrenalin_im": {
+      "danach": {
+       "dia": 68,
+       "hf": 108,
+       "spo2": 95,
+       "sys": 108
+      },
+      "ergebnis": "Epinephrin in den Oberschenkel gespritzt",
+      "id": "adrenalin_im",
+      "lebenswichtig": true,
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Adrenalin 0,5 mg i.m.",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 14: relevantes ABCD-Problem → Adrenalin i.m. schnellstmöglich in den seitlichen Oberschenkel. Erwachsene 0,5 mg.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "0,5 mg i.m."
+       }
+      ]
+     },
+     "adrenalin_vernebelt": {
+      "danach": {
+       "spo2": 96
+      },
+      "ergebnis": "Heiserkeit lässt nach",
+      "id": "adrenalin_vernebelt",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Adrenalin 5 mg vernebeln",
+      "typ": "sinnvoll",
+      "warum": "Bei Stridor zusätzlich zur i.m.-Gabe: in SH 5 mg Adrenalin pur vernebeln.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "5 mg vernebelt"
+       }
+      ]
+     },
+     "dimetinden": {
+      "ergebnis": "Dimetinden ist gegeben",
+      "id": "dimetinden",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "H1-Blocker: Dimetinden 4 mg oder Clemastin 2 mg i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH: H1-Blocker nach Adrenalin und Infusion – Erwachsene Dimetinden 4 mg oder Clemastin 2 mg, einmalig über 2 Minuten. Ersetzt nie das Adrenalin.",
+      "mittel": [
+       {
+        "w": "dimetinden",
+        "d": "4 mg i.v."
+       },
+       {
+        "w": "clemastin",
+        "d": "2 mg i.v."
+       }
+      ]
+     },
+     "prednisolon": {
+      "ergebnis": "Prednisolon ist gegeben",
+      "id": "prednisolon",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Prednisolon 50–100 mg i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH: Glukokortikoid 50–100 mg i.v. nach lokalem Protokoll. Wirkt verzögert.",
+      "mittel": [
+       {
+        "w": "prednisolon",
+        "d": "50–100 mg i.v."
+       }
+      ]
+     },
+     "adrenalin_iv": {
+      "danach": {
+       "dia": 120,
+       "hf": 168,
+       "sys": 210
+      },
+      "ergebnis": "",
+      "id": "adrenalin_iv",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Epinephrin 1 mg als Bolus i.v.",
+      "typ": "gefahr",
+      "warum": "Ein i.v.-Bolus Adrenalin ist bei Anaphylaxie in SH nicht vorgesehen – nur i.m. Er kann Rhythmusstörungen und Infarkt auslösen.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "1 mg i.v. als Bolus"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "1": {
+      "falsch": [
+       {
+        "text": "Zweite Dosis Dimetinden",
+        "warum": "Antihistaminika ersetzen kein Epinephrin."
+       },
+       {
+        "schwer": "gefahr",
+        "text": "Abwarten, Cortison wirkt gleich",
+        "warum": "Cortison wirkt verzögert – die Patientin braucht jetzt Epinephrin."
+       }
+      ],
+      "frage": "Nach 5 Minuten keine Stabilisierung. Was jetzt?",
+      "nach": "adrenalin_im",
+      "richtig": {
+       "text": "Adrenalin i.m. und Infusion wiederholen",
+       "warum": "SH Algorithmus 14: keine Besserung nach 5 Minuten → Adrenalin i.m. und 500–1.000 ml Infusion wiederholen."
+      },
+      "rolle": "ns"
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Erst ab Grad IV",
+        "warum": "Grad IV ist der Kreislaufstillstand – dann wird reanimiert."
+       },
+       {
+        "text": "Schon bei Grad I",
+        "warum": "Bei reinen Hautzeichen ist kein Epinephrin vorgesehen."
+       }
+      ],
+      "frage": "Wann gibt man in SH Adrenalin i.m.?",
+      "nach": "",
+      "richtig": {
+       "text": "Bei Anaphylaxie mit relevantem ABCD-Problem (ab Grad II)",
+       "warum": "SH entscheidet am relevanten ABCD-Problem. Ohne ein solches (z. B. Grad I, nur Haut): H1-Blocker, Glukokortikoid und langsame Infusion."
+      }
+     }
+    }
+   },
+   "x": {
+    "eigene": {
+     "stachel": {
+      "ergebnis": "Stachel am Hals entfernt",
+      "id": "stachel",
+      "text": "Stachel entfernen, Allergenexposition stoppen",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 14: Allergenexposition wenn möglich sofort beenden."
+     }
+    }
+   }
+  }
+ }
+}

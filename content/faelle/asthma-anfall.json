@@ -1,0 +1,484 @@
+{
+ "level": 1,
+ "patient": "Frau, 24 J. · sitzt vornübergebeugt auf der Bettkante, stützt sich auf die Knie",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Krieg… keine… Luft“",
+     "typ": "pflicht",
+     "warum": "Satzfetzen zeigen eine schwere Atemnot, der Atemweg selbst ist frei."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie ist wach – ein Guedel-Tubus löst Würgen aus."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie spricht nur in kurzen Satzfetzen.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "AF über 30 ist laut BPR ein Instabilitätszeichen."
+    },
+    "auskultation": {
+     "ergebnis": "Giemen und Brummen beidseits, verlängertes Exspirium",
+     "typ": "pflicht",
+     "warum": "Giemen und Brummen ohne Fieber sprechen für einen Asthmaanfall."
+    },
+    "beatmen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie atmet selbst – eine Beutel-Masken-Beatmung würde hier stören."
+    },
+    "cpap": {
+     "ergebnis": "CPAP/NIV vorbereitet",
+     "typ": "sinnvoll",
+     "warum": "Bei fehlender Besserung nach Medikamenten NIV erwägen (Starteinstellung PEEP 3, PS 5 mbar)."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 93
+     },
+     "ergebnis": "O₂ 4 l/min",
+     "typ": "pflicht",
+     "warum": "Asthma: O₂ 2–6 l/min, SpO₂ über 92 % anstreben."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Die Sättigung steuert die Sauerstoffgabe."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Sie atmet etwas ruhiger aus",
+     "id": "lippenbremse",
+     "text": "Lippenbremse anleiten, beruhigen",
+     "typ": "sinnvoll",
+     "warum": "Lippenbremse hält die Bronchien offen, Ruhe senkt den Sauerstoffbedarf."
+    },
+    {
+     "ergebnis": "Zwei Hübe genommen, kaum Wirkung",
+     "id": "eigenspray",
+     "regional": true,
+     "rolle": "rs",
+     "text": "Bei der Eigenmedikation (Bedarfsspray) helfen",
+     "typ": "sinnvoll",
+     "warum": "Hilfe bei der eigenen Medikation – ob und wie, regelt dein ÄLRD."
+    },
+    {
+     "danach": {
+      "af": 24,
+      "hf": 122,
+      "spo2": 94
+     },
+     "ergebnis": "Salbutamol läuft über die Verneblermaske",
+     "id": "salbutamol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Salbutamol 2,5 mg vernebeln",
+     "typ": "pflicht",
+     "warum": "Über 12 Jahre: 2,5 mg inhalativ, einmalige Repetition nach 10 Minuten möglich. Vorher symptomatische Tachykardie ausschließen.",
+     "mittel": [
+      {
+       "w": "salbutamol",
+       "d": "2,5 mg vernebelt"
+      }
+     ]
+    },
+    {
+     "danach": {
+      "af": 22,
+      "spo2": 95
+     },
+     "ergebnis": "Ipratropium läuft",
+     "id": "ipratropium",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Ipratropium 0,5 mg vernebeln",
+     "typ": "sinnvoll",
+     "warum": "Bei unzureichender Besserung nach Salbutamol: über 12 Jahre 0,5 mg inhalativ.",
+     "mittel": [
+      {
+       "w": "ipratropium",
+       "d": "0,5 mg vernebelt"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Verlängerte Ausatmung, man hört ein Pfeifen.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "88–92 %",
+       "warum": "Das gilt für COPD-Patienten mit Hyperkapnierisiko."
+      },
+      {
+       "text": "100 %, so viel wie möglich",
+       "warum": "Hyperoxie bringt keinen Vorteil."
+      }
+     ],
+     "frage": "Welches SpO₂-Ziel gilt bei Asthma?",
+     "nach": "",
+     "richtig": {
+      "text": "Über 92 %",
+      "warum": "Laut BPR bei Asthma O₂ 2–6 l/min und SpO₂ über 92 % anstreben."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Bei jeder Herzfrequenz über 100",
+       "warum": "Eine Tachykardie durch die Atemnot allein ist keine Kontraindikation."
+      },
+      {
+       "text": "Bei Asthmapatienten unter 30 Jahren",
+       "warum": "Das Alter ist erst unter 4 Jahren eine Grenze."
+      }
+     ],
+     "frage": "Wann darfst du laut BPR kein Salbutamol geben?",
+     "nach": "salbutamol",
+     "richtig": {
+      "text": "Bei symptomatischer Tachykardie",
+      "warum": "Bei Tachykardie mit kardialen Symptomen (z. B. Angina, Dekompensation) droht eine Verschlechterung – dann direkt zu O₂ und Prednisolon."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "118/min, regelmäßig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "schocklage": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Kein Schock – und flach liegen verschlechtert die Atemnot."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "sinnvoll",
+     "warum": "Wenn sich nichts bessert, für Prednisolon."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Prednisolon ist gegeben",
+     "id": "prednisolon",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Prednisolon 80 mg i.v.",
+     "typ": "sinnvoll",
+     "warum": "Bronchialobstruktion ohne Besserung: über 12 Jahre 80 mg i.v. Wirkt verzögert.",
+     "mittel": [
+      {
+       "w": "prednisolon",
+       "d": "80 mg i.v."
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "dimen",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Dimenhydrinat gegen Übelkeit",
+     "typ": "falsch",
+     "warum": "Bei akuter Bronchialobstruktion ist Dimenhydrinat kontraindiziert.",
+     "mittel": [
+      {
+       "w": "dimenhydrinat",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Rosig, leicht schwitzig.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "A – wach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, ängstlich.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "flach": {
+     "danach": {
+      "af": 34,
+      "spo2": 86
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Flach liegend kann sie die Atemhilfsmuskulatur nicht nutzen – die Atemnot nimmt zu."
+    },
+    "oberkoerper": {
+     "ergebnis": "Sitzt aufrecht, Arme aufgestützt",
+     "typ": "pflicht",
+     "warum": "Sitzend mit aufgestützten Armen (Kutschersitz) kann sie die Atemhilfsmuskulatur einsetzen."
+    },
+    "sampler": {
+     "ergebnis": "Asthma seit Kindheit, Katzenhaare bei Freunden, 4 Hübe Salbutamol ohne Wirkung",
+     "typ": "pflicht",
+     "warum": "Auslöser, Eigenmedikation und frühere schwere Anfälle sind wichtig."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Ein schwerer Anfall gehört in die Klinik."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf dem Nachttisch liegt ihr Notfallspray.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Kein Trauma, keine Blutung – das kostet hier nur Zeit."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Bronchialobstruktion, S. 123–124; SAA Salbutamol S. 67",
+ "regional": "Salbutamol, Ipratropium und Prednisolon nur durch NotSan nach Freigabe deines ÄLRD. Unterstützung bei der Eigenmedikation durch RS ist lokal geregelt.",
+ "rhythmus": "sinus",
+ "situation": "Mitbewohnerin: Sie hat Asthma, ihr Spray hilft heute nicht. Seit einer Stunde immer schlimmer.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Plötzlicher Beginn, kein Fieber",
+   "Giemen, Brummen, verlängerte Ausatmung",
+   "Spricht in Satzfetzen",
+   "Kutschersitz"
+  ],
+  "kern": "Sitzen lassen, Bronchien öffnen",
+  "ns": [
+   "Salbutamol: > 12 J 2,5 mg, 4–12 J 1,25 mg, Rep. nach 10 Min",
+   "Keine Besserung: Ipratropium > 12 J 0,5 mg",
+   "Prednisolon > 12 J 80 mg i.v.",
+   "Erwäge NIV",
+   "COPD: SpO₂-Ziel 88–92 %"
+  ],
+  "tun": [
+   "Aufrecht sitzen lassen",
+   "O₂ 2–6 l/min, SpO₂ > 92 %",
+   "Lippenbremse, beruhigen",
+   "Klinik"
+  ],
+  "vermeiden": [
+   "Flach lagern",
+   "Hektik",
+   "Beta-Mimetika bei symptomatischer Tachykardie"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "Asthmaanfall",
+ "vitalwerte": {
+  "af": 30,
+  "bz": 110,
+  "dia": 84,
+  "gcs": 15,
+  "hf": 118,
+  "spo2": 89,
+  "sys": 138,
+  "temp": 36.8
+ },
+ "sh": {
+  "regional": "SH Algorithmus 10: Salbutamol, Ipratropium und Glukokortikoid gibt der NotSan gemeinsam. Hilfe bei der Eigenmedikation durch RS regelt dein Träger.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 10 obstruktive Atemnot Erwachsene, S. 23; Algorithmus 3 NIV, S. 16; Infotabellen Ipratropium S. 89, Prednisolon S. 101, Salbutamol S. 104",
+  "steckbrief": {
+   "ns": [
+    "Salbutamol Erw. 2,5–5 mg, Kinder 2,5 mg, Wdh. nach 15–20 Min",
+    "Ipratropium Erw. 500 µg, Kinder 250 µg",
+    "Prednisolon 50–100 mg i.v. (Kinder 100 mg rektal)",
+    "Keine Besserung: NIV (Algorithmus 3)",
+    "Langjähriges Asthma/COPD: SpO₂ 88–92 %"
+   ],
+   "tun": [
+    "Aufrecht sitzen lassen",
+    "O₂ initial hoch, dann nach SpO₂ anpassen",
+    "Lippenbremse, beruhigen",
+    "Klinik"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "af": {
+      "ergebnis": "",
+      "typ": "pflicht",
+      "warum": "Eine AF über 30 zeigt schwere Atemnot."
+     },
+     "cpap": {
+      "ergebnis": "CPAP/NIV vorbereitet",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 10: Keine Besserung → NIV nach Algorithmus 3 (z. B. FiO₂ 1,0, PEEP 5, PS 5 mbar)."
+     },
+     "o2": {
+      "danach": {
+       "spo2": 93
+      },
+      "ergebnis": "O₂ 4 l/min",
+      "typ": "pflicht",
+      "warum": "Kritischer Zustand nicht auszuschließen: In SH initial hochdosiert O₂, dann nach SpO₂ anpassen."
+     }
+    },
+    "eigene": {
+     "salbutamol": {
+      "danach": {
+       "af": 24,
+       "hf": 122,
+       "spo2": 94
+      },
+      "ergebnis": "Salbutamol läuft über die Verneblermaske",
+      "id": "salbutamol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Salbutamol 2,5–5 mg vernebeln",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: Erwachsene 2,5–5 mg über Vernebler, Wiederholung nach 15–20 Min möglich. KI: symptomatische Tachykardie oder Tachyarrhythmie.",
+      "mittel": [
+       {
+        "w": "salbutamol",
+        "d": "2,5–5 mg vernebelt"
+       }
+      ]
+     },
+     "ipratropium": {
+      "danach": {
+       "af": 22,
+       "spo2": 95
+      },
+      "ergebnis": "Ipratropium läuft",
+      "id": "ipratropium",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Ipratropium 500 µg vernebeln",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 10: zusammen mit Salbutamol von Anfang an, Erwachsene 500 µg.",
+      "mittel": [
+       {
+        "w": "ipratropium",
+        "d": "500 µg vernebelt"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "≥ 95 %",
+        "warum": "Das gilt in SH für pulmonal Gesunde."
+       },
+       {
+        "text": "100 %, so viel wie möglich",
+        "warum": "Hyperoxie bringt keinen Vorteil."
+       }
+      ],
+      "frage": "Welches SpO₂-Ziel nennt SH bei langjährigem Asthma?",
+      "nach": "",
+      "richtig": {
+       "text": "88–92 %",
+       "warum": "SH-Standardvorgehen: pulmonal Gesunde ≥ 95 %, langjähriges Asthma oder COPD 88–92 %. Initial bei kritischem Zustand hochdosiert."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "Bei jeder Herzfrequenz über 100",
+        "warum": "Eine Tachykardie durch die Atemnot allein ist keine Kontraindikation."
+       },
+       {
+        "text": "Bei Asthmapatienten unter 30 Jahren",
+        "warum": "Das Alter ist kein Kriterium."
+       }
+      ],
+      "frage": "Wann darfst du in SH kein Salbutamol geben?",
+      "nach": "salbutamol",
+      "richtig": {
+       "text": "Bei symptomatischer Tachykardie",
+       "warum": "Symptomatische Tachykardie oder Tachyarrhythmie sind Kontraindikationen – die Herzbelastung steigt weiter."
+      },
+      "rolle": "ns"
+     }
+    }
+   },
+   "C": {
+    "eigene": {
+     "prednisolon": {
+      "ergebnis": "Prednisolon ist gegeben",
+      "id": "prednisolon",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Prednisolon 50–100 mg i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 10: Glukokortikoid gehört zur Therapie, 50–100 mg i.v. nach lokalem Protokoll. Wirkt verzögert.",
+      "mittel": [
+       {
+        "w": "prednisolon",
+        "d": "50–100 mg i.v."
+       }
+      ]
+     },
+     "dimen": {
+      "ergebnis": "",
+      "id": "dimen",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Dimenhydrinat gegen Übelkeit",
+      "typ": "falsch",
+      "warum": "SH-Infotabelle: Dimenhydrinat ist beim Asthmaanfall kontraindiziert.",
+      "mittel": [
+       {
+        "w": "dimenhydrinat",
+        "d": "*"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

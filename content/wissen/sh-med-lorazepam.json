@@ -1,0 +1,21 @@
+{
+ "kategorie": "Pharmakologie",
+ "titel": "Lorazepam",
+ "rolle": "ns",
+ "kern": "Starker Erregungszustand, Hyperventilationstetanie, anders nicht beherrschbar",
+ "punkte": [
+  "1 mg p.o. oder bukkal (Schmelztablette)",
+  "Vorher: Eigenschutz, ruhige Umgebung, Atemanweisung, Rückatembeutel",
+  "KI: Kinder < 12 J, Myasthenia gravis"
+ ],
+ "merke": "Algorithmus 23: orale/bukkale Gabe bevorzugt, sonst Midazolam.",
+ "tags": [
+  "SH",
+  "Medikament",
+  "Erregung",
+  "Tavor"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Lorazepam S. 91; Algorithmus 23 S. 36",
+ "regional": true,
+ "nurRegion": "sh"
+}

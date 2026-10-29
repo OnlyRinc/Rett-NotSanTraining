@@ -1,0 +1,34 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Volumenmangel: Blutung, Dehydratation, Anaphylaxie, Sepsis, Verbrennung, kritische Hyperglykämie",
+ "merke": "Wirkt intravasal nur 20–30 Minuten.",
+ "punkte": [
+  "> 12 J: 500–1.000 ml i.v.",
+  "≤ 12 J: 10 ml/kg i.v.",
+  "Repetition möglich",
+  "KI: Hypervolämie, Lungenödem, Anurie"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Vollelektrolytlösung, S. 71",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Infusion",
+  "Volumen",
+  "Schock"
+ ],
+ "titel": "Vollelektrolytlösung (VEL)",
+ "sh": {
+  "kern": "Balancierte Vollelektrolytlösung in den Algorithmen",
+  "punkte": [
+   "Anaphylaxie: 500–1.000 ml, Kinder 20 ml/kg",
+   "Blutung: bedarfsgerecht, permissive Hypotension (SHT/Schwangere RRsys > 90)",
+   "Sepsis: großzügig bei RRsys < 100",
+   "Verbrennung: 500–1.000 ml vorgewärmt",
+   "Schlaganfall RRsys < 120: Volumenbolus"
+  ],
+  "merke": "Keine eigene Infotabelle in SH – Mengen aus den Algorithmen.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmen 9, 14, 24, 25; Brandverletzte S. 65–66"
+ }
+}

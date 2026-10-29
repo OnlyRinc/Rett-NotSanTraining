@@ -1,0 +1,21 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Einfach beginnen, dann eskalieren",
+ "merke": "Die Intubation ist laut S1-Leitlinie keine NotSan-Kompetenz.",
+ "punkte": [
+  "Insuffizient: SpO₂ < 90 %, Zyanose, AF < 8 oder > 30, pathologische Thoraxbewegung",
+  "Einfach: O₂, Kopf überstrecken (Cave HWS), Esmarch, absaugen, Wendl; bei Stridor Epinephrin vernebeln (NotSan)",
+  "Beutel-Masken-Beatmung mit hochdosiertem O₂, Guedel/Wendl, Kapnografie",
+  "Nicht möglich: Lagerung optimieren, 2-Hand-Technik (doppelter C-Griff)",
+  "Keine Schutzreflexe und Maske versagt: extraglottischer Atemweg (NotSan)",
+  "Erfolg: Thorax hebt sich seitengleich, typische Kapnografie, SpO₂ steigt"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Atemwegsmanagement, S. 80–81",
+ "tags": [
+  "Atemweg",
+  "Beatmung",
+  "Larynxtubus",
+  "EGA"
+ ],
+ "titel": "Atemwegsmanagement"
+}

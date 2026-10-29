@@ -1,0 +1,220 @@
+{
+ "level": 2,
+ "patient": "Mann, 32 J. · sitzt im Keller neben einer Bohrmaschine, hält sich die rechte Hand",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Es hat mich voll erwischt.“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht normal.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 98 % – kein Sauerstoff nötig."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinusrhythmus, einzelne VES, keine ST-Veränderungen",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Laut BPR bei jedem Stromunfall ein 12-Kanal-EKG."
+    },
+    "ekg3": {
+     "ergebnis": "Sinusrhythmus mit einzelnen Extrasystolen",
+     "typ": "pflicht",
+     "warum": "Monitoring – Rhythmusstörungen können auch verzögert auftreten."
+    },
+    "puls": {
+     "ergebnis": "96/min, gelegentliche Aussetzer",
+     "typ": "pflicht",
+     "warum": "Unregelmäßiger Puls? Strom kann Rhythmusstörungen auslösen."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Klinische Symptome (Strommarke, Rhythmusstörung): i.v.-Zugang."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Etwas blass.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "motorik": {
+     "ergebnis": "Kribbeln in der rechten Hand, Kraft erhalten",
+     "typ": "pflicht",
+     "warum": "Neurologische Ausfälle gehören zu den Symptomen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Strommarke rechte Handfläche, kleine Marke am linken Fuß",
+     "typ": "pflicht",
+     "warum": "Strommarken an Ein- und Austrittsstelle suchen."
+    },
+    "opqrst": {
+     "ergebnis": "Muskelschmerzen im rechten Arm, NRS 4",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Mit Symptomen unter Monitorüberwachung in die Klinik."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Abgedeckt",
+     "id": "wunde",
+     "text": "Strommarken steril abdecken",
+     "typ": "sinnvoll",
+     "warum": "Verbrennungen steril und trocken versorgen."
+    }
+   ],
+   "eindruck": "Er hält die rechte Hand.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Nichts, 230 V sind harmlos",
+       "warum": "Auch Haushaltsstrom kann Rhythmusstörungen auslösen."
+      },
+      {
+       "text": "Nur die Hand ist betroffen",
+       "warum": "Der Strom ist von der Hand bis zum Fuß geflossen – also quer durch den Körper."
+      }
+     ],
+     "frage": "Er fühlt sich gut und will zu Hause bleiben. Was spricht dagegen?",
+     "nach": "",
+     "richtig": {
+      "text": "Strommarken und Extrasystolen – Monitorüberwachung in der Klinik nötig",
+      "warum": "Strom fließt oft durch das Herz und die Muskulatur. Mit Symptomen behandelt man nach den Symptomen und transportiert."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [
+    {
+     "ergebnis": "Sicherung ausgeschaltet, Stecker gezogen",
+     "id": "spannung",
+     "lebenswichtig": true,
+     "text": "Spannungsfreiheit herstellen: Sicherung raus, Stecker ziehen",
+     "typ": "pflicht",
+     "warum": "Eigenschutz zuerst. Bei Niederspannung (< 1.000 V) Sicherung entfernen oder Stecker ziehen, Abstand mindestens 1 m bis dahin."
+    },
+    {
+     "ergebnis": "",
+     "id": "anfassen",
+     "text": "Patient sofort aus der Pfütze ziehen",
+     "typ": "abbruch",
+     "warum": "Solange Spannung anliegt, wirst du selbst Teil des Stromkreises. Erst Spannungsfreiheit herstellen."
+    }
+   ],
+   "eindruck": "Keine Blutung. Die Pfütze reicht bis zu seinem Fuß.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "5 Meter",
+       "warum": "Das gilt für Hochspannung."
+      },
+      {
+       "text": "Kein Abstand nötig bei 230 V",
+       "warum": "Auch 230 V können tödlich sein."
+      }
+     ],
+     "frage": "Welcher Sicherheitsabstand gilt bei Niederspannung?",
+     "nach": "",
+     "richtig": {
+      "text": "1 Meter",
+      "warum": "Niederspannung unter 1.000 V: 1 m. Hochspannung über 1.000 V: 5 m, und nur Fachpersonal schaltet frei."
+     }
+    }
+   ]
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Stromunfall, S. 159–160",
+ "regional": "i.v.-Zugang nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Er hat ein beschädigtes Kabel angefasst (230 V). Der Stecker steckt noch, die Maschine liegt in einer Pfütze.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Strommarken (Ein- und Austritt)",
+   "Rhythmusstörungen",
+   "Muskelschmerzen, Krampf, neurologische Ausfälle"
+  ],
+  "kern": "Erst Spannung weg, dann Patient",
+  "ns": [
+   "i.v.-Zugang bei Symptomen",
+   "Behandlung nach Symptomen",
+   "Schmerztherapie"
+  ],
+  "tun": [
+   "Eigenschutz, Abstand 1 m / 5 m",
+   "12-Kanal-EKG",
+   "Strommarken suchen",
+   "Monitor, Klinik"
+  ],
+  "vermeiden": [
+   "Patient anfassen unter Spannung",
+   "Bagatellisieren"
+  ]
+ },
+ "stichwort": "RD 1 · Stromunfall",
+ "titel": "Stromunfall",
+ "vitalwerte": {
+  "af": 16,
+  "bz": 102,
+  "dia": 82,
+  "gcs": 15,
+  "hf": 96,
+  "spo2": 98,
+  "sys": 134,
+  "temp": 36.6
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Verbrennungen durch Elektrizität: Zuweisung in ein Zentrum für Brandverletzte (S. 66).",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Stromunfall; Brandverletzte S. 66",
+  "ohneAlg": true
+ }
+}

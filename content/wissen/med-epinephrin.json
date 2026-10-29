@@ -1,0 +1,36 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Reanimation, instabile Bradykardie, Anaphylaxie, Krupp, Schwellung obere Atemwege",
+ "merke": "Bei Anaphylaxie i.m. – nie als i.v.-Bolus durch NotSan.",
+ "punkte": [
+  "Rea: Erw. 1 mg i.v./i.o., Kinder 0,01 mg/kg, alle 4 Min (VF nach 3. Schock, Asystolie so früh wie möglich)",
+  "Bradykardie: 1 mg in 100 ml NaCl, 0,5 ml (5 µg) jede Minute",
+  "Anaphylaxie ab Grad II i.m.: > 12 J 0,5 mg · 6–12 J 0,3 mg · < 6 J 0,15 mg",
+  "Vernebelt 4 mg bei Stridor, Krupp, Schwellung, Rep. nach 10 Min",
+  "Keine KI bei vitaler Gefährdung"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Epinephrin, S. 49",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Adrenalin",
+  "Anaphylaxie",
+  "Reanimation",
+  "Krupp"
+ ],
+ "titel": "Epinephrin (Adrenalin)",
+ "sh": {
+  "titel": "Adrenalin (Epinephrin)",
+  "punkte": [
+   "Rea: 1 mg i.v./i.o., Wiederholung alle 3–5 Min (ERC)",
+   "Bradykardie ohne Atropin-Effekt: 2–10 µg/min (1 mg auf 100 ml = 10 µg/ml)",
+   "Anaphylaxie i.m.: Erw. und > 12 J 0,5 mg · 6–12 J 0,3 mg · < 6 J 0,15 mg",
+   "Vernebelt 5 mg pur bei Stridor/Bronchospastik und Krupp",
+   "Epistaxis: 0,2 mg in die Tamponade"
+  ],
+  "merke": "Bei Anaphylaxie i.m. in den seitlichen Oberschenkel – nie als i.v.-Bolus.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Adrenalin S. 69–70"
+ }
+}

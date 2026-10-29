@@ -1,0 +1,324 @@
+{
+ "level": 4,
+ "patient": "Frau, 31 J. · liegt im Schlafzimmer, presst laut stöhnend, das Köpfchen ist schon zu sehen",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Es kommt!“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei, sie ist ansprechbar."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie stöhnt bei jeder Wehe.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet schnell während der Wehe.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "NA und Hebamme sind alarmiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Notarzt und möglichst Hebamme hinzuziehen."
+    },
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Laut BPR i.v.-Zugang bei der außerklinischen Geburt."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Rosig, schwitzig.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "3. Kind, Termin heute, Schwangerschaft unauffällig laut Mutterpass",
+     "typ": "pflicht",
+     "warum": "Geburtshilfliche Anamnese: Termin, wievieltes Kind, Mutterpass, Komplikationen?"
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Kopf sichtbar, Presswehen alle 2 Min",
+     "id": "inspektion",
+     "text": "Vulva und Damm ansehen (Kindsteile?)",
+     "typ": "pflicht",
+     "warum": "Geburtshilfliche Untersuchung: Inspektion und Bauch tasten."
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "vaginal",
+     "text": "Vaginal untersuchen",
+     "typ": "gefahr",
+     "warum": "„Die Notfallgeburt wird gesehen und nicht getastet.“ Keine vaginale Untersuchung – Infektions- und Verletzungsgefahr."
+    },
+    {
+     "ergebnis": "Alles bereit, Zimmer warm",
+     "id": "vorbereiten",
+     "lebenswichtig": true,
+     "text": "Wärme, Licht, Ruhe, Steinschnittlage, warme Tücher, Abnabelungsbesteck",
+     "typ": "pflicht",
+     "warum": "Geburtsvorbereitende Maßnahmen: Umfeld optimieren, Platz für die Geburt schaffen, Material für das Neugeborene bereitlegen."
+    },
+    {
+     "danach": {
+      "hf": 96
+     },
+     "ergebnis": "Kopf und Körper sind geboren, das Kind schreit",
+     "id": "dammschutz",
+     "text": "Dammschutz = Kopfbremse, Pressen anleiten",
+     "typ": "pflicht",
+     "warum": "Kopf langsam kommen lassen. Kopf seitlich fassen, nach unten senken für die vordere Schulter, dann heben für die hintere."
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "ziehen",
+     "text": "Am Kopf ziehen, damit es schneller geht",
+     "typ": "gefahr",
+     "warum": "Kein Zug an Kindsteilen – Nerven- und Halsverletzungen drohen."
+    },
+    {
+     "ergebnis": "Rosig, schreit kräftig, bewegt sich",
+     "id": "neugeboren",
+     "lebenswichtig": true,
+     "text": "Kind abtrocknen, warm halten, beurteilen",
+     "typ": "pflicht",
+     "warum": "Erstversorgung des Neugeborenen: abtrocknen, wärmen, Atmung beurteilen."
+    },
+    {
+     "ergebnis": "Abgenabelt",
+     "id": "abnabeln",
+     "text": "Nach 1 Minute abnabeln, 15–20 cm vom Nabel",
+     "typ": "pflicht",
+     "warum": "Laut BPR eine Minute nach der Geburt abnabeln, 15–20 cm vom Nabel entfernt."
+    },
+    {
+     "ergebnis": "Gebärmutter fest, Blutung gering",
+     "id": "anlegen",
+     "text": "Kind an die Brust legen, Gebärmutter tasten",
+     "typ": "pflicht",
+     "warum": "Aktive Leitung der Plazentaperiode: Anlegen löst Kontraktionen aus. Fundus und Blutung regelmäßig prüfen."
+    },
+    {
+     "ergebnis": "",
+     "id": "plazenta",
+     "text": "Vor Ort auf die Plazenta warten",
+     "typ": "falsch",
+     "warum": "Die Plazentageburt laut BPR nicht vor Ort abwarten – Transport, dabei Blutung und Uterus kontrollieren."
+    }
+   ],
+   "eindruck": "Das Köpfchen ist in der Wehe zu sehen, der After klafft.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Drittes Kind",
+       "warum": "Mehrgebärende gebären oft schnell – das ist keine Kontraindikation."
+      },
+      {
+       "text": "Blasensprung",
+       "warum": "Ein Blasensprung allein ist kein sicheres Zeichen für die nahende Geburt und keine Kontraindikation."
+      }
+     ],
+     "frage": "Was ist eine Kontraindikation gegen die Geburt vor Ort?",
+     "nach": "",
+     "richtig": {
+      "text": "z. B. Querlage, Placenta praevia, vital bedrohliche Blutung, Vorfall von Extremitäten",
+      "warum": "Dann so schnell wie möglich transportieren. Hier ist alles unauffällig und das Kind kommt sofort."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Bauch kühlen und abwarten",
+       "warum": "Eine Atonie kann schnell lebensbedrohlich bluten."
+      },
+      {
+       "text": "Vaginal tamponieren",
+       "warum": "Nicht vorgesehen – Uterus halten und anreiben."
+      }
+     ],
+     "frage": "Nach der Geburt blutet sie stark, die Gebärmutter ist weich. Was tust du?",
+     "nach": "anlegen",
+     "richtig": {
+      "text": "Gebärmutter durch die Bauchdecke halten und anreiben, Blase entleeren lassen, NA (Oxytocin)",
+      "warum": "Bei Atonie hilft die Massage des Uterus. Oxytocin 3–5 IE i.v. gibt der Notarzt."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Keine Verletzung – die Blutung gehört zur Geburt. Konzentrier dich auf die Geburtsphase."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Etwas Blut und Fruchtwasser auf dem Laken.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Geburtsbegleitung (ungeplant, außerklinisch), S. 127–128",
+ "regional": "Hebamme und NA nachfordern nach lokalen Vorgaben. Oxytocin gibt der NA.",
+ "rhythmus": "sinus",
+ "situation": "Ehemann: Es ist ihr drittes Kind, Termin war heute. Die Wehen kommen alle zwei Minuten.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Presswehen alle 3–5 Min oder öfter",
+   "Kindsteil sichtbar, After klafft",
+   "Blasensprung allein ist kein sicheres Zeichen"
+  ],
+  "kern": "Gesehen, nicht getastet",
+  "ns": [
+   "i.v.-Zugang",
+   "Erstversorgung des Neugeborenen nach BPR",
+   "Oxytocin 3–5 IE i.v. durch NA"
+  ],
+  "tun": [
+   "Anamnese: Termin, wievieltes Kind, Mutterpass",
+   "Wärme, Steinschnittlage, Tücher",
+   "Dammschutz, Kopf senken/heben",
+   "Abnabeln nach 1 Min, 15–20 cm",
+   "Anlegen, Uterus und Blutung prüfen"
+  ],
+  "vermeiden": [
+   "Vaginale Untersuchung",
+   "Ziehen am Kind",
+   "Dammschnitt",
+   "Auf die Plazenta warten"
+  ]
+ },
+ "stichwort": "RD 2 · Geburt",
+ "titel": "Geburt · außerklinisch",
+ "vitalwerte": {
+  "af": 22,
+  "bz": 96,
+  "dia": 80,
+  "gcs": 15,
+  "hf": 104,
+  "spo2": 98,
+  "sys": 128,
+  "temp": 37.1
+ },
+ "sh": {
+  "regional": "SH Algorithmus 34–36: Bei Geburt vor Ort NA nachfordern. Hebamme nach lokalen Möglichkeiten.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 34 Bevorstehende Geburt, S. 53; Algorithmus 35 Geburt vor Ort, S. 54; Algorithmus 36 Neugeborenes, S. 55–56",
+  "steckbrief": {
+   "ns": [
+    "Neugeborenes: HF < 100 → 5 initiale Beatmungen, HF < 60 → CPR 3:1",
+    "Starke Blutung nach der Geburt: NA"
+   ],
+   "tun": [
+    "Mutterpass: Beckenendlage, Steißlage, Querlage, Placenta praevia → keine Geburt vor Ort",
+    "Wehen < 2 Min, Presswehen, Kindsteil sichtbar → Geburt vor Ort",
+    "NA nachfordern, Linksseitenlage, nicht mehr laufen lassen",
+    "Dammschutz, nicht am Kind ziehen, Uhrzeit notieren",
+    "Abnabeln frühestens nach 1 Min, ca. 20 cm, 2 Klemmen",
+    "APGAR nach 1, 5 und 10 Min"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "aktionen": {
+     "na": {
+      "ergebnis": "NA und Hebamme sind alarmiert",
+      "regional": true,
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 35: Bei Geburt vor Ort den Notarzt nachfordern."
+     },
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "neutral",
+      "warum": "In den SH-Algorithmen 34–36 nicht gefordert."
+     }
+    }
+   },
+   "E": {
+    "eigene": {
+     "abnabeln": {
+      "ergebnis": "Abgenabelt",
+      "id": "abnabeln",
+      "text": "Frühestens nach 1 Minute abnabeln, ca. 20 cm vom Kind",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 35: frühestens nach 1 Minute, ca. 20 cm vom Kind, zwei Klemmen im Abstand von 3 cm, dazwischen durchtrennen."
+     },
+     "plazenta": {
+      "ergebnis": "",
+      "id": "plazenta",
+      "text": "Vor Ort auf die Plazenta warten",
+      "typ": "neutral",
+      "warum": "SH Algorithmus 35: Die Geburt der Plazenta muss nicht abgewartet werden – Transport in die nächste Geburtsklinik."
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Drittes Kind",
+        "warum": "Mehrgebärende gebären oft schnell – das ist keine Kontraindikation."
+       },
+       {
+        "text": "Blasensprung",
+        "warum": "Ein Blasensprung allein ist kein sicheres Zeichen für die nahende Geburt und keine Kontraindikation."
+       }
+      ],
+      "frage": "Was ist eine Kontraindikation gegen die Geburt vor Ort?",
+      "nach": "",
+      "richtig": {
+       "text": "z. B. Beckenendlage, Steißlage, Querlage, Placenta praevia (Mutterpass)",
+       "warum": "SH Algorithmus 34: Dann keine Geburt vor Ort, sondern Transport in den Kreißsaal. Hier ist alles unauffällig und das Kind kommt sofort."
+      }
+     }
+    }
+   }
+  }
+ }
+}

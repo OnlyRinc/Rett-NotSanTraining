@@ -1,0 +1,411 @@
+{
+ "level": 2,
+ "patient": "Mann, 35 J. · liegt im Supermarkt am Boden und krampft am ganzen Körper",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "Speichel und etwas Blut abgesaugt",
+     "typ": "sinnvoll",
+     "warum": "Speichel und Blut entfernen."
+    },
+    "esmarch": {
+     "ergebnis": "Atemweg so weit möglich offen",
+     "typ": "sinnvoll",
+     "warum": "Hält den Atemweg offen, soweit möglich."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Während des Krampfens kann man keinen Guedel-Tubus sicher einlegen."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "beisskeil",
+     "text": "Beißkeil zwischen die Zähne schieben",
+     "typ": "gefahr",
+     "warum": "Laut BPR keinen Beißkeil verwenden – Zahnschäden und Verletzungen drohen."
+    }
+   ],
+   "eindruck": "Schaum vor dem Mund, er schnarcht.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "beatmen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Während des Krampfens ist eine Maskenbeatmung kaum möglich – erst den Anfall durchbrechen."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 90
+     },
+     "ergebnis": "O₂ 10 l/min über Maske",
+     "typ": "pflicht",
+     "warum": "SpO₂ 86 %: Sauerstoff geben."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoxie während des Anfalls erkennen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Unregelmäßige Atmung, die Lippen sind bläulich.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "lwRS": true,
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Status epilepticus ist lebensbedrohlich."
+    },
+    "puls": {
+     "ergebnis": "128/min",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "zugang": {
+     "ergebnis": "Zugang am Handrücken liegt",
+     "typ": "sinnvoll",
+     "warum": "Laut BPR „wenn möglich“ – nicht an einem krampfenden Arm verzweifeln."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "af": 18,
+      "gcs": 7,
+      "hf": 108,
+      "spo2": 93
+     },
+     "ergebnis": "Der Anfall endet nach 2 Minuten",
+     "id": "midazolam",
+     "lebenswichtig": true,
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Midazolam 0,1 mg/kg i.v. (alternativ 10 mg nasal/buccal/i.m.)",
+     "typ": "pflicht",
+     "warum": "Status epilepticus: frühestmöglich ein Benzodiazepin in ausreichend hoher Dosis – nicht titrieren. Laut BPR i.v., wenn ein Zugang möglich ist, sonst nasal, buccal oder i.m. (10 mg).",
+     "mittel": [
+      {
+       "w": "midazolam",
+       "d": "0,1 mg/kg i.v."
+      },
+      {
+       "w": "midazolam",
+       "d": "10 mg nasal"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "dimen",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Dimenhydrinat gegen Übelkeit",
+     "typ": "falsch",
+     "warum": "Bei Krampfanfällen kontraindiziert.",
+     "mittel": [
+      {
+       "w": "dimenhydrinat",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Rot im Gesicht, schwitzig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Ab 15 Minuten",
+       "warum": "Schon ab 5 Minuten."
+      },
+      {
+       "text": "Erst ab dem dritten Anfall",
+       "warum": "Auch ein einzelner Anfall über 5 Minuten ist ein Status."
+      }
+     ],
+     "frage": "Ab wann spricht man von einem Status epilepticus?",
+     "nach": "",
+     "richtig": {
+      "text": "Krampfanfall über 5 Minuten oder Serie ohne Wiedererlangen des Bewusstseins",
+      "warum": "So steht es im BPR – dann muss der Anfall medikamentös durchbrochen werden."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Beliebig oft, bis er aufhört",
+       "warum": "Zu viel Midazolam führt zur Atemdepression."
+      },
+      {
+       "text": "Gar nicht",
+       "warum": "Eine Repetition ist vorgesehen."
+      }
+     ],
+     "frage": "Der Anfall hört nicht auf. Wie oft darfst du wiederholen?",
+     "nach": "midazolam",
+     "richtig": {
+      "text": "Einmal, maximal 20 mg – dann NA",
+      "warum": "Laut SAA maximal eine Repetition, unabhängig von einer Eigenmedikation. Danach weitere Versorgung mit NA."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "104 mg/dl",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Eine Hypoglykämie kann Krampfanfälle auslösen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Nach dem Anfall reagiert er nur auf Schmerzreiz.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Epilepsie bekannt, Tabletten seit Tagen vergessen, wenig geschlafen",
+     "typ": "pflicht",
+     "warum": "Bekanntes Anfallsleiden? Medikamente? Auslöser?"
+    },
+    "ssl": {
+     "ergebnis": "In stabiler Seitenlage",
+     "typ": "pflicht",
+     "warum": "Postiktal mit Bewusstseinsstörung: stabile Seitenlage oder Oberkörper 30° hoch."
+    },
+    "temp": {
+     "ergebnis": "37,4 °C",
+     "typ": "sinnvoll",
+     "warum": "An die Temperatur denken."
+    },
+    "transport": {
+     "ergebnis": "Klinik mit Neurologie ist informiert",
+     "typ": "pflicht",
+     "warum": "Unter Monitorkontrolle in die Klinik."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Am Handgelenk trägt er ein Notfallarmband.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Prellung am Hinterkopf, keine weitere Verletzung",
+     "typ": "sinnvoll",
+     "warum": "Nach dem Anfall Sturzverletzungen suchen."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Kopf mit Jacke gepolstert, Regal weggezogen",
+     "id": "schutz",
+     "text": "Gegenstände wegräumen, Kopf polstern",
+     "typ": "pflicht",
+     "warum": "Schutz vor Sekundärverletzungen."
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "festhalten",
+     "text": "Arme und Beine festhalten",
+     "typ": "gefahr",
+     "warum": "Festhalten kann Knochen und Gelenke verletzen – nur vor Verletzungen schützen."
+    }
+   ],
+   "eindruck": "Blut am Mund, sonst keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Krampfanfall Erwachsene, S. 145–146; SAA Midazolam S. 61",
+ "regional": "Midazolam nur durch NotSan nach Freigabe deines ÄLRD (nasale Gabe ist off-label).",
+ "rhythmus": "sinus",
+ "situation": "Kassiererin: Er krampft schon seit über 7 Minuten, ohne aufzuhören.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Tonisch-klonische Krämpfe",
+   "Zungenbiss, Einnässen, Zyanose",
+   "Postiktal verwirrt, evtl. Lähmung (Todd)"
+  ],
+  "kern": "> 5 Min = Status",
+  "ns": [
+   "Midazolam: 0,1 mg/kg i.v. oder 10 mg i.m./nasal/buccal",
+   "Einmalige Repetition, max. 20 mg",
+   "Nicht beendet: NA",
+   "Postiktal: ggf. i.v. + VEL"
+  ],
+  "tun": [
+   "Vor Verletzungen schützen",
+   "O₂, BZ, Temperatur",
+   "NA",
+   "Postiktal: Seitenlage oder OK 30°",
+   "Klinik mit Monitor"
+  ],
+  "vermeiden": [
+   "Beißkeil",
+   "Festhalten",
+   "Antikonvulsiva im postiktalen Zustand"
+  ]
+ },
+ "stichwort": "RD 2 · Krampfanfall",
+ "titel": "Krampfanfall · Status epilepticus",
+ "vitalwerte": {
+  "af": 26,
+  "bz": 104,
+  "dia": 94,
+  "gcs": 3,
+  "hf": 128,
+  "spo2": 86,
+  "sys": 162,
+  "temp": 37.4
+ },
+ "sh": {
+  "regional": "SH Algorithmus 18: Midazolam durch NotSan – mit Zugang i.v., sonst nasal, buccal oder i.m.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 18 Krampfanfall, S. 31; Infotabellen Dimenhydrinat S. 78, Midazolam S. 94",
+  "steckbrief": {
+   "ns": [
+    "Mit Zugang: Midazolam 5 mg i.v.",
+    "Ohne Zugang: 10 mg nasal oder i.m.",
+    "Einmalige Wiederholung nach 5 Min",
+    "Fieber > 38,5 °C: Paracetamol",
+    "Nicht beendet: NA"
+   ]
+  },
+  "phasen": {
+   "A": {
+    "eigene": {
+     "beisskeil": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "beisskeil",
+      "text": "Beißkeil zwischen die Zähne schieben",
+      "typ": "gefahr",
+      "warum": "Keinen Beißkeil verwenden – Zahnschäden und Verletzungen drohen."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang am Handrücken liegt",
+      "typ": "sinnvoll",
+      "warum": "Wenn möglich – nicht an einem krampfenden Arm verzweifeln. Ohne Zugang Midazolam nasal oder i.m."
+     }
+    },
+    "eigene": {
+     "midazolam": {
+      "danach": {
+       "af": 18,
+       "gcs": 7,
+       "hf": 108,
+       "spo2": 93
+      },
+      "ergebnis": "Der Anfall endet nach 2 Minuten",
+      "id": "midazolam",
+      "lebenswichtig": true,
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Midazolam 5 mg i.v. (ohne Zugang 10 mg nasal/i.m.)",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 18: Zugang vorhanden → Midazolam i.v., Erwachsene 5 mg. Ohne Zugang 10 mg nasal oder i.m. Hält der Anfall an: einmal nach 5 Min wiederholen.",
+      "mittel": [
+       {
+        "w": "midazolam",
+        "d": "5 mg i.v."
+       },
+       {
+        "w": "midazolam",
+        "d": "10 mg nasal"
+       }
+      ]
+     },
+     "dimen": {
+      "ergebnis": "",
+      "id": "dimen",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Dimenhydrinat gegen Übelkeit",
+      "typ": "falsch",
+      "warum": "SH-Infotabelle: Dimenhydrinat ist bei Epilepsie kontraindiziert.",
+      "mittel": [
+       {
+        "w": "dimenhydrinat",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Ab 15 Minuten",
+        "warum": "Schon ab 5 Minuten."
+       },
+       {
+        "text": "Erst ab dem dritten Anfall",
+        "warum": "Auch ein einzelner Anfall über 5 Minuten ist ein Status."
+       }
+      ],
+      "frage": "Ab wann spricht man von einem Status epilepticus?",
+      "nach": "",
+      "richtig": {
+       "text": "Krampfanfall über 5 Minuten oder Serie ohne Wiedererlangen des Bewusstseins",
+       "warum": "Ab 5 Minuten muss der Anfall medikamentös durchbrochen werden."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Beliebig oft, bis er aufhört",
+        "warum": "Zu viel Midazolam führt zur Atemdepression."
+       },
+       {
+        "text": "Gar nicht",
+        "warum": "Eine Repetition ist vorgesehen."
+       }
+      ],
+      "frage": "Der Anfall hört nicht auf. Wie oft darfst du wiederholen?",
+      "nach": "midazolam",
+      "richtig": {
+       "text": "Einmal nach 5 Minuten – dann NA",
+       "warum": "SH Algorithmus 18: einmalige Wiederholung nach 5 Minuten. Danach Dosissteigerung, Levetiracetam oder Narkose durch den NA."
+      },
+      "rolle": "ns"
+     }
+    }
+   }
+  }
+ }
+}

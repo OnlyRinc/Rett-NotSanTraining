@@ -1,0 +1,19 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Erst die lebensbedrohlichen Ursachen ausschließen",
+ "merke": "Frauen, Ältere und Diabetiker haben beim Infarkt oft untypische Beschwerden.",
+ "punkte": [
+  "Akutes Koronarsyndrom – 12-Kanal-EKG innerhalb von 10 Minuten",
+  "Lungenembolie – Atemnot, Tachykardie, Risikofaktoren (Immobilisation, Thrombose)",
+  "Aortendissektion – reißender Schmerz, RR-Differenz zwischen beiden Armen",
+  "Spannungspneumothorax – einseitig fehlendes Atemgeräusch, Schock",
+  "Ösophagusruptur – nach heftigem Erbrechen",
+  "Häufig harmloser: muskuloskelettal, Reflux, Perikarditis"
+ ],
+ "tags": [
+  "ACS",
+  "DD",
+  "Thoraxschmerz"
+ ],
+ "titel": "Brustschmerz"
+}

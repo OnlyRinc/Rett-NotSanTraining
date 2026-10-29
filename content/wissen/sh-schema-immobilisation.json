@@ -1,0 +1,24 @@
+{
+ "kategorie": "Schemata",
+ "titel": "Immobilisation der Wirbelsäule",
+ "kern": "Nicht jeder Unfall braucht die Vakuummatratze",
+ "punkte": [
+  "Stumpf + GCS < 15, WS-Schmerz, neurologisches Defizit oder Fehlstellung: immobilisieren",
+  "Gefährliche Kinematik + Drogen, ablenkende Verletzung oder nicht kommunikationsfähig: immobilisieren",
+  "Sonst: keine Immobilisation (NEXUS)",
+  "Penetrierendes Trauma: nur bei neurologischem Defizit",
+  "Vakuummatratze ist die beste Immobilisation, HWS-Orthese allein reicht nicht"
+ ],
+ "merke": "Eine starre HWS-Orthese kann den Hirndruck erhöhen.",
+ "tags": [
+  "SH",
+  "Trauma",
+  "HWS",
+  "NEXUS",
+  "Vakuummatratze"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmen 32 und 33 S. 47–50",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

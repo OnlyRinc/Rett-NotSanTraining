@@ -1,0 +1,21 @@
+{
+ "kategorie": "Sonstiges",
+ "kern": "Ohne Einwilligung keine Maßnahme – außer beim mutmaßlichen Willen",
+ "merke": "Alles aussagekräftig dokumentieren.",
+ "punkte": [
+  "Aufklärung durch den höchstqualifizierten Mitarbeitenden vor Ort",
+  "Inhalt: Grund, Qualifikation, Nutzen und Risiken, Alternativen, Folgen einer Ablehnung",
+  "Nicht einwilligungsfähig z. B. bei GCS < 15, Desorientierung, erheblicher Intoxikation, kurz nach Krampfanfall oder Hypoglykämie",
+  "Kinder < 14 J. in der Regel nicht einwilligungsfähig, Jugendliche > 16 J. oft schon",
+  "Nicht einwilligungsfähig: Versorgung nach mutmaßlichem Willen"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Aufklärung und Einwilligungsfähigkeit, S. 14–16",
+ "regional": true,
+ "tags": [
+  "Einwilligung",
+  "Recht",
+  "Aufklärung",
+  "Minderjährige"
+ ],
+ "titel": "Aufklärung & Einwilligung"
+}

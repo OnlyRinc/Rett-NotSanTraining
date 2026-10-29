@@ -1,0 +1,609 @@
+{
+ "level": 1,
+ "patient": "Mann, 58 J. · sitzt blass am Küchentisch und hält sich die Brust",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Kein Sekret im Mund – Absaugen ist nicht nötig."
+    },
+    "ansprechen": {
+     "ergebnis": "Antwortet in ganzen Sätzen: „Es drückt so auf der Brust.“",
+     "typ": "pflicht",
+     "warum": "Wer in ganzen Sätzen spricht, hat einen freien Atemweg."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Bei einem wachen Patienten löst ein Guedel-Tubus Würgen und Erbrechen aus."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Der Patient wirkt ängstlich und schaut dich an.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Die Atemfrequenz gehört zu jeder B-Beurteilung."
+    },
+    "auskultation": {
+     "ergebnis": "Vesikulär beidseits, keine Rasselgeräusche",
+     "typ": "sinnvoll",
+     "warum": "Rasselgeräusche würden auf ein Lungenödem hinweisen."
+    },
+    "beatmen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Er atmet selbstständig und ausreichend – keine Beatmung."
+    },
+    "o2": {
+     "danach": {
+      "af": 19,
+      "spo2": 95
+     },
+     "ergebnis": "O₂ über Maske, titriert",
+     "typ": "pflicht",
+     "warum": "Beim ACS kein Sauerstoff routinemäßig bei SpO₂ über 90 %. Hier liegt sie darunter: titriert auf 94–96 % geben."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Die Sättigung entscheidet, ob Sauerstoff nötig ist."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er atmet etwas schneller als normal.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "danach": {
+      "rhythmus": "stemi"
+     },
+     "ergebnis": "ST-Hebungen in II, III und aVF",
+     "typ": "pflicht",
+     "warum": "Bei Brustschmerz innerhalb von 10 Minuten nach Erstkontakt ein 12-Kanal-EKG schreiben."
+    },
+    "ekg3": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Monitoring erkennt gefährliche Rhythmusstörungen sofort."
+    },
+    "haut": {
+     "ergebnis": "Blass, kaltschweißig",
+     "typ": "sinnvoll",
+     "warum": "Kaltschweißige Haut ist ein typisches Begleitzeichen beim Infarkt."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Ein STEMI ist ein kritischer Patient – im Regelfall den Notarzt hinzuziehen."
+    },
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Frequenz und Regelmäßigkeit geben den ersten Eindruck vom Kreislauf."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Blutdruck vor jeder Medikamentengabe kennen."
+    },
+    "rr2": {
+     "ergebnis": "Rechts 152/94, links 148/92 mmHg – keine relevante Differenz",
+     "typ": "sinnvoll",
+     "warum": "Beim Brustschmerz gehört die RR-Messung an beiden Armen zu den Basismaßnahmen – eine Differenz über 20 mmHg spricht für ein Aortensyndrom."
+    },
+    "schocklage": {
+     "danach": {
+      "hf": 112,
+      "spo2": 86
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Beine hoch erhöht den Rückstrom zum Herzen – beim Infarkt wird das geschädigte Herz dadurch zusätzlich belastet."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Laut BPR ACS gehört der i.v.-Zugang zur Basistherapie."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "EKG ist übermittelt, Kardiologe ruft zurück",
+     "id": "telemetrie",
+     "regional": true,
+     "text": "EKG telemetrisch an die PCI-Klinik senden",
+     "typ": "sinnvoll",
+     "warum": "Laut BPR wird das EKG an die PCI-Klinik übertragen, damit das Herzkatheterlabor früh bereitsteht."
+    },
+    {
+     "ergebnis": "ASS ist gegeben",
+     "id": "ass",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "ASS 250 mg langsam i.v.",
+     "typ": "pflicht",
+     "warum": "Basistherapie beim ACS laut SAA: 250 mg langsam i.v. oder 200 mg oral, keine Repetition.",
+     "mittel": [
+      {
+       "w": "ass",
+       "d": "250 mg i.v."
+      }
+     ]
+    },
+    {
+     "ergebnis": "Heparin ist gegeben",
+     "id": "heparin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Heparin 5.000 I.E. i.v.",
+     "typ": "pflicht",
+     "warum": "Bei STEMI / OMI gehört Heparin zur Basistherapie: 5.000 I.E. i.v., keine Repetition.",
+     "mittel": [
+      {
+       "w": "heparin",
+       "d": "5.000 I.E. i.v."
+      }
+     ]
+    },
+    {
+     "danach": {
+      "hf": 96
+     },
+     "ergebnis": "Schmerz sinkt auf NRS 3",
+     "id": "morphin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Morphin 2 mg fraktioniert i.v.",
+     "typ": "sinnvoll",
+     "warum": "Schmerz NRS 7: Beim ACS ist Morphin das Opioid der Wahl – 2 mg alle 3–4 Minuten, maximal 10 mg.",
+     "mittel": [
+      {
+       "w": "morphin",
+       "d": "2 mg i.v., fraktioniert"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "nitro",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Glyceroltrinitrat 0,4 mg s.l.",
+     "typ": "falsch",
+     "warum": "Beim Infarkt keine routinemäßige Gabe. Beim Hinterwandinfarkt ist eine rechtsventrikuläre Beteiligung eine Kontraindikation – erst V4R prüfen.",
+     "mittel": [
+      {
+       "w": "nitro",
+       "d": "*"
+      }
+     ]
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "ibu",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Ibuprofen gegen die Schmerzen",
+     "typ": "gefahr",
+     "warum": "Ibuprofen ist beim ACS kontraindiziert.",
+     "mittel": [
+      {
+       "w": "ibuprofen",
+       "d": "*"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "metoprolol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Metoprolol 2 mg i.v.",
+     "typ": "falsch",
+     "warum": "Metoprolol nur beim STEMI mit tachykardem Vorhofflimmern über 100/min oder vielen VES – hier liegt beides nicht vor.",
+     "mittel": [
+      {
+       "w": "metoprolol",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, die Stirn glänzt feucht.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Unauffälliges EKG",
+       "warum": "Schau auf die ST-Strecke: Sie ist deutlich angehoben."
+      },
+      {
+       "text": "Vorhofflimmern",
+       "warum": "Der Rhythmus ist regelmäßig und hat P-Wellen."
+      }
+     ],
+     "frage": "Wie lautet dein Befund?",
+     "nach": "ekg12",
+     "richtig": {
+      "text": "STEMI der Hinterwand",
+      "warum": "ST-Hebungen in II, III und aVF sprechen für einen inferioren Infarkt."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "V7–V9",
+       "warum": "Die Hinterwandableitungen schreibt man, wenn ST-Senkungen in V2–V4 auftreten."
+      },
+      {
+       "text": "Keine weiteren",
+       "warum": "Eine rechtsventrikuläre Beteiligung ändert die Therapie, z. B. kein Nitro."
+      }
+     ],
+     "frage": "Hebungen in II, III und aVF – welche Ableitungen schreibst du zusätzlich?",
+     "nach": "ekg12",
+     "richtig": {
+      "text": "V2R–V4R (rechtsventrikulär)",
+      "warum": "Laut BPR: Bei Hebungen in II, III und aVF zusätzlich die rechtsventrikulären Ableitungen, um eine Beteiligung der rechten Kammer zu erkennen."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "A – wach und orientiert",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Der Blutzucker gehört zu jeder D-Beurteilung."
+    },
+    "glukose_oral": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Der Blutzucker ist normal – keine Glukose."
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, verfolgt dich mit den Augen.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "flach": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Flachlagerung erschwert die Atmung und belastet das Herz."
+    },
+    "oberkoerper": {
+     "danach": {
+      "dia": 88,
+      "hf": 96,
+      "sys": 144
+     },
+     "ergebnis": "Oberkörper hoch, Hemd geöffnet",
+     "typ": "pflicht",
+     "warum": "Entlastet Herz und Atmung."
+    },
+    "opqrst": {
+     "ergebnis": "Drückend, strahlt in linken Arm und Kiefer aus, Stärke 7/10",
+     "typ": "pflicht",
+     "warum": "Typische Ausstrahlung stützt den Verdacht auf ein akutes Koronarsyndrom."
+    },
+    "sampler": {
+     "ergebnis": "Bluthochdruck, Raucher, nimmt Ramipril. Keine Allergien. Beschwerden in Ruhe seit 40 Min.",
+     "typ": "pflicht",
+     "warum": "Risikofaktoren und Medikamente sind für die Klinik wichtig."
+    },
+    "ssl": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Stabile Seitenlage nur bei Bewusstlosen mit erhaltener Atmung."
+    },
+    "waerme": {
+     "ergebnis": "Zugedeckt",
+     "typ": "sinnvoll",
+     "warum": "Wärmeerhalt nicht vergessen."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "hf": 118,
+      "spo2": 86
+     },
+     "ergebnis": "",
+     "id": "laufen",
+     "text": "Patient selbst zum RTW laufen lassen",
+     "typ": "gefahr",
+     "warum": "Jede Belastung erhöht den Sauerstoffbedarf des geschädigten Herzens. Tragestuhl nutzen."
+    }
+   ],
+   "eindruck": "Enges Hemd, der Patient friert.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Nächstes Krankenhaus ohne Katheterlabor",
+       "warum": "Eine spätere Verlegung kostet wertvolle Zeit."
+      },
+      {
+       "schwer": "abbruch",
+       "text": "Hausarzt informieren, Patient bleibt zu Hause",
+       "warum": "Ein STEMI ist ein Notfall und gehört sofort in die Klinik."
+      }
+     ],
+     "frage": "Wohin geht der Transport?",
+     "nach": "",
+     "regional": true,
+     "richtig": {
+      "text": "PCI-Klinik, möglichst direkt ins Herzkatheterlabor, voranmelden",
+      "warum": "STEMI direkt ins PCI-Zentrum – Zeit ist Herzmuskel."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "druckverband": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Es gibt keine Wunde, die versorgt werden müsste."
+    },
+    "tourniquet": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Keine Blutung – ein Tourniquet ist hier nicht angezeigt."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf den ersten Blick keine Blutung. Kein Hinweis auf Sturz oder Verletzung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Akutes Koronarsyndrom, S. 116–117",
+ "regional": "Zielklinik nach regionalem Zuweisungskonzept (PCI-Klinik). Medikamente nur nach Freigabe durch deinen ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Wohnung, 1. OG. Die Ehefrau hat angerufen: Druck auf der Brust seit etwa 40 Minuten.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Druck/Enge, auch in Ruhe",
+   "Ausstrahlung Arm, Kiefer, Rücken, Oberbauch",
+   "Kaltschweißig, Übelkeit, Dyspnoe",
+   "Frauen, Ältere, Diabetiker oft atypisch"
+  ],
+  "kern": "12-Kanal-EKG < 10 Min",
+  "ns": [
+   "i.v.-Zugang",
+   "ASS 250 mg i.v. (oder 200 mg oral)",
+   "STEMI/OMI: Heparin 5.000 I.E. i.v.",
+   "NRS ≥ 6: Morphin 2 mg fraktioniert, max. 10 mg",
+   "Kein Nitro bei RV-Infarkt, RRsys < 100"
+  ],
+  "tun": [
+   "xABCDE, RR an beiden Armen",
+   "12-Kanal-EKG < 10 Min",
+   "O₂ bei SpO₂ < 90 %, Dyspnoe oder Herzinsuffizienz, Ziel 94–96 %",
+   "EKG an PCI-Klinik senden",
+   "NA + PCI-Klinik voranmelden"
+  ],
+  "vermeiden": [
+   "Patient laufen lassen",
+   "O₂ ohne Hypoxie",
+   "Beine hochlagern",
+   "Zeit vor Ort verlieren"
+  ]
+ },
+ "stichwort": "RD 2 · Brustschmerz",
+ "titel": "ACS / Herzinfarkt",
+ "vitalwerte": {
+  "af": 22,
+  "bz": 112,
+  "dia": 94,
+  "gcs": 15,
+  "hf": 104,
+  "spo2": 88,
+  "sys": 152,
+  "temp": 36.7
+ },
+ "sh": {
+  "regional": "SH: Heparin, Metoprolol und Morphin nach lokalem Protokoll, Morphin nur unter den rechtlichen Rahmenbedingungen (BtM). Telemetrie, Voranmeldung und Zielklinik nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 1 ACS, S. 14; Infotabellen ASS S. 72, Nitro S. 87, Heparin S. 88, Metoprolol S. 93, Morphin S. 96",
+  "steckbrief": {
+   "ns": [
+    "ASS 250 mg i.v. oder 250–500 mg p.o.",
+    "Nitro 1–3 Hübe nach RR, Ziel < 140 – bei ST-Hebung II/III/aVF initial 1 Hub",
+    "Heparin 50–70 I.E./kg, üblich 5.000 I.E. (lokales Protokoll)",
+    "Morphin 2–10 mg fraktioniert (lokales Protokoll), KI SpO₂ < 92 %",
+    "Metoprolol nur nach lokalem Protokoll"
+   ],
+   "tun": [
+    "xABCDE, RR an beiden Armen",
+    "12-Kanal-EKG < 10 Min",
+    "O₂ angepasst, bei Luftnot hochdosiert, Ziel ≥ 90 %",
+    "EKG an PCI-Klinik senden",
+    "NA + PCI-Klinik voranmelden"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "o2": {
+      "danach": {
+       "af": 19,
+       "spo2": 95
+      },
+      "ergebnis": "O₂ über Maske, titriert",
+      "typ": "pflicht",
+      "warum": "SpO₂ 88 % mit Luftnot: In SH beim ACS angepasst Sauerstoff geben, bei kritischen Patienten mit Luftnot hochdosiert. Ziel bei pulmonal Gesunden ≥ 90 %."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "i.v.-Zugang für die Medikation nach Algorithmus 1 – i.v. hat Vorrang vor i.o."
+     }
+    },
+    "eigene": {
+     "telemetrie": {
+      "ergebnis": "EKG ist übermittelt, Kardiologe ruft zurück",
+      "id": "telemetrie",
+      "regional": true,
+      "text": "EKG telemetrisch an die PCI-Klinik senden",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 1: Bei ST-Hebung sofort voranmelden, Telemetrie nach lokalem Protokoll."
+     },
+     "ass": {
+      "ergebnis": "ASS ist gegeben",
+      "id": "ass",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "ASS 250 mg i.v.",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: 250 mg i.v. oder 250–500 mg p.o., auch bei ASS-Dauertherapie. KI u. a. Verdacht auf Schlaganfall, Aortendissektion oder Blutung.",
+      "mittel": [
+       {
+        "w": "ass",
+        "d": "250 mg i.v."
+       }
+      ]
+     },
+     "heparin": {
+      "ergebnis": "Heparin ist gegeben",
+      "id": "heparin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Heparin 5.000 I.E. i.v. (50–70 I.E./kg)",
+      "typ": "sinnvoll",
+      "warum": "SH: Heparin nach lokalem Protokoll, 50–70 I.E./kg, beim Erwachsenen üblicherweise 5.000 I.E. (Höchstdosis). KI: akute Blutung, Schlaganfall, Aortendissektion, HIT.",
+      "mittel": [
+       {
+        "w": "heparin",
+        "d": "5.000 I.E. i.v."
+       }
+      ]
+     },
+     "morphin": {
+      "danach": {
+       "hf": 96
+      },
+      "ergebnis": "Schmerz sinkt auf NRS 3",
+      "id": "morphin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Morphin 2 mg fraktioniert i.v.",
+      "typ": "sinnvoll",
+      "warum": "NRS 7 (> 4) bei kardialem Schmerz: SH sieht Morphin 2–10 mg fraktioniert nach lokalem Protokoll vor. KI u. a. GCS < 14, SpO₂ < 92 %, AF < 10, HF < 50 – also erst, wenn die Sättigung unter O₂ ausreicht.",
+      "mittel": [
+       {
+        "w": "morphin",
+        "d": "2 mg i.v., fraktioniert"
+       }
+      ]
+     },
+     "nitro": {
+      "ergebnis": "1 Hub gegeben, der Druck lässt etwas nach",
+      "id": "nitro",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Glyceroltrinitrat 0,4 mg s.l. (1 Hub)",
+      "typ": "sinnvoll",
+      "warum": "In SH ist Nitro beim ACS vorgesehen (1–3 Hübe nach RR, Ziel < 140). Bei ST-Hebung in II, III und aVF initial nur 1 Hub, um bei Rechtsherzinfarkt einen Blutdruckabfall zu vermeiden – anders als SAA/BPR hält SH Nitrate dort für vertretbar. KI: RRsys < 100, PDE-5-Hemmer < 48 h.",
+      "mittel": [
+       {
+        "w": "nitro",
+        "d": "0,4 mg s.l. (1 Hub)"
+       }
+      ]
+     },
+     "ibu": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "ibu",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Ibuprofen gegen die Schmerzen",
+      "typ": "gefahr",
+      "warum": "Ibuprofen ist in den SH-Handlungsempfehlungen nicht vorgesehen und beim ACS kontraindiziert.",
+      "mittel": [
+       {
+        "w": "ibuprofen",
+        "d": "*"
+       }
+      ]
+     },
+     "metoprolol": {
+      "ergebnis": "",
+      "id": "metoprolol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Metoprolol 2 mg i.v.",
+      "typ": "neutral",
+      "warum": "SH: Metoprolol beim ACS nur nach lokalem Protokoll (1–2 mg, max. 10 mg). KI u. a. Herzinsuffizienz, RRsys < 120, HF < 50.",
+      "mittel": [
+       {
+        "w": "metoprolol",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "1": {
+      "falsch": [
+       {
+        "text": "V7–V9",
+        "warum": "Die Hinterwandableitungen schreibt man, wenn ST-Senkungen in V2–V4 auftreten."
+       },
+       {
+        "text": "Keine weiteren",
+        "warum": "Eine rechtsventrikuläre Beteiligung ändert die Therapie: Nitro nur vorsichtig dosieren und auf einen Blutdruckabfall achten."
+       }
+      ],
+      "frage": "Hebungen in II, III und aVF – welche Ableitungen schreibst du zusätzlich?",
+      "nach": "ekg12",
+      "richtig": {
+       "text": "V2R–V4R (rechtsventrikulär)",
+       "warum": "Bei Hebungen in II, III und aVF zeigen die rechtsventrikulären Ableitungen eine Beteiligung der rechten Kammer. In SH dann Nitro vorsichtig: initial nur 1 Hub."
+      }
+     }
+    }
+   }
+  }
+ }
+}

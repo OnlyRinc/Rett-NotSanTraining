@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Reanimation: refraktäres Kammerflimmern / pulslose VT",
+ "merke": "Alternative: Lidocain.",
+ "punkte": [
+  "Erwachsene: 300 mg nach der 3. Defibrillation",
+  "Repetition 150 mg nach der 5. Defibrillation",
+  "Kinder: 5 mg/kg (max. 300 mg), dann 5 mg/kg (max. 150 mg)",
+  "Bolus unter laufender Infusion, mit VEL nachspülen",
+  "KI: Jod-Allergie"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Amiodaron, S. 44",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Reanimation"
+ ],
+ "titel": "Amiodaron",
+ "sh": {
+  "kern": "Instabile Tachykardie, wenn Kardioversion ohne Narkose nicht möglich oder nach 3 erfolglosen Kardioversionen",
+  "punkte": [
+   "300 mg als Kurzinfusion in Glucose 5 %",
+   "Über 20 Min (Infotabelle), Algorithmus 7: mindestens 10 Min",
+   "Instabil = SHIT: Synkope, Hypotension, Insuffizienz, Thoraxschmerz",
+   "KI: Sinus- oder Bedarfstachykardie"
+  ],
+  "merke": "In SH steht Amiodaron für den NotSan bei der instabilen Tachykardie – die Reanimation läuft nach ERC.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Amiodaron S. 71; Algorithmus 7 S. 20"
+ }
+}

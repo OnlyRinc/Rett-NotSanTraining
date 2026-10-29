@@ -1,0 +1,20 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Schnelle Einschätzung der Bewusstseinslage",
+ "merke": "Jede Minderung der Wachheit bedeutet Gefahr für den Atemweg.",
+ "punkte": [
+  "W – wach",
+  "A – reagiert auf Ansprache → Somnolenz, ggf. verwirrt",
+  "S – reagiert nur auf Schmerzreiz → Sopor",
+  "B – bewusstlos → Koma, keine Schutzreflexe"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Beurteilung der Bewusstseinslage, S. 77",
+ "tags": [
+  "Bewusstsein",
+  "AVPU",
+  "Somnolenz",
+  "Sopor",
+  "Koma"
+ ],
+ "titel": "WASB"
+}

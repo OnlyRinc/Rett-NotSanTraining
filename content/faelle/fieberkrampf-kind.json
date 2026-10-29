@@ -1,0 +1,367 @@
+{
+ "level": 2,
+ "patient": "Junge, 2 J., ca. 12 kg · liegt schlapp in den Armen der Mutter, heiß, schläfrig",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Öffnet kurz die Augen, wimmert",
+     "typ": "pflicht",
+     "warum": "Er reagiert – der Atemweg ist frei."
+    },
+    "mund": {
+     "ergebnis": "Mundraum frei",
+     "typ": "sinnvoll",
+     "warum": "Kein Erbrochenes, kein Fremdkörper."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er wimmert leise.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Kinder haben höhere Normwerte – trotzdem genau zählen."
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 95 % – kein Sauerstoff nötig."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Sättigung kontrollieren."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet schnell.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "150/min",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "Unter 2 Sekunden",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Rote Wangen, heiße Haut.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Bei jedem Krampfanfall den BZ messen."
+    },
+    "gcs": {
+     "ergebnis": "GCS 12, wird wacher",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "",
+     "id": "midazolam",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Midazolam 5 mg buccal",
+     "typ": "falsch",
+     "warum": "Der Anfall ist vorbei – im postiktalen Zustand keine antikonvulsive Therapie.",
+     "mittel": [
+      {
+       "w": "midazolam",
+       "d": "*"
+      },
+      {
+       "w": "diazepam",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Schläfrig, wird langsam wacher.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "10 mg buccal",
+       "warum": "Das ist die Dosis ab 10 Jahren."
+      },
+      {
+       "text": "2,5 mg buccal",
+       "warum": "Das gilt für 3–11 Monate."
+      }
+     ],
+     "frage": "Er krampft erneut über 5 Minuten. Welche Midazolam-Dosis bei 2 Jahren?",
+     "nach": "",
+     "richtig": {
+      "text": "5 mg buccal (1–4 Jahre)",
+      "warum": "Laut SAA 1–4 Jahre: 5 mg in 1 ml buccal, keine Repetition. Achtung: Der BPR erlaubt über 10 kg eine Repetition – die SAA ist hier strenger. Hört der Anfall nicht auf: NA."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Keine Petechien, keine Nackensteife",
+     "typ": "sinnvoll",
+     "warum": "Ausschlag oder Petechien würden an eine Meningitis denken lassen."
+    },
+    "sampler": {
+     "ergebnis": "Erster Anfall, noch kein Fiebermittel gegeben",
+     "typ": "pflicht",
+     "warum": "Erster Anfall? Fiebersaft schon gegeben?"
+    },
+    "ssl": {
+     "ergebnis": "Liegt seitlich auf dem Schoß der Mutter",
+     "typ": "sinnvoll",
+     "warum": "Seitenlage bei Schläfrigkeit, oder auf dem Arm der Mutter."
+    },
+    "temp": {
+     "ergebnis": "39,4 °C rektal",
+     "typ": "pflicht",
+     "warum": "Fieber bestätigt den Verdacht auf einen Fieberkrampf. Ab 38,5 °C (rektal) sieht der BPR eine Fiebersenkung vor."
+    },
+    "transport": {
+     "ergebnis": "Kinderklinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Erster Fieberkrampf: zur Abklärung in die Kinderklinik."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Mutter ist ruhiger",
+     "id": "eltern",
+     "text": "Eltern beruhigen und einbinden",
+     "typ": "sinnvoll",
+     "warum": "Für Eltern ist ein Fieberkrampf ein Schock – Ruhe überträgt sich aufs Kind."
+    },
+    {
+     "ergebnis": "Zäpfchen gegeben",
+     "id": "paracetamol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Paracetamol 125 mg rektal",
+     "typ": "sinnvoll",
+     "warum": "Fieber über 38,5 °C nach Fieberkrampf: gewichtsadaptiert rektal, 7–12 kg = 125 mg. Nur, wenn die Eltern noch nichts gegeben haben.",
+     "mittel": [
+      {
+       "w": "paracetamol",
+       "d": "125 mg rektal"
+      }
+     ]
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "ibu_iv",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Ibuprofen 600 mg i.v.",
+     "typ": "gefahr",
+     "warum": "Ibuprofen i.v. ist erst ab 18 Jahren vorgesehen. Bei Kleinkindern Saft oder Zäpfchen nach Gewicht.",
+     "mittel": [
+      {
+       "w": "ibuprofen",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Der Junge ist warm eingepackt.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Ab 37,5 °C",
+       "warum": "Das ist nur erhöhte Temperatur."
+      },
+      {
+       "text": "Nie, Fieber ist egal",
+       "warum": "Laut BPR gehört die Fiebersenkung beim Fieberkrampf dazu."
+      }
+     ],
+     "frage": "Ab welcher Temperatur hilft der BPR mit Fiebersenkung?",
+     "nach": "",
+     "richtig": {
+      "text": "Ab 38,5 °C (rektal), wenn noch nichts gegeben wurde",
+      "warum": "Dann gewichtsadaptiert Paracetamol oder Ibuprofen rektal."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Krampfanfall Kind, S. 147–148; SAA Paracetamol S. 65, Midazolam S. 61",
+ "regional": "Medikamente beim Kind nur durch NotSan nach Freigabe deines ÄLRD. Bei Kindern NA niederschwellig hinzuziehen.",
+ "rhythmus": "sinus",
+ "situation": "Mutter: Er hat seit gestern Fieber. Vor 5 Minuten hat er etwa 2 Minuten am ganzen Körper gezuckt, jetzt ist er ruhig.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Generalisierter Anfall bei Fieber",
+   "Meist kurz, dann schläfrig",
+   "6 Mon – 5 J typisch"
+  ],
+  "kern": "Postiktal: kein Antikonvulsivum",
+  "ns": [
+   "Status: Midazolam buccal 1–4 J 5 mg, 5–9 J 7,5 mg, ab 10 J 10 mg",
+   "Repetition: SAA 1–4 J keine, BPR > 10 kg max. 1 – im Zweifel NA",
+   "Fieber > 38,5 °C: Paracetamol oder Ibuprofen rektal nach Gewicht"
+  ],
+  "tun": [
+   "BZ und Temperatur",
+   "Eltern beruhigen",
+   "Seitenlage oder Schoß",
+   "Kinderklinik",
+   "NA niederschwellig"
+  ],
+  "vermeiden": [
+   "Antikonvulsiva nach Ende des Anfalls",
+   "Kind von den Eltern trennen"
+  ]
+ },
+ "stichwort": "RD 2 · Kind krampft",
+ "titel": "Krampfanfall Kind · Fieberkrampf",
+ "vitalwerte": {
+  "af": 32,
+  "bz": 98,
+  "dia": 56,
+  "gcs": 12,
+  "hf": 150,
+  "spo2": 95,
+  "sys": 92,
+  "temp": 39.4
+ },
+ "sh": {
+  "regional": "SH Algorithmus 18: Midazolam buccal/nasal/i.m. oder Diazepam rektal durch NotSan, Paracetamol über 38,5 °C. Bei Kindern NA niederschwellig.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 18 Krampfanfall, S. 31; Infotabellen Diazepam S. 77, Midazolam S. 94, Paracetamol S. 100",
+  "steckbrief": {
+   "ns": [
+    "Krampf hält an: Midazolam buccal 10–20 kg 5 mg (< 10 kg 2,5 · 20–30 kg 7,5 · > 30 kg 10)",
+    "Alternativ Diazepam rektal < 15 kg 5 mg, > 15 kg 10 mg",
+    "Einmalige Wiederholung nach 5 Min, dann NA",
+    "Fieber > 38,5 °C: Paracetamol rektal 1–6 J 250 mg"
+   ]
+  },
+  "phasen": {
+   "D": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "10 mg buccal",
+        "warum": "Das gilt in SH ab 30 kg."
+       },
+       {
+        "text": "2,5 mg buccal",
+        "warum": "Das gilt unter 10 kg."
+       }
+      ],
+      "frage": "Er krampft erneut über 5 Minuten. Welche Midazolam-Dosis bei 2 Jahren?",
+      "nach": "",
+      "richtig": {
+       "text": "5 mg buccal (10–20 kg)",
+       "warum": "SH-Infotabelle buccal: < 10 kg 2,5 mg · 10–20 kg 5 mg · 20–30 kg 7,5 mg · > 30 kg 10 mg. Einmalige Wiederholung nach 5 Min möglich. Alternative: Diazepam rektal (< 15 kg 5 mg). Hält der Anfall an: NA."
+      },
+      "rolle": "ns"
+     }
+    }
+   },
+   "E": {
+    "aktionen": {
+     "temp": {
+      "ergebnis": "39,4 °C rektal",
+      "typ": "pflicht",
+      "warum": "Fieber bestätigt den Verdacht auf einen Fieberkrampf. Über 38,5 °C sieht SH Paracetamol vor."
+     }
+    },
+    "eigene": {
+     "paracetamol": {
+      "ergebnis": "Zäpfchen gegeben",
+      "id": "paracetamol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Paracetamol 250 mg rektal",
+      "typ": "sinnvoll",
+      "warum": "SH: Fieberkrampf über 38,5 °C → Paracetamol rektal nach Alter: bis 6 Mon. 75 mg · bis 1 J 125 mg · 1–6 J 250 mg · Schulkind 500 mg. KI: Tageshöchstdosis 50 mg/kg durch Gaben der Eltern erreicht.",
+      "mittel": [
+       {
+        "w": "paracetamol",
+        "d": "250 mg rektal"
+       }
+      ]
+     },
+     "ibu_iv": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "ibu_iv",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Ibuprofen 600 mg i.v.",
+      "typ": "gefahr",
+      "warum": "Ibuprofen ist in den SH-Handlungsempfehlungen nicht vorgesehen – und i.v. beim Kleinkind ohnehin nicht.",
+      "mittel": [
+       {
+        "w": "ibuprofen",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Ab 37,5 °C",
+        "warum": "Das ist nur erhöhte Temperatur."
+       },
+       {
+        "text": "Nie, Fieber ist egal",
+        "warum": "In SH gehört die Fiebersenkung über 38,5 °C dazu."
+       }
+      ],
+      "frage": "Ab welcher Temperatur sieht SH eine Fiebersenkung vor?",
+      "nach": "",
+      "richtig": {
+       "text": "Über 38,5 °C – Tageshöchstdosis beachten, wenn die Eltern schon etwas gegeben haben",
+       "warum": "Dann Paracetamol rektal nach Alter (SH Algorithmus 18)."
+      }
+     }
+    }
+   }
+  }
+ }
+}

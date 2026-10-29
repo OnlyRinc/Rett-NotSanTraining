@@ -1,0 +1,20 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Bewusstseinsstörung systematisch nach ABCDE abklären",
+ "merke": "Eine gefundene Ursache schließt eine zweite nicht aus (z. B. Alkohol plus Hypoglykämie).",
+ "punkte": [
+  "A: Stridor, Aspiration, Fremdkörper",
+  "B: Aspiration, Ventilationsstörung",
+  "C: Bradykardie, Tachykardie, Schock",
+  "D: Schlaganfall, Krampfanfall",
+  "Metabolisch: Hypo-/Hyperglykämie; toxisch: Intoxikation",
+  "E: Hypo-/Hyperthermie, Sepsis; psychiatrisch erst nach Ausschluss körperlicher Ursachen"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Zentrales neurologisches Defizit, S. 108–109",
+ "tags": [
+  "Bewusstseinsstörung",
+  "Neurologie",
+  "Vigilanz"
+ ],
+ "titel": "Zentrales neurologisches Defizit"
+}

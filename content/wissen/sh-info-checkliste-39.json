@@ -1,0 +1,21 @@
+{
+ "kategorie": "Sonstiges",
+ "titel": "Beförderungsverzicht durch NotSan",
+ "rolle": "ns",
+ "kern": "Nur nach Checkliste 39 – in Eigenverantwortung",
+ "punkte": [
+  "15 Ausschlusskriterien prüfen – ein Kriterium erfüllt: kein Verzicht",
+  "Aufklärung und Hilfsangebote, z. B. ärztlicher Bereitschaftsdienst 116 117",
+  "Lückenlos dokumentieren"
+ ],
+ "merke": "Unterschied zur Checkliste 38: Dort lehnt der Patient ab, hier entscheidet der NotSan.",
+ "tags": [
+  "SH",
+  "Transport",
+  "Recht",
+  "Checkliste"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Checkliste 39 S. 60–62",
+ "regional": true,
+ "nurRegion": "sh"
+}

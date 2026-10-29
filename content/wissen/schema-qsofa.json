@@ -1,0 +1,29 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Sepsis früh erkennen",
+ "merke": "",
+ "punkte": [
+  "qSOFA (je 1 Punkt): AF ≥ 22, RRsys ≤ 100, akute Vigilanzminderung (GCS < 15)",
+  "qSOFA ≥ 2 und/oder NEWS2 ≥ 5: hohes Risiko → BPR Sepsis",
+  "NEWS2 bewertet AF, SpO₂, O₂-Gabe, RRsys, HF, Bewusstsein, Temperatur",
+  "NEWS2 ≥ 7: hohes Risiko · 5–6 moderat · ≤ 4 leicht",
+  "Schon 3 Punkte in einem Parameter: mindestens moderates Risiko"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Sepsis, S. 157–158",
+ "tags": [
+  "Sepsis",
+  "Score",
+  "NEWS"
+ ],
+ "titel": "qSOFA & NEWS2",
+ "sh": {
+  "punkte": [
+   "qSOFA (je 1 Punkt): AF > 22, RRsys < 100, GCS < 15",
+   "qSOFA ≥ 2, Sepsis wahrscheinlichste Ursache: i.v. + großzügig VEL bei RRsys < 100",
+   "Andere Ursachen ausschließen: kardiogener, anaphylaktischer, hämorrhagischer Schock",
+   "Noradrenalin (MAD > 65) durch NA, Sepsisverdacht klar übergeben"
+  ],
+  "merke": "NEWS2 ist in SH nicht Teil des Algorithmus.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmus 25 Sepsis S. 39"
+ }
+}

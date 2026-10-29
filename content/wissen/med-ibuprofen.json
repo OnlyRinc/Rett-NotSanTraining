@@ -1,0 +1,23 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Schmerzen NRS ≥ 3, Fieber beim Kind nach Fieberkrampf",
+ "merke": "Mindestens 6 Stunden Abstand zur letzten Gabe.",
+ "punkte": [
+  "p.o. nach Gewicht: 7–9 kg 50 mg · 10–15 kg 100 mg · 16–19 kg 150 mg · 20–39 kg 200 mg · > 40 kg 7,5 mg/kg",
+  "i.v. 600 mg ab 18 Jahren",
+  "KI: ACS, Blutung, Ulkus, schwere Herz-, Nieren-, Leberinsuffizienz, Schwangerschaft",
+  "Nicht unter 6 Monaten/7 kg"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Ibuprofen, S. 57",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Schmerz",
+  "Fieber",
+  "NSAR"
+ ],
+ "titel": "Ibuprofen",
+ "nurRegion": "saa"
+}

@@ -1,0 +1,36 @@
+{
+ "kategorie": "Sonstiges",
+ "kern": "Gleiche Medizin, unterschiedliche Regeln",
+ "merke": "Andere Länder haben eigene Systeme, z. B. Bayern (2c-Algorithmen) oder Niedersachsen/Bremen (NUN).",
+ "punkte": [
+  "SAA/BPR 2025 gelten in BW, BB, MV, NRW, SN und ST – nicht automatisch in Schleswig-Holstein",
+  "In BB werden die BPR Tracheostoma und Dehydratation nicht geführt",
+  "NotSan-Maßnahmen gelten erst nach Freigabe und Schulung durch den eigenen ÄLRD",
+  "Notarzt nachfordern oder abbestellen: lokale Vorgaben",
+  "Zielklinik: regionales Zuweisungskonzept (Stroke Unit, PCI, Trauma, Verbrennung)",
+  "Transportverweigerung: Landesrecht und regionale Regelungen",
+  "Betäubungsmittel nur mit schriftlicher Vorgabe, Schulung und Zertifizierung",
+  "Fabrikate und Konzentrationen der Medikamente unterscheiden sich"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), Vorwort und Hinweise zum Gebrauch, S. 8–10",
+ "regional": true,
+ "tags": [
+  "SAA",
+  "BPR",
+  "ÄLRD",
+  "Bundesland",
+  "Schleswig-Holstein"
+ ],
+ "titel": "Was regional abweicht",
+ "sh": {
+  "punkte": [
+   "SH: Handlungsempfehlungen V10.0 (Stand 15.07.2025) der Träger des RD – gelb = NotSan-, rot = Notarzt-Maßnahme",
+   "Vieles steht „nach lokalem Protokoll“ – das regelt dein Träger",
+   "SAA/BPR 2025 gelten in BW, BB, MV, NRW, SN und ST",
+   "Niedersachsen/Bremen (NUN) und Bayern (2c) haben eigene Systeme",
+   "Zielklinik, NA-Nachforderung, BtM: immer lokale Vorgaben"
+  ],
+  "merke": "Mit dem Umschalter siehst du beide Regelwerke im Vergleich.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Einleitung S. 6, Symbole S. 7; SAA/BPR 2025 S. 8–10"
+ }
+}

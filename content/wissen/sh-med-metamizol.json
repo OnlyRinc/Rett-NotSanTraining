@@ -1,0 +1,22 @@
+{
+ "kategorie": "Pharmakologie",
+ "titel": "Metamizol",
+ "rolle": "ns",
+ "kern": "Schmerz NRS > 4: Bauch, Kopf, Mixed Pain; begleitend zu Esketamin",
+ "punkte": [
+  "Erw. 1 g in 100 ml NaCl als Kurzinfusion über 10 Min",
+  "Algorithmus 20: > 31 kg 0,5 g · > 53 kg 1 g",
+  "Liegend lagern, Risiko- und Sicherungsaufklärung (Agranulozytose)",
+  "KI: RRsys < 100, Schwangerschaft, < 3 Mon./5 kg, Blutbildungsstörung, G6PD-Mangel, Methotrexat"
+ ],
+ "merke": "Wirkt nach 20–30 Min. Alternative bei KI: Paracetamol.",
+ "tags": [
+  "SH",
+  "Medikament",
+  "Schmerz",
+  "Novalgin"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Metamizol S. 92; Algorithmus 20 S. 33",
+ "regional": true,
+ "nurRegion": "sh"
+}

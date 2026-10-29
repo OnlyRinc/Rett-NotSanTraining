@@ -1,0 +1,19 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Schlaganfall erkennen – Zeit dokumentieren",
+ "merke": "Hypoglykämie kann einen Schlaganfall imitieren – immer BZ messen.",
+ "punkte": [
+  "B – Balance: Gleichgewicht, Schwindel, Gangunsicherheit",
+  "E – Eyes: Sehstörung, Doppelbilder, Gesichtsfeldausfall",
+  "F – Face: hängender Mundwinkel beim Lächeln",
+  "A – Arms: Arm sinkt beim Halteversuch ab",
+  "S – Speech: verwaschene oder gestörte Sprache",
+  "T – Time: Symptombeginn bzw. zuletzt gesund gesehen"
+ ],
+ "tags": [
+  "Stroke",
+  "Apoplex",
+  "Neurologie"
+ ],
+ "titel": "BE-FAST"
+}

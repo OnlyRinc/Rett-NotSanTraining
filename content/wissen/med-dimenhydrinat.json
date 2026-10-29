@@ -1,0 +1,31 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Übelkeit und Erbrechen",
+ "merke": "Macht müde – Fahrtauglichkeit beeinträchtigt.",
+ "punkte": [
+  "Erw. und > 14 J: 62 mg langsam i.v.",
+  "6–14 J: 40 mg langsam i.v. oder rektal",
+  "< 6 J: 40 mg rektal",
+  "KI: akute Bronchialobstruktion, Krampfanfälle, Glaukom, Long-QT"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Dimenhydrinat, S. 47",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Übelkeit",
+  "Antiemetikum"
+ ],
+ "titel": "Dimenhydrinat",
+ "sh": {
+  "punkte": [
+   "Erw. und > 14 J: 62 mg langsam i.v.",
+   "6–14 J: 25–50 mg",
+   "Kinder ab 6 kg: 1,25 mg/kg",
+   "KI: Epilepsie, Asthmaanfall, Long-QT, Ileus, Engwinkelglaukom, 3. Trimenon"
+  ],
+  "merke": "Opiat- oder chemoassoziierte Übelkeit: in SH Ondansetron.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Dimenhydrinat S. 78; Algorithmus 21 S. 34"
+ }
+}

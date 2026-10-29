@@ -1,0 +1,19 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Bewusstsein in Punkten: 3 bis 15",
+ "merke": "GCS ≤ 8: Schutzreflexe gefährdet – Atemweg sichern.",
+ "punkte": [
+  "Augen: spontan 4 · auf Aufforderung 3 · auf Schmerzreiz 2 · keine Reaktion 1",
+  "Verbal: orientiert 5 · desorientiert 4 · inadäquate Äußerung (Wortsalat) 3 · unverständliche Laute 2 · keine 1",
+  "Motorik: auf Aufforderung 6 · gezielt auf Schmerz 5 · normale Beugeabwehr 4 · Beugesynergismen 3 · Strecksynergismen 2 · keine 1",
+  "SHT: 15–13 leicht · 12–9 mittelschwer · 8–3 schwer",
+  "Kinder unter 36 Monaten haben eine eigene Skala (z. B. Plappern, tröstbares Schreien)"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Beurteilung der Bewusstseinslage, S. 77",
+ "tags": [
+  "Bewusstsein",
+  "SHT",
+  "Koma"
+ ],
+ "titel": "Glasgow Coma Scale"
+}

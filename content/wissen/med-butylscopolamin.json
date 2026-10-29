@@ -1,0 +1,29 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Starke kolikartige Bauchschmerzen",
+ "merke": "Bei Nierenkolik laut Leitlinie nicht mehr angezeigt.",
+ "punkte": [
+  "0,3 mg/kg langsam i.v., Repetition nach 5 Min, max. 20 mg",
+  "Keine Anwendung unter 12 Jahren",
+  "KI: Tachykardie, Glaukom, Ileus, Schwangerschaft"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Butylscopolamin, S. 46",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Kolik",
+  "Schmerz"
+ ],
+ "titel": "Butylscopolamin",
+ "sh": {
+  "kern": "Kolikartige Schmerzen NRS > 4 – nicht bei Nierenkolik",
+  "punkte": [
+   "Einmalig 20 mg langsam i.v.",
+   "KI: Schwangerschaft, Engwinkelglaukom, Tachyarrhythmie, Stenosen im Magen-Darm-Trakt, Prostataadenom mit Restharn"
+  ],
+  "merke": "Teil von Algorithmus 20 (Bauchschmerz).",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle N-Butylscopolamin S. 98; Algorithmus 20 S. 33"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Zu wenig Sauerstoff für die Organe",
+ "merke": "Ein normaler Blutdruck schließt einen Schock nicht aus.",
+ "punkte": [
+  "Zeichen: RRsys < 90, verlängerte Rekap, Blässe, Kaltschweißigkeit, Agitation, Bewusstseinsstörung",
+  "Trauma → BPR Polytrauma/Kritische Blutung",
+  "Kardiogen → BPR Brustschmerz/ACS",
+  "Anaphylaxie, Sepsis, Dehydratation → eigene BPR",
+  "NotSan: i.v.-Zugang, VEL bedarfsgerecht"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Schock, S. 106–107",
+ "tags": [
+  "Schock",
+  "Hypotonie",
+  "Kreislauf"
+ ],
+ "titel": "Schock"
+}

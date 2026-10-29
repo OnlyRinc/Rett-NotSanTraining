@@ -1,0 +1,21 @@
+{
+ "kategorie": "Pharmakologie",
+ "titel": "Diazepam rektal",
+ "rolle": "ns",
+ "kern": "Anhaltender Krampfanfall beim Kind ohne Zugang",
+ "punkte": [
+  "< 15 kg (bis 3 J): 5 mg rektal",
+  "> 15 kg (ab 3 J): 10 mg rektal",
+  "Einmalige Wiederholung nach 5 Min"
+ ],
+ "merke": "Alternative zu Midazolam buccal oder nasal.",
+ "tags": [
+  "SH",
+  "Medikament",
+  "Krampfanfall",
+  "Kind"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Diazepam S. 77; Algorithmus 18 S. 31",
+ "regional": true,
+ "nurRegion": "sh"
+}

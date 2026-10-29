@@ -1,0 +1,22 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Starke Schmerzen (NRS ≥ 6) · kein BtM",
+ "merke": "Ceiling-Effekt: höhere Dosis wirkt nicht stärker.",
+ "punkte": [
+  "< 65 J: 0,2 mg/kg i.v.",
+  "≥ 65 J: 0,1 mg/kg i.v.",
+  "Repetition bis max. 20 mg (Kinder keine Repetition)",
+  "KI: Schwangerschaft, Dauertherapie mit Opioiden, Methadon-Substitution"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Nalbuphin, S. 63",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Opioid",
+  "Schmerz"
+ ],
+ "titel": "Nalbuphin",
+ "nurRegion": "saa"
+}

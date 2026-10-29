@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Hypoglykämie < 60 mg/dl",
+ "merke": "Paravasat verursacht Nekrosen – sichere Lage prüfen.",
+ "punkte": [
+  "Wach und schluckfähig: oral!",
+  "i.v.: max. 20 %ig, mit laufender VEL",
+  "Erw./> 30 kg: 8–10 g i.v.; Kinder 0,2 g/kg",
+  "Repetition möglich, BZ-Kontrolle nach ca. 5 Min (i.v.)"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Glucose, S. 54",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Hypoglykämie",
+  "BZ",
+  "Zucker"
+ ],
+ "titel": "Glucose",
+ "sh": {
+  "punkte": [
+   "Wach und schluckfähig: 20 g oral (z. B. 200 ml Saft)",
+   "i.v. Erw. und ab 5 J: 10 g (G20 50 ml; G40 25 ml nur verdünnt oder zentralvenös)",
+   "Unter 5 J: 0,2 g/kg",
+   "BZ-Kontrolle nach 3 Min, ggf. wiederholen"
+  ],
+  "merke": "Paravasat verursacht Nekrosen – sichere Lage prüfen.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Glucose S. 85–86; Algorithmus 17 S. 30"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Anaphylaxie (nach Epinephrin)",
+ "merke": "Ersetzt nie das Epinephrin.",
+ "punkte": [
+  "> 12 J: 4–8 mg (0,1 mg/kg, max. 8 mg) langsam i.v.",
+  "Keine Anwendung unter 12 Jahren",
+  "KI: Schwangerschaft und Stillzeit"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Dimetinden, S. 48",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Anaphylaxie",
+  "Antihistaminikum"
+ ],
+ "titel": "Dimetinden",
+ "sh": {
+  "punkte": [
+   "Erwachsene 4 mg i.v. über 2 Min, einmalig",
+   "Kinder: < 6 J 1 mg · 6–12 J 2 mg · > 12 J 4 mg",
+   "Alternative in SH: Clemastin"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Dimetinden S. 80; Algorithmus 14 S. 27"
+ }
+}

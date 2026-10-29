@@ -1,0 +1,21 @@
+{
+ "kategorie": "Pharmakologie",
+ "titel": "Clemastin",
+ "rolle": "ns",
+ "kern": "Anaphylaxie (H1-Blocker, nach Adrenalin)",
+ "punkte": [
+  "Erw. 2 mg i.v. über 2 Min",
+  "Kinder: < 6 J 1 mg · 6–12 J 1,5 mg · > 12 J 2 mg",
+  "Alternative: Dimetinden"
+ ],
+ "merke": "Ersetzt nie das Adrenalin.",
+ "tags": [
+  "SH",
+  "Medikament",
+  "Anaphylaxie",
+  "Tavegil"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Clemastin S. 76",
+ "regional": true,
+ "nurRegion": "sh"
+}

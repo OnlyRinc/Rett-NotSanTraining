@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Bronchialobstruktion",
+ "merke": "Vorsicht bei schwerer Herzerkrankung.",
+ "punkte": [
+  "> 12 J: 2,5 mg inhalativ",
+  "4–12 J: 1,25 mg inhalativ",
+  "Einmalige Repetition nach 10 Min",
+  "Nicht unter 4 Jahren (dort Epinephrin vernebeln)",
+  "KI: symptomatische Tachykardie"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Salbutamol, S. 67",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Asthma",
+  "COPD",
+  "Vernebler"
+ ],
+ "titel": "Salbutamol",
+ "sh": {
+  "punkte": [
+   "Erwachsene 2,5–5 mg über Vernebler",
+   "Kinder 2,5 mg",
+   "Wiederholung nach 15–20 Min möglich",
+   "KI: symptomatische Tachykardie/Tachyarrhythmie, kreißende Schwangere"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Salbutamol S. 104–105"
+ }
+}

@@ -1,0 +1,390 @@
+{
+ "level": 2,
+ "patient": "Mann, 78 J. · sitzt auf der Sofakante, ringt nach Luft, man hört es brodeln",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "Etwas schaumiges Sekret abgesaugt",
+     "typ": "sinnvoll",
+     "warum": "Schaumiges Sekret im Mund absaugen."
+    },
+    "ansprechen": {
+     "ergebnis": "„Ich … ersticke …“",
+     "typ": "pflicht",
+     "warum": "Er spricht kurz – der Atemweg ist frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er hustet, etwas schaumiger Auswurf.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "AF über 30 ist ein Instabilitätszeichen."
+    },
+    "auskultation": {
+     "ergebnis": "Grobblasige Rasselgeräusche beidseits basal",
+     "typ": "pflicht",
+     "warum": "Feuchte, grobblasige Rasselgeräusche ohne Fieber sprechen für ein Lungenödem."
+    },
+    "beatmen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Er atmet selbst – Beutel-Masken-Beatmung ist nicht nötig."
+    },
+    "cpap": {
+     "danach": {
+      "af": 24,
+      "spo2": 93
+     },
+     "ergebnis": "CPAP läuft, PEEP 5 mbar",
+     "typ": "pflicht",
+     "warum": "PEEP drückt die Flüssigkeit aus den Alveolen. Start: FiO₂ 1,0, PEEP 5, PS 0 mbar."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 88
+     },
+     "ergebnis": "O₂ 15 l/min über Maske",
+     "typ": "pflicht",
+     "warum": "Hypoxie führend: hochdosiert Sauerstoff."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Ausgangswert für die Sauerstofftherapie."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Rasseln schon ohne Stethoskop hörbar.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinustachykardie, keine ST-Hebungen",
+     "typ": "pflicht",
+     "warum": "Ursache suchen: Infarkt oder Rhythmusstörung?"
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Bei Verschlechterung notärztliche Weiterbehandlung."
+    },
+    "puls": {
+     "ergebnis": "112/min, flach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Vor Nitro muss der Blutdruck bekannt sein."
+    },
+    "schocklage": {
+     "danach": {
+      "af": 36,
+      "spo2": 80
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Beine hoch erhöht den Rückstrom – das Ödem nimmt zu."
+    },
+    "vel": {
+     "danach": {
+      "af": 36,
+      "spo2": 80
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Volumen ist beim Lungenödem kontraindiziert – noch mehr Flüssigkeit in der Lunge."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Sicherer Zugang vor Nitro und für Furosemid."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "dia": 88,
+      "spo2": 94,
+      "sys": 154
+     },
+     "ergebnis": "1 Hub unter die Zunge",
+     "id": "nitro",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Glyceroltrinitrat 0,4 mg s.l.",
+     "typ": "pflicht",
+     "warum": "Vorlastsenkung: 1 Hub sublingual, einmalige Repetition nach 5 Min. Nur bei RRsys über 100 und mit sicherem Zugang.",
+     "mittel": [
+      {
+       "w": "nitro",
+       "d": "0,4 mg s.l. (1 Hub)"
+      }
+     ]
+    },
+    {
+     "danach": {
+      "af": 22,
+      "spo2": 95
+     },
+     "ergebnis": "Furosemid ist gegeben",
+     "id": "furosemid",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Furosemid 20 mg langsam i.v.",
+     "typ": "pflicht",
+     "warum": "Reduziert das Volumen: 20 mg langsam i.v., einmalige Repetition nach 15 Min.",
+     "mittel": [
+      {
+       "w": "furosemid",
+       "d": "20 mg langsam i.v."
+      }
+     ]
+    }
+   ],
+   "eindruck": "Kaltschweißig, die Halsvenen sind gestaut.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Nur das 12-Kanal-EKG",
+       "warum": "Das EKG ist wichtig, ersetzt aber nicht Zugang und Blutdruck."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Nichts, Nitro geht immer",
+       "warum": "Nitro kann den Blutdruck massiv senken."
+      }
+     ],
+     "frage": "Was muss vor der Nitro-Gabe gegeben sein?",
+     "nach": "",
+     "richtig": {
+      "text": "Sicherer i.v.-Zugang und RRsys über 100 mmHg",
+      "warum": "Laut SAA vor Nitro einen sicheren Zugang legen. Unter 100 mmHg kontraindiziert, unter 120 nur nach Abwägung."
+     },
+     "rolle": "ns"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "A – wach, unruhig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, ängstlich, unruhig.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "flach": {
+     "danach": {
+      "af": 36,
+      "spo2": 79
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Flach liegen verstärkt das Lungenödem massiv."
+    },
+    "oberkoerper": {
+     "ergebnis": "Sitzt aufrecht, Beine hängen herunter",
+     "typ": "pflicht",
+     "warum": "Oberkörper hoch, Beine tief: entlastet das Herz."
+    },
+    "sampler": {
+     "ergebnis": "Herzschwäche bekannt, nimmt Torasemid – seit 3 Tagen vergessen",
+     "typ": "pflicht",
+     "warum": "Herzinsuffizienz, Hypertonie oder KHK bekannt? Wassertabletten genommen?"
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Lungenödem gehört in die Klinik mit Kardiologie."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Beide Unterschenkel sind dick geschwollen.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Kardiales Lungenödem, S. 143–144; SAA Glyceroltrinitrat S. 55, Furosemid S. 52",
+ "regional": "CPAP/NIV, Nitro und Furosemid nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Tochter: Er hat ein schwaches Herz. Seit der Nacht wird die Luft immer knapper, die Beine sind dick.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Atemnot, schaumiger Auswurf",
+   "Rasseln auf Distanz, kein Fieber",
+   "Tachykardie, Unruhe",
+   "Beinödeme, Herzschwäche bekannt"
+  ],
+  "kern": "Sitzen, Beine tief, PEEP",
+  "ns": [
+   "CPAP: FiO₂ 1,0, PEEP 5, PS 0",
+   "i.v.-Zugang vor Nitro",
+   "Nitro 0,4 mg s.l. (RRsys > 100)",
+   "Furosemid 20 mg langsam i.v.",
+   "Keine Besserung: NIV"
+  ],
+  "tun": [
+   "Oberkörper hoch, Beine tief",
+   "O₂ hochdosiert",
+   "12-Kanal-EKG",
+   "Klinik"
+  ],
+  "vermeiden": [
+   "Flach lagern",
+   "Beine hoch",
+   "Infusion"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "Kardiales Lungenödem",
+ "vitalwerte": {
+  "af": 32,
+  "bz": 142,
+  "dia": 98,
+  "gcs": 15,
+  "hf": 112,
+  "spo2": 84,
+  "sys": 178,
+  "temp": 36.6
+ },
+ "sh": {
+  "regional": "SH Algorithmus 2/3: Nitro, Furosemid und frühzeitig parallel NIV durch NotSan. Morphin nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 2 Lungenödem, S. 15; Algorithmus 3 NIV, S. 16; Infotabellen Furosemid S. 83, Nitro S. 87, Urapidil S. 107",
+  "steckbrief": {
+   "ns": [
+    "NIV früh und parallel: FiO₂ 1,0, PEEP 5, PS 5",
+    "Nitro 1–3 Hübe nach RR, Ziel < 140",
+    "Furosemid 40 mg i.v.",
+    "RR > 180: zusätzlich Urapidil, Ziel zügig < 140",
+    "Morphin nach lokalem Protokoll"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "cpap": {
+      "danach": {
+       "af": 24,
+       "spo2": 93
+      },
+      "ergebnis": "NIV läuft, PEEP 5, PS 5 mbar",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 2/3: frühzeitig und parallel zur Medikation NIV, z. B. FiO₂ 1,0, PEEP 5, Druckunterstützung 5 mbar, mit Kapnografie."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "i.v.-Zugang für Furosemid und weitere Medikamente."
+     }
+    },
+    "eigene": {
+     "nitro": {
+      "danach": {
+       "dia": 88,
+       "spo2": 94,
+       "sys": 154
+      },
+      "ergebnis": "Hübe nach Blutdruck gegeben",
+      "id": "nitro",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Glyceroltrinitrat 0,4–1,2 mg s.l. (1–3 Hübe)",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: 1–3 Hübe nach Blutdruck, Ziel < 140 mmHg. KI: RRsys < 100, PDE-5-Hemmer in den letzten 48 h.",
+      "mittel": [
+       {
+        "w": "nitro",
+        "d": "0,4 mg s.l. (1 Hub)"
+       },
+       {
+        "w": "nitro",
+        "d": "0,8 mg s.l. (2 Hübe)"
+       },
+       {
+        "w": "nitro",
+        "d": "1,2 mg s.l. (3 Hübe)"
+       }
+      ]
+     },
+     "furosemid": {
+      "danach": {
+       "af": 22,
+       "spo2": 95
+      },
+      "ergebnis": "Furosemid ist gegeben",
+      "id": "furosemid",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Furosemid 40 mg i.v.",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: 40 mg i.v. KI: bekannte Hypokaliämie.",
+      "mittel": [
+       {
+        "w": "furosemid",
+        "d": "40 mg i.v."
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Nur das 12-Kanal-EKG",
+        "warum": "Das EKG ist wichtig, ersetzt aber nicht Zugang und Blutdruck."
+       },
+       {
+        "schwer": "gefahr",
+        "text": "Nichts, Nitro geht immer",
+        "warum": "Nitro kann den Blutdruck massiv senken."
+       }
+      ],
+      "frage": "Was gilt in SH für Nitro beim Lungenödem?",
+      "nach": "",
+      "richtig": {
+       "text": "RRsys über 100, 1–3 Hübe nach RR, Ziel unter 140",
+       "warum": "SH dosiert Nitro nach Blutdruck. KI: RRsys < 100 und PDE-5-Hemmer in den letzten 48 h. Bei RR > 180 zusätzlich Urapidil."
+      },
+      "rolle": "ns"
+     }
+    }
+   }
+  }
+ }
+}

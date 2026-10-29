@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Bronchialobstruktion (Asthma, COPD)",
+ "merke": "Nicht in die Augen vernebeln – Maske dicht.",
+ "punkte": [
+  "> 12 J: 0,5 mg inhalativ",
+  "6–12 J: 0,25 mg inhalativ",
+  "Repetition nach 30 Min",
+  "Nicht unter 6 Jahren",
+  "KI: symptomatische Tachykardie, Glaukom"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Ipratropiumbromid, S. 58",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Asthma",
+  "COPD",
+  "Vernebler"
+ ],
+ "titel": "Ipratropiumbromid",
+ "sh": {
+  "punkte": [
+   "Erwachsene 500 µg über O₂-Vernebler",
+   "Kinder 250 µg",
+   "Zusammen mit Salbutamol und Glukokortikoid (Algorithmus 10/12)",
+   "KI: symptomatische Tachykardie oder Tachyarrhythmie"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Ipratropiumbromid S. 89–90"
+ }
+}

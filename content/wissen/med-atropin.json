@@ -1,0 +1,32 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Instabile Bradykardie",
+ "merke": "Bei Asystoliegefahr laut BPR direkt Epinephrin.",
+ "punkte": [
+  "0,5 mg i.v., Repetition nach 3–5 Min bis zum Herzfrequenzanstieg",
+  "Maximal 3 mg gesamt",
+  "Wirkungslos: keine weitere Gabe, Wechsel auf Epinephrin",
+  "Keine Anwendung unter 18 Jahren",
+  "KI: Engwinkelglaukom"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Atropin, S. 45",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Bradykardie"
+ ],
+ "titel": "Atropin",
+ "sh": {
+  "kern": "Instabile Bradykardie, schweres cholinerges Syndrom",
+  "punkte": [
+   "Bradykardie: 0,5 mg i.v., bei unzureichender Wirkung wiederholen bis 3 mg",
+   "Keine Reaktion zu erwarten (AV III + breiter QRS, Mobitz II): Adrenalin oder sofort Schrittmacher",
+   "Cholinerg (z. B. E 605): 1 mg Testdosis, dann 5 mg alle 10 Min (Kinder 0,01 / 0,1 mg/kg)",
+   "KI im Notfall: keine"
+  ],
+  "merke": "Keine Gabe nach Herztransplantation – Gefahr eines AV-Block III°.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Atropin S. 73; Algorithmus 5 S. 18"
+ }
+}

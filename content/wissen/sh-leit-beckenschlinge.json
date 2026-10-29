@@ -1,0 +1,23 @@
+{
+ "kategorie": "Leitsymptome",
+ "titel": "Beckenschlinge",
+ "kern": "Im Zweifel anlegen",
+ "punkte": [
+  "Kinematik: Hochrasanz, Seitenaufprall, Sturz > 3 m, Pferd, Anprall, Überrollen, Last auf dem Becken",
+  "Dazu Hinweise: Prellmarken, Hämatome, Fehlstellung, Schmerz",
+  "Klare Hinweise schon vorher: nicht palpieren, direkt anlegen",
+  "Nicht bei isolierter Femur- oder Schenkelhalsfraktur",
+  "Kinematik allein, Patient steht und geht: nicht nötig"
+ ],
+ "merke": "Knie zusammenbinden (Innenrotation) unterstützt den Effekt.",
+ "tags": [
+  "SH",
+  "Becken",
+  "Trauma",
+  "Blutung"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Beckenschlinge S. 38",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

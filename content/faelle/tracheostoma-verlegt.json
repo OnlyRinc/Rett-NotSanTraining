@@ -1,0 +1,255 @@
+{
+ "level": 4,
+ "patient": "Mann, 66 J. · sitzt im Sessel, ringt nach Luft, aus der Trachealkanüle am Hals brodelt es",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Nickt, zeigt auf die Kanüle",
+     "typ": "pflicht",
+     "warum": "Nach einer Laryngektomie kann er nicht normal sprechen."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Mund und Rachen sind nicht mit der Luftröhre verbunden – ein Guedel-Tubus bringt nichts."
+    },
+    "mund": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Nach Laryngektomie führt der Weg durch Mund und Nase nicht in die Lunge."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Kehlkopf entfernt (Laryngektomie)",
+     "id": "kehlkopf",
+     "lebenswichtig": true,
+     "text": "Klären: Kehlkopf entfernt oder durchgängig?",
+     "typ": "pflicht",
+     "warum": "Davon hängt alles ab: Nach Laryngektomie gelangt Luft nur über das Tracheostoma in die Lunge."
+    },
+    {
+     "danach": {
+      "af": 26,
+      "spo2": 87
+     },
+     "ergebnis": "Innenkanüle voller zähem Schleim, Luft geht etwas besser",
+     "id": "innenkanuele",
+     "text": "Aufsätze entfernen, Innenkanüle herausnehmen",
+     "typ": "pflicht",
+     "warum": "Offenheit prüfen: Aufsätze (Filter, Sprechventil) entfernen und die Innenkanüle ziehen – oft sitzt dort die Verlegung."
+    },
+    {
+     "danach": {
+      "af": 20,
+      "hf": 100,
+      "spo2": 95
+     },
+     "ergebnis": "Großer Schleimpfropf abgesaugt",
+     "id": "absaugen_endo",
+     "regional": true,
+     "rolle": "ns",
+     "text": "Absaugkatheter einführen, endobronchial absaugen",
+     "typ": "pflicht",
+     "warum": "Lässt sich ein Absaugkatheter einführen, ist das Stoma durchgängig – zäher Schleim wird entfernt."
+    },
+    {
+     "danach": {
+      "af": 22,
+      "spo2": 93
+     },
+     "ergebnis": "Kanüle entfernt, er atmet freier über das Stoma",
+     "id": "kanuele_raus",
+     "text": "Trachealkanüle ganz entfernen",
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Lässt sich nicht absaugen und keine Besserung: Eine verlegte Kanüle muss bei Erstickungsgefahr entfernt werden.",
+     "warumRS": "Als RS ohne endobronchiales Absaugen: Bleibt die Verlegung trotz entfernter Innenkanüle, muss die Kanüle bei Erstickungsgefahr ganz entfernt werden."
+    },
+    {
+     "danach": {
+      "spo2": 76
+     },
+     "ergebnis": "",
+     "id": "maske_mund",
+     "text": "Beatmungsmaske auf Mund und Nase",
+     "typ": "gefahr",
+     "warum": "Nach Laryngektomie kommt über Mund und Nase keine Luft in die Lunge. Beatmet wird über das Tracheostoma."
+    }
+   ],
+   "eindruck": "Er kann nicht sprechen, zeigt auf seinen Hals.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Über eine Maske auf Mund und Nase",
+       "warum": "Das erreicht die Lunge nach Laryngektomie nicht."
+      },
+      {
+       "text": "Über Mund und Stoma gleichzeitig",
+       "warum": "Mund und Nase sind vom Atemweg getrennt – nur das Stoma zählt."
+      }
+     ],
+     "frage": "Kehlkopf entfernt. Worüber gibst du Sauerstoff?",
+     "nach": "kehlkopf",
+     "richtig": {
+      "text": "Nur über das Tracheostoma",
+      "warum": "Bei verschlossenem Kehlkopf führt der Weg durch Mund und Nase nicht in die Lunge."
+     }
+    }
+   ]
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Tachypnoe zeigt die Not."
+    },
+    "beatmen": {
+     "ergebnis": "Nicht mehr nötig – er atmet frei",
+     "typ": "sinnvoll",
+     "warum": "Ohne Besserung: Beutel-Tracheostoma-Beatmung, z. B. mit Säuglingsmaske auf dem Stoma."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoxie."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "spo2": 90
+     },
+     "ergebnis": "O₂ über Tracheostomamaske",
+     "id": "o2stoma",
+     "text": "Sauerstoff über das Tracheostoma",
+     "typ": "pflicht",
+     "warum": "Sauerstoff ununterbrochen über das Stoma, bis sich die Lage bessert."
+    }
+   ],
+   "eindruck": "Brodelndes Geräusch am Stoma.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg3": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Atemwegsnotfall – ein sekundärer Atemweg ist eine notärztliche Aufgabe."
+    },
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Gestresst, kaltschweißig.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Laryngektomie wegen Kehlkopfkrebs, sonst fit",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "transport": {
+     "ergebnis": "HNO-Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Nach Verlegung zur Kontrolle in die Klinik mit HNO."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Typische Kurve",
+     "id": "kapno",
+     "text": "Kapnografie am Stoma",
+     "typ": "sinnvoll",
+     "warum": "Ausgeatmetes CO₂ zeigt verlässlich, ob Luft ein- und ausströmt."
+    }
+   ],
+   "eindruck": "Auf dem Tisch liegt Zubehör: Ersatzkanüle, Filter, Absaugkatheter.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Atemnot durch verlegtes Tracheostoma, S. 121–122",
+ "regional": "Dieser BPR wird von den ÄLRD in Brandenburg nicht geführt. Endobronchiales Absaugen nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Ehefrau: Ihm wurde vor zwei Jahren der Kehlkopf entfernt. Seit einer Stunde bekommt er immer schlechter Luft.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Brodeln, Atemnot, Unruhe",
+   "Laryngektomie: Mund/Nase führen nicht in die Lunge",
+   "Durchgängiger Kehlkopf: meist mit Kanüle"
+  ],
+  "kern": "Kehlkopf weg? Nur über das Stoma",
+  "ns": [
+   "Endobronchiales Absaugen",
+   "Kapnografie",
+   "Sekundärer Atemweg ist notärztlich"
+  ],
+  "tun": [
+   "Kehlkopf-Status klären",
+   "O₂ über das Stoma",
+   "Aufsätze und Innenkanüle entfernen",
+   "Keine Besserung: Kanüle entfernen",
+   "Beutel-Tracheostoma-Beatmung"
+  ],
+  "vermeiden": [
+   "Maske auf Mund/Nase bei Laryngektomie",
+   "Kanüle neu einlegen ohne Erfahrung"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "Verlegtes Tracheostoma",
+ "vitalwerte": {
+  "af": 30,
+  "bz": 126,
+  "dia": 86,
+  "gcs": 15,
+  "hf": 118,
+  "spo2": 82,
+  "sys": 148,
+  "temp": 36.9
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus für das verlegte Tracheostoma – Inhalte nach SAA/BPR als Orientierung. Algorithmus 26 regelt heimbeatmete Patienten: Bei Problemen Beutel mit 100 % O₂ über das Tracheostoma, keine Änderungen am Heimbeatmungsgerät, bei Akutproblemen NA. Absaugen über die Trachealkanüle ist beschrieben (S. 43).",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Tracheostoma; Absaugen S. 43; Algorithmus 26 Heimbeatmung, S. 40",
+  "ohneAlg": true
+ }
+}

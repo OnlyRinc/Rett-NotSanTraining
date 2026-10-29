@@ -1,0 +1,393 @@
+{
+ "level": 3,
+ "patient": "Frau, 54 J. · sitzt auf dem Sofa, hält die Hand auf die Brust, wirkt unruhig",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Mein Herz rast so.“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht flüssig.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 97 % – Sauerstoff nur bedarfsgerecht."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet etwas schneller.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Schmalkomplextachykardie, keine ST-Hebungen",
+     "typ": "pflicht",
+     "warum": "Vor jeder Intervention ein 12-Kanal-EKG, auch zur Ischämiesuche."
+    },
+    "ekg3": {
+     "ergebnis": "Regelmäßige Schmalkomplextachykardie, HF 188/min, keine P-Wellen sichtbar",
+     "typ": "pflicht",
+     "warum": "Rhythmus einordnen: schmal oder breit, regelmäßig oder nicht?"
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Medikamentöse Therapie bleibt dem NA vorbehalten."
+    },
+    "puls": {
+     "ergebnis": "188/min, regelmäßig, gut tastbar",
+     "typ": "pflicht",
+     "warum": "Puls tasten und mit dem Monitor vergleichen (Pulsdefizit?)."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypotonie wäre ein Instabilitätszeichen."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Laut BPR i.v.-Zugang."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "hf": 92,
+      "rhythmus": "sinus"
+     },
+     "ergebnis": "Nach dem Manöver springt der Rhythmus um",
+     "id": "valsalva",
+     "text": "Modifiziertes Valsalva-Manöver",
+     "typ": "pflicht",
+     "warum": "Stabile, regelmäßige Schmalkomplextachykardie: zuerst ein Vagusreiz. Oberkörper hoch, 15 s in eine Spritze pusten, dann flach hinlegen und Beine hoch."
+    },
+    {
+     "ergebnis": "",
+     "id": "karotis",
+     "text": "Karotisdruck-Massage",
+     "typ": "falsch",
+     "warum": "Nicht Teil des BPR. Bei älteren Patienten kann sie Plaques lösen – das modifizierte Valsalva-Manöver ist vorgesehen."
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "kardioversion",
+     "rolle": "ns",
+     "text": "Sofort kardiovertieren",
+     "typ": "gefahr",
+     "warum": "Sie ist wach und stabil. Die Kardioversion ist laut BPR für instabile, bewusstlose Patienten vorgesehen."
+    }
+   ],
+   "eindruck": "Rosig, leicht schwitzig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Ja, jede HF über 150 ist instabil",
+       "warum": "Die Frequenz allein entscheidet nicht."
+      },
+      {
+       "text": "Ja, weil sie Angst hat",
+       "warum": "Angst ist kein Instabilitätszeichen."
+      }
+     ],
+     "frage": "Ist sie instabil?",
+     "nach": "ekg3",
+     "richtig": {
+      "text": "Nein – keine Instabilitätszeichen",
+      "warum": "Instabil wären Schock, Bewusstseinsstörung, Synkope, Myokardischämie oder schwere Herzinsuffizienz. Nicht jede Tachykardie ist instabil."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Valsalva weitermachen",
+       "warum": "Das geht nur bei wachen, stabilen Patienten."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Abwarten bis der NA kommt",
+       "warum": "Bei Bewusstlosigkeit durch die Tachykardie ist Abwarten gefährlich."
+      }
+     ],
+     "frage": "Angenommen, sie würde bewusstlos – mit Puls. Was dann?",
+     "nach": "",
+     "richtig": {
+      "text": "Kardioversion (synchronisiert) nach SAA",
+      "warum": "Instabil und bewusstlos: laut BPR die elektrische Kardioversion."
+     },
+     "rolle": "ns"
+    },
+    {
+     "falsch": [
+      {
+       "text": "Valsalva weitermachen",
+       "warum": "Das geht nur bei wachen, stabilen Patienten."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Nur beobachten",
+       "warum": "Sie braucht sofort erweiterte Hilfe."
+      }
+     ],
+     "frage": "Angenommen, sie würde bewusstlos – mit Puls. Was tust du als RS?",
+     "nach": "",
+     "richtig": {
+      "text": "Defi-Pads kleben, NA nachfordern, Atemweg sichern, ständig Puls kontrollieren",
+      "warum": "Die Kardioversion ist eine NotSan- bzw. NA-Maßnahme. Ohne Puls sofort reanimieren."
+     },
+     "rolle": "rs"
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Hypoglykämie ist eine reversible Ursache."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Zweimal Herzrasen, ging von selbst weg. Keine Medikamente.",
+     "typ": "pflicht",
+     "warum": "Frühere Episoden, Vorerkrankungen, Medikamente, Auslöser."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Auch nach Umspringen kardiologisch abklären."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Wohnung, kein Alkohol zu sehen.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Immer harmlos, wie hier",
+       "warum": "Breite Komplexe sind ein Warnsignal."
+      },
+      {
+       "text": "Valsalva hilft immer",
+       "warum": "Vagusreize sind für Schmalkomplextachykardien gedacht."
+      }
+     ],
+     "frage": "Was gilt bei einer regelmäßigen Breitkomplextachykardie (QRS > 120 ms)?",
+     "nach": "",
+     "richtig": {
+      "text": "Bis zum Beweis des Gegenteils eine Kammertachykardie",
+      "warum": "Laut BPR wird jede regelmäßige Breitkomplextachykardie zunächst als VT behandelt."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Instabile Tachykardie, S. 139–140",
+ "regional": "Kardioversion nur durch NotSan nach Freigabe deines ÄLRD. Medikamentöse Therapie der Tachykardie durch den NA.",
+ "rhythmus": "svt",
+ "situation": "Seit 30 Minuten Herzrasen, „wie ein Presslufthammer“. Das hatte sie schon zweimal.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Instabil: Schock, Bewusstseinsstörung, Synkope, Ischämie, schwere Herzinsuffizienz",
+   "Breit (> 120 ms) = VT bis zum Beweis des Gegenteils"
+  ],
+  "kern": "Erst Stabilität prüfen",
+  "ns": [
+   "i.v.-Zugang",
+   "Instabil + bewusstlos: Kardioversion",
+   "Instabil + wach: medikamentöse Therapie durch NA"
+  ],
+  "tun": [
+   "Puls und Monitor vergleichen",
+   "12-Kanal-EKG",
+   "Stabil + schmal + regelmäßig: modifiziertes Valsalva",
+   "Reversible Ursachen: Kalium, Volumen, BZ"
+  ],
+  "vermeiden": [
+   "Karotisdruck",
+   "Jede Tachykardie für instabil halten"
+  ]
+ },
+ "stichwort": "RD 2 · Herzrasen",
+ "titel": "Tachykardie",
+ "vitalwerte": {
+  "af": 20,
+  "bz": 104,
+  "dia": 74,
+  "gcs": 15,
+  "hf": 188,
+  "spo2": 97,
+  "sys": 112,
+  "temp": 36.7
+ },
+ "sh": {
+  "regional": "SH Algorithmus 6/7: Stabile Tachykardien nach lokalem Protokoll. Instabil mit schwerer Vigilanzminderung: Kardioversion; sonst Amiodaron 300 mg als Kurzinfusion durch NotSan.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 6 und 7 Tachykardie, S. 19–20; Infotabelle Amiodaron S. 71",
+  "steckbrief": {
+   "ns": [
+    "Instabil (SHIT) prüfen",
+    "Schwere Vigilanzminderung: Kardioversion bis 3×, biphasisch 120 J",
+    "Ohne schwere Vigilanzminderung oder erfolglos: Amiodaron 300 mg Kurzinfusion",
+    "Stabil: nach lokalem Protokoll"
+   ],
+   "tun": [
+    "Puls und Monitor vergleichen",
+    "12-Kanal-EKG",
+    "Stabil: nach lokalem Protokoll, z. B. modifiziertes Valsalva",
+    "Ursachen behandeln: Hypoxie, Hypovolämie, Fieber, Schmerz, LAE …"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "o2": {
+      "ergebnis": "O₂ hochdosiert über Maske",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 6: Beim tachykarden Patienten steht die hochdosierte O₂-Gabe am Anfang."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "i.v.-Zugang für eine mögliche Therapie."
+     }
+    },
+    "eigene": {
+     "valsalva": {
+      "danach": {
+       "hf": 92,
+       "rhythmus": "sinus"
+      },
+      "ergebnis": "Nach dem Manöver springt der Rhythmus um",
+      "id": "valsalva",
+      "text": "Modifiziertes Valsalva-Manöver",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 6: Stabile Tachykardien nach lokalem Protokoll. Das modifizierte Valsalva-Manöver (ERC) ist dafür üblich, wird in SH aber nicht ausdrücklich genannt."
+     },
+     "karotis": {
+      "ergebnis": "",
+      "id": "karotis",
+      "text": "Karotisdruck-Massage",
+      "typ": "falsch",
+      "warum": "Nicht vorgesehen. Bei älteren Patienten kann die Massage Plaques lösen."
+     },
+     "kardioversion": {
+      "danach": {},
+      "ergebnis": "",
+      "id": "kardioversion",
+      "rolle": "ns",
+      "text": "Sofort kardiovertieren",
+      "typ": "gefahr",
+      "warum": "Sie ist wach und stabil. SH Algorithmus 7: Kardioversion nur bei Instabilität mit schwerer Vigilanzminderung."
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Ja, jede HF über 150 ist instabil",
+        "warum": "Die Frequenz allein entscheidet nicht."
+       },
+       {
+        "text": "Ja, weil sie Angst hat",
+        "warum": "Angst ist kein Instabilitätszeichen."
+       }
+      ],
+      "frage": "Ist sie instabil?",
+      "nach": "ekg3",
+      "richtig": {
+       "text": "Nein – keine Instabilitätszeichen",
+       "warum": "Instabil (SHIT): Synkope/Bewusstseinsstörung, Hypotension/Schock, Insuffizienzzeichen, Thoraxschmerz. Nicht jede Tachykardie ist instabil."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "Valsalva weitermachen",
+        "warum": "Das geht nur bei wachen, stabilen Patienten."
+       },
+       {
+        "schwer": "gefahr",
+        "text": "Abwarten bis der NA kommt",
+        "warum": "Bei Bewusstlosigkeit durch die Tachykardie ist Abwarten gefährlich."
+       }
+      ],
+      "frage": "Angenommen, sie würde bewusstlos – mit Puls. Was dann?",
+      "nach": "",
+      "richtig": {
+       "text": "Notfallkardioversion (synchronisiert), bis zu 3 Versuche, biphasisch initial 120 J",
+       "warum": "SH Algorithmus 7: instabil mit schwerer Vigilanzminderung → Kardioversion. Erfolglos: Amiodaron 300 mg als Kurzinfusion über mindestens 10 Min."
+      },
+      "rolle": "ns"
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Immer harmlos, wie hier",
+        "warum": "Breite Komplexe sind ein Warnsignal."
+       },
+       {
+        "text": "Valsalva hilft immer",
+        "warum": "Vagusreize sind für Schmalkomplextachykardien gedacht."
+       }
+      ],
+      "frage": "Was gilt bei einer regelmäßigen Breitkomplextachykardie (QRS > 120 ms)?",
+      "nach": "",
+      "richtig": {
+       "text": "Bis zum Beweis des Gegenteils eine Kammertachykardie",
+       "warum": "Jede regelmäßige Breitkomplextachykardie zunächst als VT behandeln."
+      }
+     }
+    }
+   }
+  }
+ }
+}

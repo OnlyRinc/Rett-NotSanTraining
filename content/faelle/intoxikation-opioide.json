@@ -1,0 +1,400 @@
+{
+ "level": 3,
+ "patient": "Mann, ca. 28 J. · liegt in einer öffentlichen Toilette auf dem Boden, reagiert nicht",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "Kaum Sekret",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "ansprechen": {
+     "ergebnis": "Keine Reaktion",
+     "typ": "pflicht",
+     "warum": "Keine Reaktion auf Ansprache."
+    },
+    "esmarch": {
+     "ergebnis": "Schnarchen hört auf",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Schnarchen heißt: Die Zunge verlegt den Atemweg. Kopf überstrecken, Esmarch."
+    },
+    "guedel": {
+     "ergebnis": "Guedel liegt",
+     "typ": "sinnvoll",
+     "warum": "Bewusstlos ohne Schutzreflexe: hält den Atemweg offen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er schnarcht laut.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "4/min",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Bradypnoe gehört zum opioiden Toxidrom."
+    },
+    "beatmen": {
+     "danach": {
+      "hf": 76,
+      "spo2": 94
+     },
+     "ergebnis": "Beatmung mit O₂, Thorax hebt sich",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Kritisches B-Problem: Beutel-Masken-Beatmung mit Sauerstoff ist die wichtigste Maßnahme."
+    },
+    "o2": {
+     "ergebnis": "O₂ 15 l/min am Beutel",
+     "typ": "pflicht",
+     "warum": "Hochdosiert über den Beatmungsbeutel."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Ausmaß der Hypoxie."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Er macht 2 tiefe Atemzüge, dann wieder Pausen",
+     "id": "kommando",
+     "text": "Kommandoatmung: laut zum Atmen auffordern",
+     "typ": "sinnvoll",
+     "warum": "Primäre Maßnahme beim opioiden Toxidrom."
+    },
+    {
+     "danach": {
+      "af": 12,
+      "gcs": 11,
+      "spo2": 95
+     },
+     "ergebnis": "Atmung wird regelmäßig, AF 12/min",
+     "id": "naloxon",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Naloxon 0,1 mg fraktioniert i.v., alle 2 Minuten",
+     "typ": "sinnvoll",
+     "warum": "Wenn die primären Maßnahmen nicht ausreichen: titrieren, bis Spontanatmung und Schutzreflexe da sind – nicht bis zum vollen Erwachen.",
+     "mittel": [
+      {
+       "w": "naloxon",
+       "d": "0,1 mg i.v., alle 2 Min"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "naloxon_bolus",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Ganze Ampulle Naloxon 0,4 mg auf einmal",
+     "typ": "falsch",
+     "warum": "Naloxon wird fraktioniert gegeben. Ein Bolus kann einen akuten Entzug mit Erbrechen, Aggression und Krampf auslösen.",
+     "mittel": [
+      {
+       "w": "naloxon",
+       "d": "0,4 mg i.v. als Bolus"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Sehr langsame, flache Atmung.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Naloxon sofort, Beatmung ist zu aufwendig",
+       "warum": "Ohne Beatmung bleibt er bis zur Naloxon-Wirkung hypoxisch."
+      },
+      {
+       "schwer": "abbruch",
+       "text": "Abwarten bis er aufwacht",
+       "warum": "Bei AF 4 und SpO₂ 78 % ist Abwarten lebensgefährlich."
+      }
+     ],
+     "frage": "Was kommt vor dem Naloxon?",
+     "nach": "",
+     "richtig": {
+      "text": "Atemweg freimachen, Kommandoatmung, O₂, Beutel-Masken-Beatmung",
+      "warum": "Laut SAA ist Naloxon für das Versagen der primären Maßnahmen vorgesehen. Die Beatmung behebt die Hypoxie sofort."
+     }
+    }
+   ]
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Kritischer Patient."
+    },
+    "puls": {
+     "ergebnis": "52/min",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt am Handrücken",
+     "typ": "pflicht",
+     "warum": "Venöser Zugang laut BPR."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Blass, kühle Haut.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Bei Bewusstlosigkeit immer BZ – auch bei offensichtlicher Ursache."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "pupillen": {
+     "ergebnis": "Beidseits stecknadelkopfgroß",
+     "typ": "pflicht",
+     "warum": "Stecknadelkopfpupillen (Miosis) gehören zum opioiden Toxidrom."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Reagiert nicht.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Passant: kennt ihn nicht. Im Rucksack Methadon-Ausweis.",
+     "typ": "pflicht",
+     "warum": "Wer, was, wieviel, wann, wie? Maximale Menge annehmen."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Naloxon wirkt kürzer als viele Opioide – erneute Atemdepression möglich. Überwachung zwingend."
+    },
+    "waerme": {
+     "ergebnis": "Zugedeckt",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er ist leicht unterkühlt.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Gehen lassen, er ist ja wach",
+       "warum": "Rebound-Gefahr: Er kann allein wieder aufhören zu atmen."
+      },
+      {
+       "text": "Festhalten und in den RTW tragen",
+       "warum": "Zwang ist nur unter engen gesetzlichen Voraussetzungen erlaubt."
+      }
+     ],
+     "frage": "Nach Naloxon wacht er auf und will gehen. Was tust du?",
+     "nach": "",
+     "regional": true,
+     "richtig": {
+      "text": "Aufklären: erneute Atemlähmung möglich – NA hinzuziehen, Transport anstreben",
+      "warum": "Die Opioidwirkung kann zurückkehren. Einwilligungsfähigkeit prüfen, bei Verweigerung nach BPR Transportverweigerung vorgehen."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Einstichstellen in der Ellenbeuge, keine Verletzung",
+     "typ": "sinnvoll",
+     "warum": "Einstichstellen und Verletzungen suchen – vorsichtig, Nadeln!"
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Spritze im Abwurfbehälter",
+     "id": "eigenschutz",
+     "lebenswichtig": true,
+     "text": "Eigenschutz: Handschuhe, Spritze sichern",
+     "typ": "pflicht",
+     "warum": "Eigenschutz geht vor. Nadelstichverletzungen vermeiden, Spritze sicher entsorgen."
+    }
+   ],
+   "eindruck": "Keine Blutung. Eine Spritze liegt offen am Boden.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Intoxikation, S. 141–142; SAA Naloxon S. 64",
+ "regional": "Naloxon nur durch NotSan nach Freigabe deines ÄLRD. Vorgehen bei Transportverweigerung nach Landesrecht.",
+ "rhythmus": "sinus",
+ "situation": "Ein Passant hat ihn gefunden. Neben ihm liegen eine Spritze und ein Löffel.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Miosis (Stecknadelkopfpupillen)",
+   "Bradypnoe bis Apnoe",
+   "Hypotonie, Bradykardie",
+   "Einstichstellen, Opiatpflaster"
+  ],
+  "kern": "Erst beatmen, dann Naloxon",
+  "ns": [
+   "Venöser Zugang",
+   "Naloxon 0,1 mg fraktioniert i.v. alle 2 Min",
+   "Bis Spontanatmung + Schutzreflexe, nicht bis zum Aufwachen",
+   "Rauchgas/CO: O₂ FiO₂ 1,0"
+  ],
+  "tun": [
+   "Eigenschutz",
+   "Atemweg frei, Kommandoatmung",
+   "Beutel-Masken-Beatmung mit O₂",
+   "Überwachen, Klinik"
+  ],
+  "vermeiden": [
+   "Naloxon vor Beatmung",
+   "Gehen lassen nach Naloxon"
+  ]
+ },
+ "stichwort": "RD 2 · Person bewusstlos",
+ "titel": "Intoxikation · Opioide",
+ "vitalwerte": {
+  "af": 4,
+  "bz": 96,
+  "dia": 60,
+  "gcs": 5,
+  "hf": 52,
+  "spo2": 78,
+  "sys": 92,
+  "temp": 35.9
+ },
+ "sh": {
+  "regional": "SH Algorithmus 22: Naloxon durch NotSan. Transportverweigerung nach Checkliste 38. Giftnotruf GIZ-Nord 0551 19240.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 22 Intoxikation, S. 35; Infotabelle Naloxon S. 97; Checkliste 38, S. 58–59",
+  "steckbrief": {
+   "ns": [
+    "Naloxon 0,4 mg i.v. in 0,1-mg-Schritten",
+    "Alternativ i.m. 0,4–0,8 mg oder nasal 1,8–2 mg",
+    "Titrieren bis ausreichende Spontanatmung",
+    "GIZ-Nord 0551 19240"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "eigene": {
+     "naloxon": {
+      "danach": {
+       "af": 12,
+       "gcs": 11,
+       "spo2": 95
+      },
+      "ergebnis": "Atmung wird regelmäßig, AF 12/min",
+      "id": "naloxon",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Naloxon 0,1 mg-Schritte i.v. (0,4 mg auf 10 ml)",
+      "typ": "sinnvoll",
+      "warum": "SH-Infotabelle: 0,4 mg i.v., möglichst schrittweise in 0,1-mg-Schritten titrieren, bis die Atmung ausreicht. Alternativ 0,4 mg i.m. (bis 0,8 mg) oder 1,8–2 mg nasal.",
+      "mittel": [
+       {
+        "w": "naloxon",
+        "d": "0,1 mg i.v., alle 2 Min"
+       }
+      ]
+     },
+     "naloxon_bolus": {
+      "ergebnis": "",
+      "id": "naloxon_bolus",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Ganze Ampulle Naloxon 0,4 mg auf einmal",
+      "typ": "falsch",
+      "warum": "SH: möglichst schrittweise in 0,1-mg-Schritten. Ein schneller Bolus kann einen akuten Entzug mit Erbrechen, Aggression und Krampf auslösen.",
+      "mittel": [
+       {
+        "w": "naloxon",
+        "d": "0,4 mg i.v. als Bolus"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Naloxon sofort, Beatmung ist zu aufwendig",
+        "warum": "Ohne Beatmung bleibt er bis zur Naloxon-Wirkung hypoxisch."
+       },
+       {
+        "schwer": "abbruch",
+        "text": "Abwarten bis er aufwacht",
+        "warum": "Bei AF 4 und SpO₂ 78 % ist Abwarten lebensgefährlich."
+       }
+      ],
+      "frage": "Was kommt vor dem Naloxon?",
+      "nach": "",
+      "richtig": {
+       "text": "Atemweg freimachen, Kommandoatmung, O₂, Beutel-Masken-Beatmung",
+       "warum": "Atemweg, O₂ und Beatmung beheben die Hypoxie sofort. Naloxon folgt bei erkennbarem opioidem Toxidrom (SH Algorithmus 22)."
+      }
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang liegt am Handrücken",
+      "typ": "pflicht",
+      "warum": "Venöser Zugang für Naloxon und Infusion."
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Gehen lassen, er ist ja wach",
+        "warum": "Rebound-Gefahr: Er kann allein wieder aufhören zu atmen."
+       },
+       {
+        "text": "Festhalten und in den RTW tragen",
+        "warum": "Zwang ist nur unter engen gesetzlichen Voraussetzungen erlaubt."
+       }
+      ],
+      "frage": "Nach Naloxon wacht er auf und will gehen. Was tust du?",
+      "nach": "",
+      "regional": true,
+      "richtig": {
+       "text": "Aufklären: erneute Atemlähmung möglich – NA hinzuziehen, Transport anstreben",
+       "warum": "Die Opioidwirkung kann zurückkehren. Einwilligungsfähigkeit prüfen, bei Verweigerung nach SH-Checkliste 38 vorgehen."
+      }
+     }
+    }
+   }
+  }
+ }
+}

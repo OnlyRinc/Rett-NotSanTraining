@@ -1,0 +1,33 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Blutstillung hat Vorrang vor allem anderen",
+ "merke": "Kälte verschlechtert die Gerinnung – zudecken nicht vergessen.",
+ "punkte": [
+  "Manuell komprimieren",
+  "Extremität: hochlagern → Kompressionsverband/Hämostyptikum → Immobilisation → Tourniquet",
+  "Rumpf: Hämostyptikum und Packing, Kompressionsverband",
+  "Beckenschlinge bei Verdacht frühzeitig",
+  "Temperaturmanagement früh beginnen",
+  "Nicht stillbare innere Blutung: permissive Hypotonie (NotSan: VEL bedarfsgerecht, TXA)",
+  "Früh Zielklinik wählen, ggf. Luftrettung"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Kritische Blutung, S. 98–99",
+ "tags": [
+  "Blutung",
+  "Tourniquet",
+  "Schock",
+  "Trauma"
+ ],
+ "titel": "Kritische Blutung",
+ "sh": {
+  "punkte": [
+   "1. Manuelle Kompression",
+   "2. Kompressionsverband oder Wound packing, ggf. mit Hämostyptikum",
+   "3. Tourniquet, wenn die Blutstillung an der Extremität scheitert",
+   "Primär Tourniquet: mehrere Blutungsquellen, Blutung + ABC-Problem, mehrere Verletzte, Gefahr",
+   "Innere Blutung: Beckenschlinge erwägen, saugende Wunden abdichten",
+   "Blutung nicht gestillt: permissive Hypotension, SHT/Schwangere RRsys > 90"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmus 24 S. 37"
+ }
+}

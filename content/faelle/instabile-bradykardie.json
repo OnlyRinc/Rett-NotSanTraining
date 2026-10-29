@@ -1,0 +1,400 @@
+{
+ "level": 3,
+ "patient": "Mann, 81 J. · liegt blass auf dem Badezimmerboden, wirkt benommen",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Antwortet verlangsamt, aber passend",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Antwortet langsam.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "danach": {
+      "spo2": 95
+     },
+     "ergebnis": "O₂ über Nasenbrille",
+     "typ": "pflicht",
+     "warum": "SpO₂ 90 %: bedarfsgerecht Sauerstoff, Ziel 92–96 %."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Sauerstoff bedarfsgerecht."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "AV-Block III°, breiter QRS-Komplex",
+     "typ": "sinnvoll",
+     "warum": "Sobald möglich schreiben – oder mindestens den Monitorstreifen ausdrucken."
+    },
+    "ekg3": {
+     "ergebnis": "AV-Block III° mit breiten Kammerkomplexen, HF 32/min",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Ohne EKG keine Einordnung der Bradykardie."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "lwRS": true,
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Instabiler Patient mit drohender Asystolie."
+    },
+    "puls": {
+     "ergebnis": "32/min, regelmäßig, schwach",
+     "typ": "pflicht",
+     "warum": "Bei jeder Rhythmusstörung den Puls tasten."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypotonie ist ein Zeichen des Schocks – Instabilitätszeichen."
+    },
+    "schocklage": {
+     "danach": {
+      "dia": 44,
+      "sys": 84
+     },
+     "ergebnis": "Beine hochgelagert",
+     "typ": "sinnvoll",
+     "warum": "Bei Hypotonie ohne Atemnot verbessert das den Rückstrom."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Bei Instabilität i.v.-Zugang."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Pads kleben, Gerät bereit",
+     "id": "pads",
+     "rolle": "ns",
+     "text": "Pacer-Elektroden aufkleben (Schrittmacherbereitschaft)",
+     "typ": "pflicht",
+     "warum": "Bei Asystoliegefahr laut BPR die Elektroden für die transkutane Stimulation vorab aufkleben."
+    },
+    {
+     "danach": {
+      "dia": 58,
+      "gcs": 15,
+      "hf": 54,
+      "sys": 102
+     },
+     "ergebnis": "HF steigt auf 54/min",
+     "id": "epinephrin",
+     "lebenswichtig": true,
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 5 µg (0,5 ml der Verdünnung) i.v., jede Minute",
+     "typ": "pflicht",
+     "warum": "Asystoliegefahr: direkt Epinephrin. 1 mg in 100 ml NaCl, davon 0,5 ml (5 µg) bolusweise jede Minute bis zum Herzfrequenzanstieg.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "5 µg i.v. jede Minute"
+      }
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "atropin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Atropin 0,5 mg i.v.",
+     "typ": "falsch",
+     "warum": "AV-Block III° mit breitem QRS bedeutet Asystoliegefahr – laut BPR dann direkt Epinephrin. Atropin wirkt hier meist nicht.",
+     "mittel": [
+      {
+       "w": "atropin",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Grau-blass, kaltschweißig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Nein, die Frequenz ist ja noch über 30",
+       "warum": "Entscheidend ist der Rhythmus, nicht nur die Zahl."
+      },
+      {
+       "text": "Nur wenn er bewusstlos wird",
+       "warum": "Die Gefahr ergibt sich aus dem EKG-Befund."
+      }
+     ],
+     "frage": "Besteht Asystoliegefahr?",
+     "nach": "ekg3",
+     "richtig": {
+      "text": "Ja – AV-Block III° mit breitem QRS-Komplex",
+      "warum": "Asystoliegefahr: kürzliche Asystolie, AV-Block II° Typ Mobitz, AV-Block III° mit breitem QRS, Pausen über 3 Sekunden."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Hypoglykämie",
+       "warum": "Der BZ ist normal."
+      },
+      {
+       "text": "Hyperthermie",
+       "warum": "Er hat kein Fieber."
+      }
+     ],
+     "frage": "Welche reversible Ursache musst du besonders bedenken?",
+     "nach": "",
+     "richtig": {
+      "text": "Hyperkaliämie",
+      "warum": "Laut BPR vor allem die Hyperkaliämie: Sinusarrest, AV-Blockierungen und Asystolien. Hinweise aus EKG, Vormedikation und Anamnese."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Eine Hypoglykämie als Ursache ausschließen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Etwas verlangsamt.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Dialysepflichtig, letzte Dialyse ausgefallen, nimmt Bisoprolol",
+     "typ": "pflicht",
+     "warum": "Vormedikation (z. B. Betablocker, Kalium-sparende Mittel) und Nierenfunktion klären."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Unter Monitorüberwachung in eine Klinik mit Kardiologie."
+    },
+    "waerme": {
+     "ergebnis": "Zugedeckt",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf dem Waschbecken liegen viele Tablettenschachteln.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Platzwunde Stirn, sonst keine Verletzung",
+     "typ": "pflicht",
+     "warum": "Nach einem Sturz Verletzungen ausschließen."
+    },
+    "druckverband": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Die Platzwunde blutet kaum – sie wird später versorgt."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Kleine Platzwunde an der Stirn, kaum Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Instabile Bradykardie, S. 137–138; SAA Epinephrin S. 49, Atropin S. 45",
+ "regional": "Epinephrin, Atropin und externe Schrittmacheranlage nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "avb3",
+ "situation": "Ehefrau: Er ist auf der Toilette kurz weggekippt und war ein paar Sekunden weg.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "HF < 60, instabil: HF < 40, Schock, Bewusstseinsstörung, Synkope, Ischämie, Herzinsuffizienz",
+   "Asystoliegefahr: Mobitz II, AV III° mit breitem QRS, Pausen > 3 s"
+  ],
+  "kern": "Asystoliegefahr? Dann Epinephrin",
+  "ns": [
+   "i.v.-Zugang",
+   "Keine Asystoliegefahr: Atropin 0,5 mg, Rep. bis max. 3 mg",
+   "Asystoliegefahr oder Atropin wirkungslos: Epinephrin 5 µg Boli jede Minute",
+   "HF steigt unter Epinephrin nicht und Bewusstseinsstörung hält an: Schrittmacher + Schmerztherapie"
+  ],
+  "tun": [
+   "Puls tasten, Monitor-EKG",
+   "12-Kanal sobald möglich",
+   "O₂ bedarfsgerecht",
+   "NA",
+   "Hyperkaliämie bedenken"
+  ],
+  "vermeiden": [
+   "Bradykardie ohne EKG einordnen"
+  ]
+ },
+ "stichwort": "RD 2 · Kollaps",
+ "titel": "Instabile Bradykardie",
+ "vitalwerte": {
+  "af": 16,
+  "bz": 108,
+  "dia": 40,
+  "gcs": 14,
+  "hf": 32,
+  "spo2": 90,
+  "sys": 78,
+  "temp": 36.4
+ },
+ "sh": {
+  "regional": "SH Algorithmus 4/5: Atropin, Adrenalin und transthorakaler Schrittmacher durch NotSan.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 4 und 5 Bradykardie, S. 17–18; Infotabellen Adrenalin S. 69–70, Atropin S. 73",
+  "steckbrief": {
+   "ns": [
+    "Instabil (SHIT): Synkope, Hypotension, Insuffizienz, Thoraxschmerz",
+    "Atropin 0,5 mg, wiederholen bis 3 mg",
+    "Keine Atropin-Reaktion zu erwarten (AV III + breiter QRS, Mobitz II): Adrenalin 2–10 µg/min oder sofort Schrittmacher",
+    "Schrittmacher: Demand, 60–80/min"
+   ],
+   "tun": [
+    "Puls tasten, Monitor-EKG",
+    "12-Kanal sobald möglich",
+    "O₂ hochdosiert",
+    "NA",
+    "Hyperkaliämie bedenken"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "o2": {
+      "danach": {
+       "spo2": 95
+      },
+      "ergebnis": "O₂ hochdosiert über Maske mit Reservoir",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 4: Bradykardie mit Instabilität – hochdosiert Sauerstoff."
+     }
+    }
+   },
+   "C": {
+    "eigene": {
+     "pads": {
+      "ergebnis": "Pads kleben, Gerät bereit",
+      "id": "pads",
+      "rolle": "ns",
+      "text": "Pacer-Elektroden aufkleben (Schrittmacherbereitschaft)",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 4: Reanimationsbereitschaft – Therapieelektroden situationsabhängig schon aufkleben."
+     },
+     "epinephrin": {
+      "danach": {
+       "dia": 58,
+       "gcs": 15,
+       "hf": 54,
+       "sys": 102
+      },
+      "ergebnis": "HF steigt auf 54/min",
+      "id": "epinephrin",
+      "lebenswichtig": true,
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Adrenalin 2–10 µg/min i.v. (1 mg auf 100 ml NaCl)",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 5: Bei AV-Block III° mit breitem QRS ist keine Atropin-Reaktion zu erwarten → Adrenalin 2–10 µg/min oder sofort Schrittmacher erwägen.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "2–10 µg/min i.v."
+       }
+      ]
+     },
+     "atropin": {
+      "ergebnis": "",
+      "id": "atropin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Atropin 0,5 mg i.v.",
+      "typ": "neutral",
+      "warum": "SH Algorithmus 5: Bei AV-Block III° mit breitem QRS ist keine Reaktion auf Atropin zu erwarten. Sonst gilt: Atropin 0,5 mg, bei unzureichender Wirkung wiederholen bis 3 mg.",
+      "mittel": [
+       {
+        "w": "atropin",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Ja, Atropin wirkt immer",
+        "warum": "Atropin wirkt am Sinus- und AV-Knoten – bei Blockierungen darunter (breiter QRS) meist nicht."
+       },
+       {
+        "text": "Nur wenn er bewusstlos wird",
+        "warum": "Das entscheidet der EKG-Befund, nicht das Bewusstsein."
+       }
+      ],
+      "frage": "Ist eine Reaktion auf Atropin zu erwarten?",
+      "nach": "ekg3",
+      "richtig": {
+       "text": "Nein – AV-Block III° mit breitem QRS-Komplex",
+       "warum": "SH Algorithmus 5: keine Atropin-Reaktion zu erwarten bei AV-Block III° mit breitem QRS oder AV-Block II° Mobitz. Dann Adrenalin oder sofort Schrittmacher."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "Hypoglykämie",
+        "warum": "Der BZ ist normal."
+       },
+       {
+        "text": "Hyperthermie",
+        "warum": "Er hat kein Fieber."
+       }
+      ],
+      "frage": "Welche reversible Ursache musst du besonders bedenken?",
+      "nach": "",
+      "richtig": {
+       "text": "Hyperkaliämie",
+       "warum": "Vor allem die Hyperkaliämie: Sinusarrest, AV-Blockierungen und Asystolien. Hinweise aus EKG, Vormedikation und Anamnese."
+      }
+     }
+    }
+   }
+  }
+ }
+}

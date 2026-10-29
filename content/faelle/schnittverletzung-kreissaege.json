@@ -1,0 +1,421 @@
+{
+ "level": 1,
+ "patient": "Mann, 45 J. · sitzt in der Werkstatt, presst ein durchgeblutetes Handtuch auf den linken Unterarm",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Das hört nicht auf zu bluten!“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht klar.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 96 % – kein Sauerstoff nötig."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Atmet schnell.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "104/min, kräftig",
+     "typ": "pflicht",
+     "warum": "Tachykardie ist ein frühes Schockzeichen."
+    },
+    "rekap": {
+     "ergebnis": "2 Sekunden",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Blutdruck zur Einschätzung des Volumenverlusts."
+    },
+    "vel": {
+     "ergebnis": "VEL läuft",
+     "typ": "sinnvoll",
+     "warum": "Bedarfsgerechte Volumengabe mit VEL."
+    },
+    "zugang": {
+     "ergebnis": "Zugang am rechten Arm",
+     "typ": "sinnvoll",
+     "warum": "Gefäßzugang und bedarfsgerechte Volumengabe."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "",
+     "id": "txa",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Tranexamsäure 1 g",
+     "typ": "falsch",
+     "warum": "TXA ist für Blutungen nach schwerem Trauma im hämorrhagischen Schock vorgesehen – hier ist die Blutung gestoppt und kein Schock.",
+     "mittel": [
+      {
+       "w": "txa",
+       "d": "*"
+      }
+     ]
+    },
+    {
+     "ergebnis": "Kurzinfusion läuft",
+     "id": "paracetamol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Paracetamol 1.000 mg als Kurzinfusion",
+     "typ": "sinnvoll",
+     "warum": "BPR Schmerzen: ab NRS ≥ 3 zuerst Paracetamol oder Ibuprofen – bei Blutung Paracetamol, Ibuprofen ist kontraindiziert.",
+     "mittel": [
+      {
+       "w": "paracetamol",
+       "d": "1.000 mg als Kurzinfusion"
+      }
+     ]
+    },
+    {
+     "ergebnis": "Schmerz sinkt auf NRS 4",
+     "id": "fentanyl",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Fentanyl 50 µg-Schritte i.v.",
+     "typ": "sinnvoll",
+     "warum": "Tourniquet und Wunde schmerzen stark (NRS 8): zusätzlich Opioid oder Esketamin/Midazolam.",
+     "mittel": [
+      {
+       "w": "fentanyl",
+       "d": "50 µg i.v., titriert"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, schwitzig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Etwa 0,5 – völlig unauffällig",
+       "warum": "Rechne HF geteilt durch RRsys."
+      },
+      {
+       "text": "Etwa 1,5 – schwerer Schock",
+       "warum": "Rechne nach: 104 ÷ 118."
+      }
+     ],
+     "frage": "Schockindex: HF 104 ÷ RRsys 118?",
+     "nach": "",
+     "richtig": {
+      "text": "Etwa 0,9 – noch kein manifester Schock, aber engmaschig kontrollieren",
+      "warum": "Ein Schockindex über 1 spricht für einen relevanten Volumenmangel (im BPR Polytrauma ist > 0,9 ein Schockraumkriterium)."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "motorik": {
+     "ergebnis": "Finger bewegt er, Gefühl erhalten",
+     "typ": "sinnvoll",
+     "warum": "Durchblutung, Motorik, Sensibilität distal prüfen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Keine Blutverdünner, Tetanus unklar",
+     "typ": "pflicht",
+     "warum": "Gerinnungshemmer? Tetanusschutz?"
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Frühe Zielklinik und Voranmeldung, Handchirurgie."
+    },
+    "waerme": {
+     "ergebnis": "Zugedeckt",
+     "typ": "pflicht",
+     "warum": "Laut BPR früh mit dem Temperaturmanagement beginnen – Kälte verschlechtert die Gerinnung."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Steril abgedeckt",
+     "id": "wunde",
+     "text": "Wunde steril abdecken",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   ],
+   "eindruck": "Er friert.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "becken": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Kein Hinweis auf eine Beckenverletzung."
+    },
+    "bodycheck": {
+     "ergebnis": "Keine weiteren Verletzungen",
+     "typ": "sinnvoll",
+     "warum": "Weitere Verletzungen ausschließen."
+    },
+    "druckverband": {
+     "ergebnis": "Druckverband angelegt",
+     "typ": "pflicht",
+     "warum": "Kompressionsverband als nächster Schritt."
+    },
+    "kompression": {
+     "ergebnis": "Blutung unter Druck deutlich weniger",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Sofort manuell abdrücken – direkt auf die Wunde."
+    },
+    "tourniquet": {
+     "danach": {
+      "dia": 76,
+      "hf": 98,
+      "sys": 120
+     },
+     "ergebnis": "Tourniquet am Oberarm, Blutung steht",
+     "typ": "pflicht",
+     "warum": "Blutet der Druckverband durch: Tourniquet proximal der Wunde."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Arm hochgelagert",
+     "id": "hoch",
+     "text": "Arm hochlagern",
+     "typ": "sinnvoll",
+     "warum": "Laut BPR bei Extremitätenblutung hochlagern."
+    },
+    {
+     "ergebnis": "Zeit notiert",
+     "id": "tqzeit",
+     "text": "Uhrzeit des Tourniquets notieren",
+     "typ": "pflicht",
+     "warum": "Die Anlagezeit muss an die Klinik übergeben werden."
+    }
+   ],
+   "eindruck": "Aus dem linken Unterarm spritzt hellrotes Blut stoßweise durch das Handtuch.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Noch einen Druckverband darüber",
+       "warum": "Der Blutverlust geht weiter – Zeit ist Blut."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Abwarten, das hört schon auf",
+       "warum": "Arterielle Blutungen stoppen nicht von selbst."
+      }
+     ],
+     "frage": "Der Druckverband blutet sofort durch. Was jetzt?",
+     "nach": "druckverband",
+     "richtig": {
+      "text": "Tourniquet am Oberarm",
+      "warum": "Wenn Kompression und Druckverband nicht reichen, kommt das Tourniquet."
+     }
+    }
+   ]
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Kritische Blutung, S. 98–99",
+ "regional": "i.v.-Zugang, VEL und Schmerztherapie nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Er ist mit der Kreissäge abgerutscht. Am Boden ist eine große Blutlache.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Spritzende, pulsierende Blutung",
+   "Durchgeblutete Verbände",
+   "Tachykardie, Blässe"
+  ],
+  "kern": "Drücken – Verband – Tourniquet",
+  "ns": [
+   "i.v./i.o. + VEL bedarfsgerecht",
+   "Rumpf: Hämostyptikum und Packing",
+   "TXA nur bei hämorrhagischem Schock nach schwerem Trauma",
+   "Schmerztherapie"
+  ],
+  "tun": [
+   "Manuell komprimieren",
+   "Hochlagern, Druckverband",
+   "Blutet durch: Tourniquet, Zeit notieren",
+   "Wärmeerhalt",
+   "Zielklinik früh"
+  ],
+  "vermeiden": [
+   "Abwarten",
+   "Tourniquet wieder lockern"
+  ]
+ },
+ "stichwort": "RD 2 · Blutung",
+ "titel": "Kritische Blutung · Schnittverletzung",
+ "vitalwerte": {
+  "af": 22,
+  "bz": 118,
+  "dia": 74,
+  "gcs": 15,
+  "hf": 104,
+  "spo2": 96,
+  "sys": 118,
+  "temp": 36.4
+ },
+ "sh": {
+  "regional": "SH Algorithmus 24 (Blutung) und 19 (Schmerz). TXA nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 24 Blutungskontrolle, S. 37; Algorithmus 19 Schmerz, S. 32; Infotabellen Esketamin S. 81, Metamizol S. 92, Tranexamsäure S. 106",
+  "steckbrief": {
+   "ns": [
+    "i.v. + balancierte VEL, nach Blutstillung Normotension",
+    "Wound packing mit Hämostyptikum",
+    "TXA nur bei hämorrhagischem Schock",
+    "Schmerz: Esketamin + Midazolam, begleitend Metamizol"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "aktionen": {
+     "vel": {
+      "ergebnis": "VEL läuft",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 24: balancierte VEL – nach erfolgreicher Blutstillung Normotension anstreben."
+     },
+     "zugang": {
+      "ergebnis": "Zugang am rechten Arm",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 24: i.v.-Zugang und Volumentherapie."
+     }
+    },
+    "eigene": {
+     "txa": {
+      "ergebnis": "",
+      "id": "txa",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Tranexamsäure 1 g",
+      "typ": "falsch",
+      "warum": "SH: TXA bei lebensbedrohlicher Blutung mit hämorrhagischem Schock – hier ist die Blutung gestoppt und kein Schock.",
+      "mittel": [
+       {
+        "w": "txa",
+        "d": "*"
+       }
+      ]
+     },
+     "paracetamol": {
+      "ergebnis": "Kurzinfusion läuft",
+      "id": "paracetamol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Metamizol 1 g als Kurzinfusion (begleitend)",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 19: begleitend ein peripheres Analgetikum erwägen – Metamizol als Kurzinfusion über 10 Min, liegend. KI u. a. RRsys < 100.",
+      "mittel": [
+       {
+        "w": "metamizol",
+        "d": "1 g als Kurzinfusion"
+       }
+      ]
+     },
+     "fentanyl": {
+      "ergebnis": "Schmerz sinkt auf NRS 4",
+      "id": "fentanyl",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Esketamin + Midazolam i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 19: traumatischer Schmerz NRS > 4 → Esketamin (0,125–0,25 mg/kg i.v.) mit Midazolam. Ziel: NRS halbieren oder < 4.",
+      "mittel": [
+       {
+        "w": "esketamin",
+        "d": "0,125–0,25 mg/kg i.v. + Midazolam"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Etwa 0,5 – völlig unauffällig",
+        "warum": "Rechne HF geteilt durch RRsys."
+       },
+       {
+        "text": "Etwa 1,5 – schwerer Schock",
+        "warum": "Rechne nach: 104 ÷ 118."
+       }
+      ],
+      "frage": "Schockindex: HF 104 ÷ RRsys 118?",
+      "nach": "",
+      "richtig": {
+       "text": "Etwa 0,9 – noch kein manifester Schock, aber engmaschig kontrollieren",
+       "warum": "Ein Schockindex über 1 spricht für einen relevanten Volumenmangel – engmaschig kontrollieren."
+      }
+     }
+    }
+   },
+   "E": {
+    "aktionen": {
+     "waerme": {
+      "ergebnis": "Zugedeckt",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 24: konsequenter Wärmeerhalt – Kälte verschlechtert die Gerinnung."
+     }
+    }
+   },
+   "x": {
+    "eigene": {
+     "hoch": {
+      "ergebnis": "Arm hochgelagert",
+      "id": "hoch",
+      "text": "Arm hochlagern",
+      "typ": "sinnvoll",
+      "warum": "Hochlagern unterstützt die Blutstillung."
+     }
+    }
+   }
+  }
+ }
+}

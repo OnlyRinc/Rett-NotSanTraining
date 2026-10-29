@@ -1,0 +1,378 @@
+{
+ "level": 2,
+ "patient": "Mann, 58 J. · sitzt mit hochrotem Kopf am Esstisch, hält sich den Kopf",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Mein Kopf platzt gleich.“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht normal.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "auskultation": {
+     "ergebnis": "Vesikulär, keine Rasselgeräusche",
+     "typ": "sinnvoll",
+     "warum": "Rasselgeräusche würden auf ein Lungenödem hinweisen – dann BPR Lungenödem."
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 97 % – Sauerstoff nur bedarfsgerecht."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinusrhythmus, Linkshypertrophie, keine ST-Hebungen",
+     "typ": "pflicht",
+     "warum": "Bei jedem Patienten obligat – Ischämie ausschließen."
+    },
+    "rr2": {
+     "ergebnis": "Rechts 236/128, links 230/124 mmHg",
+     "typ": "pflicht",
+     "warum": "An beiden Armen messen – die Therapie richtet sich nach dem höheren Wert."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Für Urapidil."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "",
+     "id": "nitro",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Glyceroltrinitrat 0,4 mg s.l.",
+     "typ": "falsch",
+     "warum": "Nitro ist nur beim hypertensiven Notfall mit kardialer Symptomatik vorgesehen – er hat keine Brustschmerzen oder Atemnot.",
+     "mittel": [
+      {
+       "w": "nitro",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Rotes Gesicht, warme Haut.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Auf 120/80",
+       "warum": "Eine so starke Senkung kann einen Schlaganfall auslösen."
+      },
+      {
+       "text": "Gar nicht, nur transportieren",
+       "warum": "Mit Symptomen wie Sehstörung ist es ein Notfall – titriert senken."
+      }
+     ],
+     "frage": "Wie weit senkst du den Blutdruck?",
+     "nach": "",
+     "richtig": {
+      "text": "Höchstens um 20 % des Ausgangswerts",
+      "warum": "Laut BPR soll die Senkung 20 % im Regelfall nicht überschreiten – sonst drohen Minderdurchblutung von Hirn und Herz."
+     },
+     "rolle": "ns"
+    },
+    {
+     "falsch": [
+      {
+       "text": "Bei Werten unter 250 mmHg",
+       "warum": "Nicht die Zahl allein, sondern Symptome entscheiden."
+      },
+      {
+       "text": "Bei Patienten über 60",
+       "warum": "Das Alter ist kein Kriterium."
+      }
+     ],
+     "frage": "Wann senkt man laut BPR den Blutdruck nicht?",
+     "nach": "",
+     "richtig": {
+      "text": "Wenn der Patient symptomfrei ist",
+      "warum": "Ohne Symptome nur die verordnete Dauermedikation vorziehen und transportieren."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "befast": {
+     "ergebnis": "Kein seitenbetonter Ausfall",
+     "typ": "pflicht",
+     "warum": "Schlaganfall ausschließen – dann gilt der BPR Schlaganfall mit anderen Zielwerten."
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "dia": 108,
+      "sys": 196
+     },
+     "ergebnis": "Urapidil gegeben",
+     "id": "urapidil",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Urapidil 5 mg langsam i.v.",
+     "typ": "pflicht",
+     "warum": "Lungenödem, ACS, Aortensyndrom und Schlaganfall sind ausgeschlossen: Urapidil 5 mg titriert, Repetition nach 5 Min möglich, max. 25 mg.",
+     "mittel": [
+      {
+       "w": "urapidil",
+       "d": "5 mg langsam i.v."
+      }
+     ]
+    },
+    {
+     "ergebnis": "RR wird alle 5 Min gemessen",
+     "id": "rrkontrolle",
+     "text": "RR alle 5 Minuten kontrollieren",
+     "typ": "pflicht",
+     "warum": "Laut BPR engmaschige Blutdruckkontrolle.",
+     "zeigt": [
+      "rr"
+     ]
+    }
+   ],
+   "eindruck": "Wach, orientiert, klagt über Sehstörungen.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "oberkoerper": {
+     "ergebnis": "Oberkörper hoch",
+     "typ": "sinnvoll",
+     "warum": "Oberkörper hoch lagern."
+    },
+    "opqrst": {
+     "ergebnis": "Seit 2 Std., pochend, NRS 7",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "sampler": {
+     "ergebnis": "Ramipril und Amlodipin – seit einer Woche nicht genommen",
+     "typ": "pflicht",
+     "warum": "Dauermedikation und Einnahme erfragen."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Mit Organzeichen in die Klinik."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf dem Tisch liegen Blutdrucktabletten.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Hypertensiver Notfall, S. 131–132; SAA Urapidil S. 70",
+ "regional": "Urapidil nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Seit zwei Stunden starke Kopfschmerzen, ihm ist schwindelig und er sieht verschwommen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "RRsys > 220 mmHg",
+   "ZNS: Kopfschmerz, Schwindel, Sehstörung, Krampf",
+   "Kardial: Angina, Dyspnoe"
+  ],
+  "kern": "Symptome entscheiden, nicht die Zahl",
+  "ns": [
+   "i.v.-Zugang",
+   "Urapidil 5 mg titriert, Rep. nach 5 Min, max. 25 mg",
+   "Ausnahmen: Lungenödem/AP < 180, Schlaganfall nicht < 180, Aorta: BPR HN < 140, BPR Aorta/SAA 100–120"
+  ],
+  "tun": [
+   "RR an beiden Armen, höherer Wert zählt",
+   "12-Kanal-EKG",
+   "Schlaganfall, ACS, Aorta, Lungenödem ausschließen",
+   "RR alle 5 Min"
+  ],
+  "vermeiden": [
+   "Senkung um mehr als 20 %",
+   "Senken ohne Symptome"
+  ]
+ },
+ "stichwort": "RD 1 · Kopfschmerz",
+ "titel": "Hypertensiver Notfall",
+ "vitalwerte": {
+  "af": 18,
+  "bz": 116,
+  "dia": 128,
+  "gcs": 15,
+  "hf": 92,
+  "spo2": 97,
+  "sys": 236,
+  "temp": 36.7
+ },
+ "sh": {
+  "regional": "SH Algorithmus 8: Urapidil durch NotSan. Schlaganfall, ACS und Lungenstauung haben eigene Algorithmen.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 8 Hypertensiver Notfall, S. 21; Infotabelle Urapidil S. 107",
+  "steckbrief": {
+   "ns": [
+    "Urapidil 5–10 mg, alle 3 Min bis max. 50 mg",
+    "Max. 25 % senken",
+    "Ziele: ACS < 180, Lungenödem < 140, Aorta < 120, Schlaganfall 180/100"
+   ],
+   "tun": [
+    "RR an beiden Armen, höherer Wert zählt",
+    "12-Kanal-EKG",
+    "Schlaganfall, ACS, Aorta, Lungenödem ausschließen",
+    "RR nach jeder Gabe kontrollieren"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "auskultation": {
+      "ergebnis": "Vesikulär, keine Rasselgeräusche",
+      "typ": "sinnvoll",
+      "warum": "Rasselgeräusche würden auf ein Lungenödem hinweisen – dann Algorithmus 2."
+     }
+    }
+   },
+   "C": {
+    "eigene": {
+     "nitro": {
+      "ergebnis": "",
+      "id": "nitro",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Glyceroltrinitrat 0,4 mg s.l.",
+      "typ": "falsch",
+      "warum": "In SH kommt Nitro beim hypertensiven Notfall nur über ACS (Algorithmus 1) oder Lungenstauung (Algorithmus 2) – er hat keine Brustschmerzen oder Atemnot.",
+      "mittel": [
+       {
+        "w": "nitro",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Auf 120/80",
+        "warum": "Eine so starke Senkung kann einen Schlaganfall auslösen."
+       },
+       {
+        "text": "Gar nicht, nur transportieren",
+        "warum": "Mit Symptomen wie Sehstörung ist es ein Notfall – titriert senken."
+       }
+      ],
+      "frage": "Wie weit senkst du den Blutdruck?",
+      "nach": "",
+      "richtig": {
+       "text": "Höchstens um 25 % des Ausgangswerts",
+       "warum": "SH-Infotabelle Urapidil: maximale Senkung im Regelfall 25 % (SAA/BPR: 20 %). Ausnahmen: begleitende Angina pectoris oder Lungenödem."
+      },
+      "rolle": "ns"
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "Bei Werten unter 250 mmHg",
+        "warum": "Nicht die Zahl allein, sondern Symptome entscheiden."
+       },
+       {
+        "text": "Bei Patienten über 60",
+        "warum": "Das Alter ist kein Kriterium."
+       }
+      ],
+      "frage": "Wann senkt man in SH den Blutdruck nicht?",
+      "nach": "",
+      "richtig": {
+       "text": "Wenn der Patient symptomfrei ist",
+       "warum": "SH Algorithmus 8: Ohne klinische Symptome beobachten und transportieren."
+      }
+     }
+    }
+   },
+   "D": {
+    "aktionen": {
+     "befast": {
+      "ergebnis": "Kein seitenbetonter Ausfall",
+      "typ": "pflicht",
+      "warum": "Schlaganfall ausschließen – sonst gilt Algorithmus 9 mit anderen Zielwerten."
+     }
+    },
+    "eigene": {
+     "urapidil": {
+      "danach": {
+       "dia": 108,
+       "sys": 196
+      },
+      "ergebnis": "Urapidil gegeben",
+      "id": "urapidil",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Urapidil 5–10 mg langsam i.v.",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 8: Schlaganfall, ACS und Lungenstauung ausgeschlossen → Urapidil 5–10 mg, alle 3 Min nach RR-Kontrolle steigern bis max. 50 mg.",
+      "mittel": [
+       {
+        "w": "urapidil",
+        "d": "5–10 mg langsam i.v."
+       }
+      ]
+     },
+     "rrkontrolle": {
+      "ergebnis": "RR nach jeder Gabe kontrolliert",
+      "id": "rrkontrolle",
+      "text": "RR nach jeder Gabe kontrollieren",
+      "typ": "pflicht",
+      "warum": "SH: Urapidil nur nach RR-Kontrolle steigern (alle 3 Minuten).",
+      "zeigt": [
+       "rr"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

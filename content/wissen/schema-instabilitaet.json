@@ -1,0 +1,21 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Diese Befunde zeigen: Der Patient ist kritisch",
+ "merke": "Instabil heißt: Problem sofort behandeln und den Notarzt hinzuziehen – lokale Vorgaben beachten.",
+ "punkte": [
+  "c – anhaltend spritzende Blutung, ausgeprägte Blässe",
+  "A – gefährdeter Atemweg, Schnarchen, Gurgeln, Stridor, Erbrochenes/Blut/Fremdkörper",
+  "B – AF < 8 oder > 30/min, SpO₂ < 90 %, Hypoxiezeichen, Einziehungen, pathologische Auskultation",
+  "C – Puls schwach/fehlend, RRsys < 80 oder > 200, HF < 40 oder > 130, Arrhythmie, Rekap > 2 s, kaltschweißig, starker Durst",
+  "D – Bewusstlosigkeit, Bewusstseinsstörung, Lähmungen, Sensibilitätsstörungen, BZ-Entgleisung",
+  "E – Hypo- oder Hyperthermie, andere Hinweise auf einen kritischen Zustand"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR <c>ABCDE – Instabilitäten, S. 76",
+ "tags": [
+  "kritisch",
+  "instabil",
+  "Vitalwerte",
+  "ABCDE"
+ ],
+ "titel": "<c>ABCDE – Instabilitätszeichen"
+}

@@ -1,0 +1,29 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "ACS / Myokardinfarkt",
+ "merke": "Vorsicht beim Asthmaanfall (Bronchospasmus).",
+ "punkte": [
+  "250 mg langsam i.v. oder 200 mg oral, keine Repetition",
+  "KI: V.a. Aortensyndrom, innere Blutung, Trauma mit nicht komprimierbarer Blutung, Blutungsneigung, letztes Trimenon",
+  "Keine Anwendung durch NotSan unter 18 Jahren",
+  "Wirkeintritt nach 10–15 Min"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Acetylsalicylsäure, S. 43",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "ACS"
+ ],
+ "titel": "Acetylsalicylsäure (ASS)",
+ "sh": {
+  "punkte": [
+   "250 mg i.v. oder 250–500 mg p.o.",
+   "Auch bei ASS-Dauertherapie",
+   "KI: V.a. Schlaganfall, Aortendissektion, Blutung"
+  ],
+  "merke": "Indikation: NSTE-ACS und STEMI.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle ASS S. 72; Algorithmus 1 S. 14"
+ }
+}

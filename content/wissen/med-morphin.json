@@ -1,0 +1,31 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Starke Schmerzen (NRS ≥ 6) · BtM",
+ "merke": "Beim ACS gut geeignet (Vorlastsenkung, Sedierung).",
+ "punkte": [
+  "Erw.: 2 mg fraktioniert i.v. alle 3–4 Min, max. 10 mg",
+  "Kinder: 0,05 mg/kg",
+  "Nicht unter 21 kg",
+  "KI: Atemdepression, Sopor/Koma"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Morphin, S. 62",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Opioid",
+  "BtM",
+  "ACS",
+  "Schmerz"
+ ],
+ "titel": "Morphin",
+ "sh": {
+  "kern": "NRS > 4: kardialer Schmerz, Trauma mit KI für Esketamin – nach lokalem Protokoll (BtM)",
+  "punkte": [
+   "2–10 mg fraktioniert i.v.",
+   "KI: GCS < 14, SpO₂ < 92 %, AF < 10, HF < 50, Schwangerschaft/Stillzeit"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Morphin S. 96; Algorithmus 19 S. 32"
+ }
+}

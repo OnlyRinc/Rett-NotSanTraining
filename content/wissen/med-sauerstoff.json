@@ -1,0 +1,33 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Hypoxämie, CO-Vergiftung, Tauchunfall",
+ "merke": "Hyperoxie schadet: Radikale, Gefäßverengung in Herz und Hirn.",
+ "punkte": [
+  "Ziel ohne Hyperkapnierisiko: SpO₂ 92–96 %",
+  "Mit Hyperkapnierisiko (COPD, Adipositas > 40, neuromuskulär): 88–92 %",
+  "Ohne Zielwert 15 l/min: Kreislaufstillstand, schwere Atemnot, CO, Tauchunfall",
+  "Nasenbrille < 5 l/min, Maske ≥ 5 l/min",
+  "ACS: keine Routinegabe über 90 %; bei Hypoxie, Dyspnoe oder Herzinsuffizienz Ziel 94–96 %"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Sauerstoff, S. 68",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "O2",
+  "Hypoxie"
+ ],
+ "titel": "Sauerstoff",
+ "sh": {
+  "kern": "Kritischer Zustand nicht auszuschließen: initial hochdosiert",
+  "punkte": [
+   "Ziel pulmonal Gesunde: SpO₂ ≥ 95 %",
+   "Langjähriges Asthma oder COPD: 88–92 %",
+   "ACS: angepasst, bei Luftnot hochdosiert, Ziel ≥ 90 %",
+   "Post-ROSC: SpO₂ > 94 %"
+  ],
+  "merke": "Keine eigene Infotabelle – Vorgaben aus dem Standardvorgehen.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Einleitung S. 6; Algorithmus 1 S. 14"
+ }
+}

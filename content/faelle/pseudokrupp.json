@@ -1,0 +1,316 @@
+{
+ "level": 2,
+ "patient": "Mädchen, 3 J., ca. 15 kg · sitzt auf dem Schoß der Mutter, bellender Husten, pfeifendes Einatmen",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "danach": {
+      "spo2": 90
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Absaugen reizt und regt das Kind auf – der Stridor nimmt zu."
+    },
+    "ansprechen": {
+     "ergebnis": "Weint heiser",
+     "typ": "pflicht",
+     "warum": "Sie weint heiser, aber kräftig – der Atemweg ist eingeengt, nicht verschlossen."
+    },
+    "mund": {
+     "danach": {
+      "af": 42,
+      "spo2": 90
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Keine Racheninspektion mit Spatel – der Stress verschlimmert den Stridor. Bei einer Epiglottitis kann sie den Atemweg verschließen."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Zäpfchen gegeben",
+     "id": "prednisolon",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Prednisolon 100 mg rektal",
+     "typ": "pflicht",
+     "warum": "Laut BPR zuerst: Pseudokrupp beim Kleinkind 100 mg rektal.",
+     "mittel": [
+      {
+       "w": "prednisolon",
+       "d": "100 mg rektal"
+      }
+     ]
+    },
+    {
+     "danach": {
+      "af": 28,
+      "hf": 150,
+      "spo2": 97
+     },
+     "ergebnis": "Stridor deutlich leiser",
+     "id": "adrenalin_vernebelt",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Epinephrin 4 mg vernebeln",
+     "typ": "pflicht",
+     "warum": "Laryngotracheobronchitis: nach dem Prednisolon Epinephrin 4 mg vernebeln. Keine Besserung: erneut vernebeln.",
+     "mittel": [
+      {
+       "w": "adrenalin",
+       "d": "4 mg vernebelt"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Lautes pfeifendes Geräusch beim Einatmen, heisere Stimme.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Atemfrequenz und Einziehungen zeigen den Schweregrad."
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sauerstoff laut BPR bei Zyanose. Sie ist rosig – eine Maske würde sie nur aufregen."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Nur wenn das Kind es toleriert – Clip am Zeh auf dem Schoß."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Fenster offen, sie atmet ruhiger",
+     "id": "kuehl",
+     "text": "Kühle, feuchte Luft (Fenster auf)",
+     "typ": "sinnvoll",
+     "warum": "Laut BPR für kühle, feuchte Luft sorgen."
+    }
+   ],
+   "eindruck": "Einziehungen am Hals beim Einatmen.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "zugang": {
+     "typ": "falsch",
+     "ergebnis": "",
+     "warum": "Beim Krupp keinen Zugang legen – die Aufregung kann den Stridor akut verschlimmern."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Rosig.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, ängstlich.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "flach": {
+     "danach": {
+      "af": 44,
+      "spo2": 89
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Hinlegen und von der Mutter trennen bedeutet Stress – der Stridor nimmt zu."
+    },
+    "sampler": {
+     "ergebnis": "Erkältet, sonst gesund, geimpft",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "temp": {
+     "ergebnis": "37,9 °C",
+     "typ": "pflicht",
+     "warum": "Fieber über 38,5 °C, Speichelfluss und Schluckstörung würden an eine Epiglottitis denken lassen."
+    },
+    "transport": {
+     "ergebnis": "Kinderklinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Mit der Mutter zusammen in die Kinderklinik."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Sie beruhigt sich etwas",
+     "id": "schoss",
+     "lebenswichtig": true,
+     "text": "Kind auf dem Schoß der Mutter lassen, beruhigen",
+     "typ": "pflicht",
+     "warum": "Keinen Stress zulassen: Nähe zur Bezugsperson, Ruhe."
+    }
+   ],
+   "eindruck": "Die Mutter ist aufgeregt.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Hohes Fieber und Speichelfluss",
+       "warum": "Das spricht für eine Epiglottitis."
+      },
+      {
+       "text": "Das lässt sich nicht unterscheiden",
+       "warum": "Die Symptome helfen gut bei der Unterscheidung."
+      }
+     ],
+     "frage": "Was spricht für Pseudokrupp und gegen Epiglottitis?",
+     "nach": "",
+     "richtig": {
+      "text": "Bellender Husten, Heiserkeit, Temperatur unter 38,5 °C",
+      "warum": "Epiglottitis: hohes Fieber, Speichelfluss, Schluckstörung, kein bellender Husten."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Obstruktion der oberen Atemwege Säugling/Kleinkind, S. 151–152; SAA Prednisolon S. 66, Epinephrin S. 49",
+ "regional": "Prednisolon rektal und Epinephrin-Vernebelung beim Kind nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Mitten in der Nacht aufgewacht. Seit zwei Tagen leicht erkältet.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Bellender Husten, Heiserkeit",
+   "Inspiratorischer Stridor",
+   "Meist nachts, nach Erkältung",
+   "DD Epiglottitis: Fieber > 38,5, Speichelfluss"
+  ],
+  "kern": "Keinen Stress zulassen",
+  "ns": [
+   "Prednisolon 100 mg rektal",
+   "Epinephrin 4 mg vernebeln, ggf. wiederholen"
+  ],
+  "tun": [
+   "Auf dem Schoß lassen",
+   "Beruhigen",
+   "Kühle, feuchte Luft",
+   "O₂ nur bei Zyanose",
+   "Kinderklinik"
+  ],
+  "vermeiden": [
+   "Racheninspektion mit Spatel",
+   "Kind von Eltern trennen",
+   "Hinlegen"
+  ]
+ },
+ "stichwort": "RD 2 · Kind Atemnot",
+ "titel": "Pseudokrupp",
+ "vitalwerte": {
+  "af": 36,
+  "bz": 102,
+  "dia": 58,
+  "gcs": 15,
+  "hf": 140,
+  "spo2": 94,
+  "sys": 96,
+  "temp": 37.9
+ },
+ "sh": {
+  "regional": "SH Algorithmus 13: Adrenalin-Vernebelung und Glukokortikoid rektal gleichzeitig durch NotSan. Kein i.v.-Zugang – kann die Symptome akut verschlechtern.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 13 Akute kindliche Atemnot extrapulmonal, S. 26; Infotabellen Adrenalin S. 69, Prednisolon S. 102, Prednison S. 103",
+  "steckbrief": {
+   "ns": [
+    "Adrenalin 5 mg vernebeln",
+    "Gleichzeitig Prednisolon/Prednison 100 mg rektal",
+    "Keinen i.v.-Zugang erzwingen"
+   ]
+  },
+  "phasen": {
+   "A": {
+    "eigene": {
+     "prednisolon": {
+      "ergebnis": "Zäpfchen gegeben",
+      "id": "prednisolon",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Prednisolon oder Prednison 100 mg rektal",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 13: Glukokortikoid rektal parallel zur Adrenalin-Vernebelung, einmalig 100 mg.",
+      "mittel": [
+       {
+        "w": "prednisolon",
+        "d": "100 mg rektal"
+       }
+      ]
+     },
+     "adrenalin_vernebelt": {
+      "danach": {
+       "af": 28,
+       "hf": 150,
+       "spo2": 97
+      },
+      "ergebnis": "Stridor deutlich leiser",
+      "id": "adrenalin_vernebelt",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Adrenalin 5 mg vernebeln",
+      "typ": "pflicht",
+      "warum": "SH: 5 mg Adrenalin pur vernebeln, gleichzeitig mit dem Glukokortikoid.",
+      "mittel": [
+       {
+        "w": "adrenalin",
+        "d": "5 mg vernebelt"
+       }
+      ]
+     }
+    }
+   },
+   "B": {
+    "aktionen": {
+     "o2": {
+      "ergebnis": "O₂ wird vorgehalten, sie bleibt ruhig auf dem Schoß",
+      "typ": "sinnvoll",
+      "warum": "SH: Bei nicht auszuschließendem kritischem Zustand initial O₂ (Ziel ≥ 95 %). Beim Kind vorhalten statt Maske aufdrücken – Aufregung verstärkt den Stridor."
+     }
+    },
+    "eigene": {
+     "kuehl": {
+      "ergebnis": "Fenster offen, sie atmet ruhiger",
+      "id": "kuehl",
+      "text": "Kühle, feuchte Luft (Fenster auf)",
+      "typ": "sinnvoll",
+      "warum": "Kühle, feuchte Luft beruhigt – ersetzt aber keine Medikamente."
+     }
+    }
+   }
+  }
+ }
+}

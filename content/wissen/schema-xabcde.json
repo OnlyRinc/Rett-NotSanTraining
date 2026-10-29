@@ -1,0 +1,18 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Lebensbedrohliches zuerst – in fester Reihenfolge, Probleme sofort behandeln",
+ "merke": "Treat first what kills first. Nach jeder Maßnahme neu von vorne beurteilen.",
+ "punkte": [
+  "x – kritische Blutung stoppen (Druck, Druckverband, Tourniquet)",
+  "A – Atemweg frei? Sprechen, Geräusche, Fremdkörper, HWS bedenken",
+  "B – Atmung: Frequenz, Tiefe, SpO₂, Auskultation seitengleich",
+  "C – Kreislauf: Puls, Hautbild, Rekap-Zeit, RR, EKG",
+  "D – Neurologie: Bewusstsein (AVPU/GCS), Pupillen, BZ, Motorik",
+  "E – Entkleiden/Untersuchen, Wärmeerhalt, Umgebung"
+ ],
+ "tags": [
+  "Primary Survey",
+  "Erstbeurteilung"
+ ],
+ "titel": "xABCDE"
+}

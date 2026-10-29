@@ -1,0 +1,303 @@
+{
+ "level": 2,
+ "patient": "Mann, 74 J. · liegt im Bett, glüht, ist verwirrt und atmet schnell",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Murmelt, antwortet unpassend",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er murmelt.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "AF ≥ 22 ist ein qSOFA-Kriterium."
+    },
+    "auskultation": {
+     "ergebnis": "Feinblasige Rasselgeräusche rechts unten",
+     "typ": "pflicht",
+     "warum": "Schleichender Beginn, Knistern und Fieber sprechen für eine Pneumonie."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 93
+     },
+     "ergebnis": "O₂ über Maske",
+     "typ": "pflicht",
+     "warum": "Bedarfsgerecht Sauerstoff, Ziel SpO₂ 92–96 %."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoxie erkennen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Schnelle Atmung, er hustet.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Kritischer Patient."
+    },
+    "puls": {
+     "ergebnis": "118/min",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "3 Sekunden",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "RRsys ≤ 100 ist ein qSOFA-Kriterium."
+    },
+    "vel": {
+     "danach": {
+      "dia": 62,
+      "hf": 106,
+      "sys": 104
+     },
+     "ergebnis": "VEL läuft",
+     "typ": "pflicht",
+     "warum": "Angepasste Volumengabe mit VEL, Ziel MAD ≥ 65 mmHg."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Venöser Zugang laut BPR."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Heiß, aber die Hände sind kühl und marmoriert.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "1 Punkt",
+       "warum": "Alle drei Kriterien sind erfüllt."
+      },
+      {
+       "text": "qSOFA geht nur in der Klinik",
+       "warum": "Der qSOFA wurde gerade für die Präklinik entwickelt."
+      }
+     ],
+     "frage": "AF 26, RR 92/54, verwirrt. qSOFA?",
+     "nach": "rr",
+     "richtig": {
+      "text": "3 Punkte – hohes Risiko",
+      "warum": "AF ≥ 22, RRsys ≤ 100 und Vigilanzminderung geben je 1 Punkt. Ab 2 Punkten besteht ein hohes Risiko für einen schweren Verlauf."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Bewusstseinsstörung: BZ messen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Verwirrt.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Keine Hautauffälligkeiten",
+     "typ": "sinnvoll",
+     "warum": "Petechien, Erysipel oder Wunden als Fokus suchen."
+    },
+    "sampler": {
+     "ergebnis": "Husten mit gelbem Auswurf seit 3 Tagen, Diabetes",
+     "typ": "pflicht",
+     "warum": "Infektfokus und Vorerkrankungen klären."
+    },
+    "temp": {
+     "ergebnis": "39,2 °C",
+     "typ": "pflicht",
+     "warum": "Fieber über 38 °C (nicht zwingend) ist ein Sepsishinweis."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Laut BPR voranmelden – die Klinik soll früh Antibiotika geben können."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "",
+     "id": "antibiotika",
+     "text": "Nach Antibiotika im RTW suchen",
+     "typ": "falsch",
+     "warum": "Antibiotika werden präklinisch nicht empfohlen – der schnelle Transport ist die wichtigste Therapie."
+    }
+   ],
+   "eindruck": "Er schwitzt stark.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Sepsis, S. 157–158",
+ "regional": "VEL nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Ehefrau: Seit drei Tagen Husten und Fieber, heute erkennt er sie kaum.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Fieber (nicht zwingend), Infektfokus",
+   "AF ≥ 22",
+   "RRsys ≤ 100",
+   "Vigilanzminderung (GCS < 15)",
+   "NEWS2 ≥ 5"
+  ],
+  "kern": "qSOFA ≥ 2 – zügig in die Klinik",
+  "ns": [
+   "Venöser Zugang",
+   "VEL angepasst, Ziel MAD ≥ 65 mmHg"
+  ],
+  "tun": [
+   "O₂, Ziel SpO₂ 92–96 %",
+   "Fokus suchen",
+   "Voranmeldung",
+   "Re-Evaluation"
+  ],
+  "vermeiden": [
+   "Fieber als harmlos abtun",
+   "Zeit vor Ort verlieren"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot, Fieber",
+ "titel": "Sepsis",
+ "vitalwerte": {
+  "af": 26,
+  "bz": 148,
+  "dia": 54,
+  "gcs": 14,
+  "hf": 118,
+  "spo2": 89,
+  "sys": 92,
+  "temp": 39.2
+ },
+ "sh": {
+  "regional": "SH Algorithmus 25: großzügige Volumentherapie durch NotSan, Noradrenalin durch NA.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 25 Sepsis, S. 39",
+  "steckbrief": {
+   "ns": [
+    "i.v.-Zugang",
+    "RRsys < 100: großzügig balancierte VEL",
+    "Noradrenalin (MAD > 65) durch NA"
+   ],
+   "tun": [
+    "O₂, Ziel SpO₂ ≥ 95 %",
+    "qSOFA: AF > 22, RRsys < 100, GCS < 15",
+    "Fokus suchen",
+    "Sepsisverdacht klar übergeben"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "af": {
+      "ergebnis": "",
+      "lebenswichtig": true,
+      "typ": "pflicht",
+      "warum": "AF > 22 ist ein qSOFA-Kriterium (SH Algorithmus 25)."
+     },
+     "o2": {
+      "danach": {
+       "spo2": 93
+      },
+      "ergebnis": "O₂ über Maske",
+      "typ": "pflicht",
+      "warum": "Bedarfsgerecht Sauerstoff, SH-Ziel bei pulmonal Gesunden SpO₂ ≥ 95 %."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "rr": {
+      "ergebnis": "",
+      "lebenswichtig": true,
+      "typ": "pflicht",
+      "warum": "RRsys < 100 ist ein qSOFA-Kriterium (SH Algorithmus 25)."
+     },
+     "vel": {
+      "danach": {
+       "dia": 62,
+       "hf": 106,
+       "sys": 104
+      },
+      "ergebnis": "VEL läuft",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 25: Sepsis wahrscheinlich und RRsys < 100 → großzügig balancierte VEL. Noradrenalin (Ziel MAD > 65) gibt der NA."
+     },
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "i.v.-Zugang für die Volumentherapie."
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "1 Punkt",
+        "warum": "Alle drei Kriterien sind erfüllt."
+       },
+       {
+        "text": "qSOFA geht nur in der Klinik",
+        "warum": "Der qSOFA wurde gerade für die Präklinik entwickelt."
+       }
+      ],
+      "frage": "AF 26, RR 92/54, verwirrt. qSOFA?",
+      "nach": "rr",
+      "richtig": {
+       "text": "3 Punkte – hohes Risiko",
+       "warum": "AF > 22, RRsys < 100 und GCS < 15 geben je 1 Punkt (SH Algorithmus 25). Ab 2 Punkten und ohne andere Erklärung: V.a. Sepsis."
+      }
+     }
+    }
+   },
+   "E": {
+    "aktionen": {
+     "transport": {
+      "ergebnis": "Klinik ist informiert",
+      "typ": "pflicht",
+      "warum": "SH: zügiger Transport, Übergabe priorisieren und den Sepsisverdacht klar übergeben."
+     }
+    }
+   }
+  }
+ }
+}

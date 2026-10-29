@@ -1,0 +1,21 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Reversible Ursachen des Kreislaufstillstands",
+ "merke": "Während der Reanimation aktiv nach diesen Ursachen suchen und behandeln.",
+ "punkte": [
+  "Hypoxie",
+  "Hypovolämie",
+  "Hypo-/Hyperkaliämie und andere metabolische Störungen",
+  "Hypothermie",
+  "Herzbeuteltamponade",
+  "Intoxikation",
+  "Thromboembolie (Lungenembolie, Myokardinfarkt)",
+  "Spannungspneumothorax"
+ ],
+ "tags": [
+  "Reanimation",
+  "CPR",
+  "ALS"
+ ],
+ "titel": "4 H und HITS"
+}

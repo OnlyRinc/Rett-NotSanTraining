@@ -1,0 +1,20 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Viele Ursachen, eine Pflichtmessung: Blutzucker",
+ "merke": "Bei GCS ≤ 8 ist der Atemweg gefährdet.",
+ "punkte": [
+  "Hypoglykämie oder Hyperglykämie",
+  "Intoxikation (Alkohol, Drogen, Medikamente, CO)",
+  "Schlaganfall oder Hirnblutung",
+  "Krampfanfall bzw. postiktaler Zustand",
+  "Schädel-Hirn-Trauma",
+  "Hypoxie oder Hyperkapnie",
+  "Sepsis, Hypothermie, Elektrolytstörungen"
+ ],
+ "tags": [
+  "Bewusstlosigkeit",
+  "Vigilanz",
+  "DD"
+ ],
+ "titel": "Bewusstseinsstörung"
+}

@@ -1,0 +1,193 @@
+{
+ "level": 1,
+ "patient": "Frau, 19 J. · sitzt vor der Bühne auf dem Boden, blass, aber wach",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Mir war plötzlich schwarz vor Augen.“",
+     "typ": "pflicht",
+     "warum": "Wach und orientiert."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht normal.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinusrhythmus, unauffällig",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Laut BPR gehört das 12-Kanal-EKG zu jeder Abklärung einer kurzzeitigen Bewusstlosigkeit."
+    },
+    "puls": {
+     "ergebnis": "88/min, regelmäßig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypotonie oder orthostatischer Abfall?"
+    },
+    "schocklage": {
+     "ergebnis": "Beine hochgelagert, Farbe kommt zurück",
+     "typ": "sinnvoll",
+     "warum": "Beine hoch hilft bei vagaler oder orthostatischer Synkope."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Noch etwas blass.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "befast": {
+     "ergebnis": "Unauffällig",
+     "typ": "sinnvoll",
+     "warum": "Schlaganfall als Ursache ausschließen."
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoglykämie als Ursache ausschließen."
+    },
+    "pupillen": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Kein Zungenbiss, kein Einnässen",
+     "typ": "sinnvoll",
+     "warum": "Zungenbiss oder Einnässen würden für einen Krampfanfall sprechen."
+    },
+    "sampler": {
+     "ergebnis": "Gesund, keine Medikamente, hat heute kaum getrunken, nichts gegessen",
+     "typ": "pflicht",
+     "warum": "Risikofaktoren klären: Herzerkrankung, Synkope im Liegen oder unter Belastung, Herzrasen?"
+    }
+   },
+   "eigene": [],
+   "eindruck": "Die Freundin hält eine leere Wasserflasche.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Dass sie gestürzt ist",
+       "warum": "Stürzen tut man bei beidem."
+      },
+      {
+       "text": "Dass ihre Arme kurz gezuckt haben",
+       "warum": "Kurzes Zucken gibt es auch bei einer konvulsiven Synkope."
+      }
+     ],
+     "frage": "Krampfanfall oder Synkope? Was spricht hier für eine Synkope?",
+     "nach": "",
+     "richtig": {
+      "text": "Schwarzwerden vorher, kurze Dauer, sofort wieder orientiert, blass",
+      "warum": "Beim Krampfanfall: evtl. Aura, Initialschrei, Zungenbiss seitlich, Einnässen, Reorientierung über 5 Minuten."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Dass sie 19 ist",
+       "warum": "Das Alter allein ist kein Risikofaktor."
+      },
+      {
+       "text": "Dass es ein Konzert war",
+       "warum": "Lange Stehen in der Hitze passt zur harmlosen Synkope."
+      }
+     ],
+     "frage": "Welcher Befund würde eine Klinik mit Monitorüberwachung zwingend machen?",
+     "nach": "",
+     "richtig": {
+      "text": "Synkope im Liegen oder unter Belastung, Herzrasen vorher, Herzerkrankung, auffälliges EKG",
+      "warum": "Das sind laut BPR Risikofaktoren für eine kardiale Ursache – dann immer in die Notaufnahme mit Monitor."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Keine Verletzung, Kopf unauffällig",
+     "typ": "pflicht",
+     "warum": "Nach einem Sturz Verletzungen ausschließen – besonders den Kopf."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Keine sichtbare Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Kurzzeitige Bewusstlosigkeit, S. 100–101",
+ "regional": "Ob eine Versorgung ohne Transport möglich ist, regeln Landesrecht und dein ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Freundin: Sie stand zwei Stunden in der Hitze, wurde blass, sagte „mir wird schwarz“ und sackte zusammen. Nach ein paar Sekunden war sie wieder da.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Vagal: Schmerz, Schreck, Hitze, langes Stehen",
+   "Orthostatisch: beim Aufstehen",
+   "Kardial: im Liegen, unter Belastung, Palpitationen"
+  ],
+  "kern": "12-Kanal-EKG bei jeder Synkope",
+  "ns": [],
+  "tun": [
+   "Sturzverletzungen suchen",
+   "12-Kanal-EKG, BZ",
+   "Risikofaktoren erfragen",
+   "Beine hoch",
+   "Ambulant nur: zuvor gesund, keine RF, unauffällige Befunde, plausible Orthostase"
+  ],
+  "vermeiden": [
+   "Als harmlos abtun ohne EKG",
+   "Krampfanfall und Synkope verwechseln"
+  ]
+ },
+ "stichwort": "RD 1 · Kollaps",
+ "titel": "Kurzzeitige Bewusstlosigkeit · Synkope",
+ "vitalwerte": {
+  "af": 16,
+  "bz": 94,
+  "dia": 68,
+  "gcs": 15,
+  "hf": 88,
+  "spo2": 98,
+  "sys": 108,
+  "temp": 36.8
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Ein Beförderungsverzicht durch den NotSan ist in SH nur nach Checkliste 39 möglich.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Synkope; Checkliste 39 Beförderungsverzicht, S. 60–62",
+  "ohneAlg": true
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "kategorie": "Krankheitsbilder",
+ "kern": "Missverhältnis zwischen Sauerstoffangebot und -bedarf der Gewebe",
+ "merke": "Ein normaler Blutdruck schließt einen Schock nicht aus – Kinder und junge Menschen kompensieren lange.",
+ "punkte": [
+  "Hypovolämisch – Blutung, Flüssigkeitsverlust",
+  "Kardiogen – Pumpversagen, z. B. großer Infarkt",
+  "Distributiv – septisch, anaphylaktisch, neurogen",
+  "Obstruktiv – Lungenembolie, Spannungspneumothorax, Tamponade",
+  "Zeichen: Tachykardie, blasse kaltschweißige Haut, Rekap-Zeit > 2 s, Unruhe",
+  "Schockindex = HF ÷ RR systolisch; Werte über 1 sprechen für Schock"
+ ],
+ "tags": [
+  "Kreislauf",
+  "Schockindex"
+ ],
+ "titel": "Schock – Formen"
+}

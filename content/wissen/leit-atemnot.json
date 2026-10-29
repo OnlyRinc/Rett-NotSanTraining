@@ -1,0 +1,20 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Lunge, Herz oder Atemweg? Auskultation und Anamnese geben die Richtung",
+ "merke": "Hyperventilation ist eine Ausschlussdiagnose.",
+ "punkte": [
+  "Asthma/COPD – Giemen, verlängertes Exspirium",
+  "Lungenödem – feuchte Rasselgeräusche, Herzvorgeschichte",
+  "Pneumonie – Fieber, Husten, einseitige Rasselgeräusche",
+  "Lungenembolie – plötzlicher Beginn, oft unauffällige Auskultation",
+  "Pneumothorax – einseitig abgeschwächtes Atemgeräusch",
+  "Anaphylaxie – Stridor, Haut- und Kreislaufsymptome",
+  "Fremdkörper – plötzlich, oft beim Essen oder bei Kindern"
+ ],
+ "tags": [
+  "Dyspnoe",
+  "DD",
+  "Atmung"
+ ],
+ "titel": "Atemnot"
+}

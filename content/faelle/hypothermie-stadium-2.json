@@ -1,0 +1,242 @@
+{
+ "level": 2,
+ "patient": "Mann, 70 J. · liegt nachts im Garten im nassen Gras, zittert nicht, spricht verwaschen",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Antwortet verwaschen, langsam",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er murmelt.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "danach": {
+      "spo2": 94
+     },
+     "ergebnis": "O₂ über Nasenbrille",
+     "typ": "sinnvoll",
+     "warum": "Bedarfsgerechte Sauerstoffgabe bei Stadium II–III."
+    },
+    "spo2": {
+     "ergebnis": "Schwaches Signal",
+     "typ": "sinnvoll",
+     "warum": "Bei Kälte ist das Signal oft schlecht – Werte vorsichtig deuten."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Langsame Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg3": {
+     "ergebnis": "Sinusbradykardie, HF 48/min",
+     "typ": "pflicht",
+     "warum": "Kammerflimmern droht bei Bewegung – Monitoring."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "regional": true,
+     "typ": "sinnvoll",
+     "typRS": "pflicht",
+     "warum": "Kritischer Patient, Zielklinik klären."
+    },
+    "puls": {
+     "ergebnis": "48/min, schwach",
+     "typ": "pflicht",
+     "warum": "Puls bis zu 1 Minute tasten – bei Hypothermie ist er langsam und schwach."
+    },
+    "vel": {
+     "ergebnis": "Gewärmte VEL läuft",
+     "typ": "sinnvoll",
+     "warum": "Wenn Volumen nötig, dann gewärmt."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "sinnvoll",
+     "warum": "Ggf. i.v.-Zugang, für gewärmte VEL."
+    },
+    "schocklage": {
+     "typ": "gefahr",
+     "ergebnis": "",
+     "warum": "Bei Hypothermie die Beine nicht hochlagern: kaltes Blut aus der Peripherie strömt zum Herzen (Afterdrop) – Gefahr von Kammerflimmern."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Kalte, blasse Haut.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypoglykämie als Ursache oder Folge ausschließen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Verlangsamt, zittert nicht.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Stadium I",
+       "warum": "Im Stadium I zittert der Patient noch und ist wach."
+      },
+      {
+       "text": "Stadium IV",
+       "warum": "Er hat Vitalzeichen."
+      }
+     ],
+     "frage": "Er ist bewusstseinsgetrübt und zittert nicht mehr. Welches Stadium?",
+     "nach": "",
+     "richtig": {
+      "text": "Stadium II (32–28 °C)",
+      "warum": "Stadium I: wach und friert. II: beeinträchtigtes Bewusstsein ohne Frieren. III: bewusstlos. IV: keine Vitalzeichen."
+     }
+    }
+   ]
+  },
+  "E": {
+   "aktionen": {
+    "temp": {
+     "ergebnis": "31,0 °C (rektal)",
+     "typ": "pflicht",
+     "warum": "Kerntemperatur messen – Infrarot-Ohrthermometer sind für tiefe Werte ungeeignet."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Liegend und schonend in eine geeignete Klinik."
+    },
+    "waerme": {
+     "ergebnis": "In Rettungsdecke und Decken gepackt, RTW geheizt",
+     "typ": "pflicht",
+     "warum": "Isolation gegen weiteren Wärmeverlust, aktive Wiedererwärmung von außen erwägen."
+    },
+    "flach": {
+     "typ": "sinnvoll",
+     "ergebnis": "Flach gelagert",
+     "warum": "Schonend und flach lagern, keine unnötigen Lagewechsel."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Kleidung aufgeschnitten, Haut vorsichtig abgetrocknet",
+     "id": "kleidung",
+     "text": "Nasse Kleidung aufschneiden, abtrocknen",
+     "typ": "pflicht",
+     "warum": "Nasse Kleidung aufschneiden statt ausziehen – so wird er kaum bewegt."
+    },
+    {
+     "danach": {
+      "hf": 36,
+      "sys": 80
+     },
+     "ergebnis": "",
+     "id": "aufstehen",
+     "text": "Aufhelfen, er soll zum RTW gehen",
+     "typ": "gefahr",
+     "warum": "Aktive Bewegung treibt kaltes Blut zum Herzen (Afterdrop) – Kammerflimmern droht."
+    },
+    {
+     "danach": {
+      "hf": 38
+     },
+     "ergebnis": "",
+     "id": "reiben",
+     "text": "Arme und Beine kräftig reiben",
+     "typ": "gefahr",
+     "warum": "Reiben und Massieren bewegt kaltes Blut zum Herzen – Afterdrop und Kammerflimmern drohen."
+    },
+    {
+     "ergebnis": "",
+     "id": "tee",
+     "text": "Warmen Tee zu trinken geben",
+     "typ": "falsch",
+     "warum": "Warme Getränke nur im Stadium I. Mit Bewusstseinsstörung droht Aspiration."
+    }
+   ],
+   "eindruck": "Die Kleidung ist durchnässt.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Prellung an der Hüfte rechts",
+     "typ": "pflicht",
+     "warum": "Er ist vermutlich gestürzt – Verletzungen suchen, dabei kaum bewegen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Hypothermie, S. 135–136",
+ "regional": "Erweiterte Maßnahmen (i.v., gewärmte VEL, Atemwegssicherung) nach Freigabe deines ÄLRD. Zielklinik mit ECLS nach regionalem Konzept.",
+ "rhythmus": "sinus",
+ "situation": "Nachbar: Er wohnt allein, das Licht brannte die ganze Nacht. Draußen sind 2 °C.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "I: wach, friert (35–32 °C)",
+   "II: Bewusstsein beeinträchtigt, kein Frieren (32–28 °C)",
+   "III: bewusstlos (28–24 °C)",
+   "IV: keine Vitalzeichen (< 24 °C)"
+  ],
+  "kern": "Nicht bewegen, warm einpacken",
+  "ns": [
+   "Ggf. i.v.-Zugang",
+   "Gewärmte VEL",
+   "Ggf. Atemwegssicherung",
+   "Niemand ist tot, ehe er nicht warm und tot ist"
+  ],
+  "tun": [
+   "Schonend retten, liegend",
+   "Kleidung aufschneiden, abtrocknen",
+   "Isolieren, RTW heizen",
+   "Puls bis 1 Min tasten, Monitor"
+  ],
+  "vermeiden": [
+   "Aufstehen oder gehen lassen",
+   "Reiben, Massieren",
+   "Getränke ab Stadium II"
+  ]
+ },
+ "stichwort": "RD 2 · Hilflose Person",
+ "titel": "Hypothermie",
+ "vitalwerte": {
+  "af": 10,
+  "bz": 88,
+  "dia": 60,
+  "gcs": 12,
+  "hf": 48,
+  "spo2": 90,
+  "sys": 98,
+  "temp": 31
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Zielklinik mit ECLS nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Hypothermie",
+  "ohneAlg": true
+ }
+}

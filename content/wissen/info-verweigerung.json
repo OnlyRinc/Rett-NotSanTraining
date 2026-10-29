@@ -1,0 +1,28 @@
+{
+ "kategorie": "Sonstiges",
+ "kern": "Behandlungspflicht und Einwilligungsfähigkeit entscheiden",
+ "merke": "Die Pfade haben nur empfehlenden Charakter – maßgeblich sind Landesrecht und regionale Regelungen.",
+ "punkte": [
+  "Hohe Behandlungspflicht + nicht einwilligungsfähig: NA, ggf. Behandlung nach gesetzlichen Grundlagen",
+  "Einwilligungsfähig: verschärfte Aufklärung, Angehörige einbeziehen, NA/TNA",
+  "Bleibt es beim Nein: Formblatt, ggf. Unterschrift, Zeugen, Kopie bleibt beim Patienten",
+  "Angemessene Hilfe sicherstellen: erneut 112, ärztlicher Bereitschaftsdienst 116 117, Hausarzt"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Behandlungs-, Transportverweigerung, S. 17",
+ "regional": true,
+ "tags": [
+  "Verweigerung",
+  "Transport",
+  "Recht"
+ ],
+ "titel": "Behandlungs- und Transportverweigerung",
+ "sh": {
+  "punkte": [
+   "Checkliste 38: 15 Fragen, z. B. Minderjährigkeit, Suizidalität, Intoxikation, Hypo-/Hyperglykämie, Desorientierung, Lebensgefahr",
+   "Eine Frage mit Ja: Die Verweigerung ist nicht rechtswirksam – (Tele-)Notarzt hinzuziehen",
+   "Sonst: Aufklärung, Unterschrift, Zeugen dokumentieren"
+  ],
+  "merke": "Beförderungsverzicht durch den NotSan nur nach Checkliste 39.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Checkliste 38 S. 58–59"
+ }
+}

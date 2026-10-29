@@ -1,0 +1,431 @@
+{
+ "level": 4,
+ "patient": "Mann, 24 J. · liegt nach einem Motorradunfall auf der Straße, Helm auf, stöhnt",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Antwortet verwaschen",
+     "typ": "pflicht",
+     "warum": "Er stöhnt – der Atemweg ist frei."
+    },
+    "hws": {
+     "ergebnis": "Kopf wird gehalten",
+     "typ": "pflicht",
+     "warum": "Hochrasanz: manuelle HWS-Immobilisation."
+    },
+    "stifneck": {
+     "ergebnis": "Zervikalstütze angelegt",
+     "typ": "sinnvoll",
+     "warum": "Nach Helmabnahme HWS-Immobilisation."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Helm abgenommen, HWS stabil gehalten",
+     "id": "helm",
+     "text": "Helm zu zweit abnehmen",
+     "typ": "pflicht",
+     "warum": "Für Atemweg, Beatmung und Untersuchung muss der Helm ab – zu zweit unter HWS-Schutz."
+    }
+   ],
+   "eindruck": "Er stöhnt unter dem Helm.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "AF über 29 ist ein Schockraumkriterium."
+    },
+    "auskultation": {
+     "ergebnis": "Beidseits Atemgeräusch, rechts etwas leiser",
+     "typ": "pflicht",
+     "warum": "Seitenvergleich."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 95
+     },
+     "ergebnis": "O₂ 15 l/min über Maske",
+     "typ": "pflicht",
+     "warum": "Bedarfsgerecht O₂ – hier hochdosiert."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "SpO₂ unter 90 % ist ein Schockraumkriterium."
+    },
+    "thorax": {
+     "ergebnis": "Prellmarke rechts, hebt sich seitengleich",
+     "typ": "pflicht",
+     "warum": "Inspektion, Palpation, Auskultation – Spannungspneu ausschließen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Schnelle, flache Atmung, rechts schonend.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "io": {
+     "ergebnis": "i.o.-Zugang liegt im Humeruskopf",
+     "typ": "pflicht",
+     "warum": "Schock, i.v. nicht möglich: i.o.-Zugang."
+    },
+    "na": {
+     "ergebnis": "Notarzt ist alarmiert",
+     "lebenswichtig": true,
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Polytrauma mit Schock: Notarzt."
+    },
+    "puls": {
+     "ergebnis": "132/min, flach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "4 Sekunden",
+     "typ": "pflicht",
+     "warum": "Über 2 Sekunden: Zentralisation."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "RRsys unter 90 und HF über 120: Schockraumkriterien."
+    },
+    "schocklage": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Bei Beckenverletzung und Wirbelsäulentrauma keine Lagerungsmanöver – flach auf der Vakuummatratze."
+    },
+    "vel": {
+     "danach": {
+      "dia": 58,
+      "sys": 96
+     },
+     "ergebnis": "VEL läuft",
+     "typ": "pflicht",
+     "warum": "Bedarfsgerechte Volumengabe mit VEL – bei inneren Blutungen permissive Hypotonie."
+    },
+    "zugang": {
+     "ergebnis": "Zugang gelingt nicht, Venen kollabiert",
+     "typ": "sinnvoll",
+     "warum": "Großlumiger Zugang – gelingt er nicht schnell, i.o."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "TXA läuft über 15 Minuten",
+     "id": "txa",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Tranexamsäure 1 g als Kurzinfusion",
+     "typ": "pflicht",
+     "warum": "Schweres Trauma im hämorrhagischen Schock, unter 3 Stunden: 15 mg/kg langsam i.v., max. 1.000 mg.",
+     "mittel": [
+      {
+       "w": "txa",
+       "d": "15 mg/kg als Kurzinfusion (max. 1 g)"
+      }
+     ]
+    },
+    {
+     "ergebnis": "Schmerz sinkt auf NRS 5",
+     "id": "fentanyl",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Fentanyl 50 µg-Schritte i.v.",
+     "typ": "sinnvoll",
+     "warum": "Trauma mit NRS 9: Bei unerträglichen Schmerzen zuerst ein Opioid oder Esketamin/Midazolam, danach ggf. Paracetamol. Im Schock vorsichtig titrieren.",
+     "mittel": [
+      {
+       "w": "fentanyl",
+       "d": "50 µg i.v., titriert"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Blass, kaltschweißig, Puls flach.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Nein, er ist ja ansprechbar",
+       "warum": "Das Bewusstsein ist nur ein Kriterium von vielen."
+      },
+      {
+       "text": "Erst nach dem Röntgen",
+       "warum": "Das Schockraumteam muss vor Ankunft bereitstehen."
+      }
+     ],
+     "frage": "Schockraum alarmieren?",
+     "nach": "rr",
+     "regional": true,
+     "richtig": {
+      "text": "Ja – RRsys < 90, HF > 120, SpO₂ < 90 %, Tourniquet",
+      "warum": "Schon ein Kriterium reicht für die Schockraum-Alarmierung (S3-Leitlinie Polytrauma, im BPR aufgeführt)."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": "Hypoglykämie als Ursache ausschließen."
+    },
+    "gcs": {
+     "ergebnis": "GCS 13",
+     "typ": "pflicht",
+     "warum": "GCS ≤ 12 wäre ein Schockraumkriterium."
+    },
+    "motorik": {
+     "ergebnis": "Beine bewegt er, Gefühl erhalten",
+     "typ": "pflicht",
+     "warum": "Sensomotorisches Defizit nach Wirbelsäulenverletzung?"
+    },
+    "pupillen": {
+     "ergebnis": "Isokor, prompt",
+     "typ": "pflicht",
+     "warum": "Pupillendifferenz spricht für Hirndruck."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, aber verlangsamt.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Oberschenkelfraktur rechts offen, Prellmarken Becken und Thorax",
+     "typ": "pflicht",
+     "warum": "Weitere Verletzungen finden – danach sofort zudecken."
+    },
+    "sampler": {
+     "ergebnis": "Keine Vorerkrankungen, keine Medikamente",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "transport": {
+     "ergebnis": "Traumazentrum ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Load and go: zügig in ein Traumazentrum, Schockraum voranmelden. Ggf. Luftrettung."
+    },
+    "waerme": {
+     "danach": {
+      "temp": 36
+     },
+     "ergebnis": "Rettungsdecke, RTW geheizt",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Kälte verschlechtert die Gerinnung – Temperaturmanagement früh beginnen."
+    },
+    "flach": {
+     "typ": "sinnvoll",
+     "ergebnis": "Flach auf der Vakuummatratze",
+     "warum": "Bei Wirbelsäulen- und Beckentrauma flach auf der Vakuummatratze – keine Lagerungsmanöver."
+    },
+    "oberkoerper": {
+     "typ": "falsch",
+     "ergebnis": "",
+     "warum": "Bei Wirbelsäulen- und Beckentrauma im Schock keine Oberkörperhochlage – flach auf der Vakuummatratze."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Liegt auf der Vakuummatratze",
+     "id": "vakuum",
+     "text": "Auf Vakuummatratze immobilisieren",
+     "typ": "pflicht",
+     "warum": "Achsengerechte Immobilisation bei Becken- und Wirbelsäulenverdacht."
+    }
+   ],
+   "eindruck": "Er zittert, es ist kühl und windig.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "becken": {
+     "danach": {
+      "dia": 56,
+      "sys": 94
+     },
+     "ergebnis": "Beckenschlinge liegt, Becken stabilisiert",
+     "typ": "pflicht",
+     "warum": "Hochrasanztrauma mit Schock: Beckenschlinge frühzeitig."
+    },
+    "bodycheck": {
+     "ergebnis": "Oberschenkel rechts offen, Becken schmerzhaft, Thorax rechts druckschmerzhaft",
+     "typ": "pflicht",
+     "warum": "Nach der kritischen Blutung Kopf bis Fuß absuchen."
+    },
+    "druckverband": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Bei spritzender Oberschenkelblutung reicht ein Druckverband nicht – Tourniquet."
+    },
+    "kompression": {
+     "ergebnis": "Blutung manuell gestoppt",
+     "typ": "pflicht",
+     "warum": "Sofort manuell abdrücken, bis das Tourniquet liegt."
+    },
+    "tourniquet": {
+     "danach": {
+      "dia": 54,
+      "hf": 124,
+      "sys": 90
+     },
+     "ergebnis": "Tourniquet liegt, Blutung steht",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Spritzende Extremitätenblutung: Tourniquet proximal der Wunde – lebensrettend."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Zeit notiert: 14:32",
+     "id": "tqzeit",
+     "text": "Uhrzeit des Tourniquets notieren",
+     "typ": "sinnvoll",
+     "warum": "Die Anlagezeit ist für die Klinik wichtig."
+    }
+   ],
+   "eindruck": "Am rechten Oberschenkel spritzt hellrotes Blut, die Jeans ist durchnässt.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Polytrauma, S. 153–154; BPR Kritische Blutung S. 98; SAA Tranexamsäure S. 69",
+ "regional": "Zuweisung (Traumazentrum, Schockraum) nach regionalem Konzept. i.o., VEL, TXA und Schmerztherapie nur nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Mit hoher Geschwindigkeit gegen ein abbiegendes Auto. Am rechten Oberschenkel spritzt Blut. Polizei sichert ab.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Hochrasanz, Sturz > 3 m, Herausschleudern",
+   "Spritzende Blutung, Schockzeichen",
+   "Instabiles Becken, Thoraxtrauma"
+  ],
+  "kern": "c vor A – Blutung zuerst",
+  "ns": [
+   "i.v. oder i.o., VEL bedarfsgerecht",
+   "Permissive Hypotonie bei inneren Blutungen",
+   "TXA 15 mg/kg, max. 1 g, < 3 h",
+   "Schmerztherapie"
+  ],
+  "tun": [
+   "Tourniquet, Beckenschlinge",
+   "HWS-Schutz, Helm zu zweit ab",
+   "O₂, Thorax prüfen",
+   "Wärmeerhalt",
+   "Schockraum, Load and go"
+  ],
+  "vermeiden": [
+   "Druckverband bei spritzender Blutung",
+   "Zeit vor Ort",
+   "Auskühlung"
+  ]
+ },
+ "stichwort": "RD 3 · VU Motorrad",
+ "titel": "Polytrauma",
+ "vitalwerte": {
+  "af": 28,
+  "bz": 128,
+  "dia": 50,
+  "gcs": 13,
+  "hf": 132,
+  "spo2": 90,
+  "sys": 84,
+  "temp": 35.8
+ },
+ "sh": {
+  "regional": "SH Algorithmus 24 (Blutung) und 19 (Schmerz). TXA nach lokalem Protokoll. Zuweisung nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 24 Blutungskontrolle, S. 37; Beckenschlinge S. 38; Algorithmus 19 Schmerz, S. 32; Infotabellen Esketamin S. 81, Morphin S. 96, Tranexamsäure S. 106",
+  "steckbrief": {
+   "ns": [
+    "i.v./i.o., balancierte VEL",
+    "Permissive Hypotension, SHT/Schwangere RRsys > 90",
+    "TXA Erw. 1 g über 10 Min, < 3 h (lokales Protokoll)",
+    "Esketamin KI bei Bewusstseinsstörung, Morphin KI bei GCS < 14 → Analgesie durch NA"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "aktionen": {
+     "vel": {
+      "danach": {
+       "dia": 58,
+       "sys": 96
+      },
+      "ergebnis": "VEL läuft",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 24: i.v./i.o. und balancierte VEL – bei nicht beherrschter Blutung permissive Hypotension, bei SHT RRsys > 90."
+     }
+    },
+    "eigene": {
+     "txa": {
+      "ergebnis": "TXA läuft über 10 Minuten",
+      "id": "txa",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Tranexamsäure 1 g als Kurzinfusion über 10 Min",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: lebensbedrohliche Blutung mit hämorrhagischem Schock, Trauma < 3 h → Erwachsene 1 g über 10 Min (Kinder > 1 J 20 mg/kg), nach lokalem Protokoll.",
+      "mittel": [
+       {
+        "w": "txa",
+        "d": "1 g als Kurzinfusion"
+       }
+      ]
+     },
+     "fentanyl": {
+      "ergebnis": "",
+      "id": "fentanyl",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Esketamin + Midazolam zur Analgesie",
+      "typ": "falsch",
+      "warum": "SH: Esketamin ist bei Bewusstseinsstörung kontraindiziert (GCS 13), Morphin bei GCS < 14 und SpO₂ < 92 %. Die Analgesie übernimmt hier der Notarzt. Fentanyl gibt es in SH nicht.",
+      "mittel": [
+       {
+        "w": "esketamin",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Nein, er ist ja ansprechbar",
+        "warum": "Das Bewusstsein ist nur ein Kriterium von vielen."
+       },
+       {
+        "text": "Erst nach dem Röntgen",
+        "warum": "Das Schockraumteam muss vor Ankunft bereitstehen."
+       }
+      ],
+      "frage": "Schockraum alarmieren?",
+      "nach": "rr",
+      "regional": true,
+      "richtig": {
+       "text": "Ja – RRsys < 90, HF > 120, SpO₂ < 90 %, Tourniquet",
+       "warum": "Schon ein Kriterium reicht für die Schockraum-Alarmierung (S3-Leitlinie Polytrauma). Zuweisung in SH nach lokalem Protokoll."
+      }
+     }
+    }
+   }
+  }
+ }
+}

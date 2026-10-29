@@ -1,0 +1,31 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Blutung nach schwerem Trauma im hämorrhagischen Schock",
+ "merke": "Nicht empfohlen bei isoliertem SHT, ICB oder GI-Blutung.",
+ "punkte": [
+  "15 mg/kg als Kurzinfusion über 15 Min, max. 1.000 mg",
+  "Nur innerhalb von 3 Stunden nach dem Trauma",
+  "Nicht unter 6 Jahren",
+  "KI: Schwangerschaft"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Tranexamsäure, S. 69",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Trauma",
+  "Blutung"
+ ],
+ "titel": "Tranexamsäure",
+ "sh": {
+  "kern": "Lebensbedrohliche Blutung mit hämorrhagischem Schock, Epistaxis – nach lokalem Protokoll",
+  "punkte": [
+   "Erw. 1 g als Kurzinfusion über 10 Min",
+   "Kinder > 1 J 20 mg/kg über 10 Min",
+   "Nur bis 3 h nach dem Trauma",
+   "Epistaxis: 0,5 g pro Nasenloch über MAD oder Tamponade"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Tranexamsäure S. 106; Algorithmus 24 S. 37"
+ }
+}

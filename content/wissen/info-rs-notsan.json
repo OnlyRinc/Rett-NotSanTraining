@@ -1,0 +1,22 @@
+{
+ "kategorie": "Sonstiges",
+ "kern": "Die SAA beschreiben NotSan-Maßnahmen",
+ "merke": "Was RS im Einzelfall dürfen (z. B. Hilfe bei Eigenmedikation), regelt der ÄLRD.",
+ "punkte": [
+  "RS (in der App, nicht Teil der SAA): xABCDE, Basismonitoring, 12-Kanal-EKG schreiben, O₂, Lagerung, Blutstillung, Atemweg mit einfachen Mitteln, Beutel-Masken-Beatmung, BZ, Glukose oral",
+  "NotSan (SAA invasiv): i.v./i.o.-Zugang, Larynxtubus/Larynxmaske/i-gel, Laryngoskopie/Magill, CPAP/NIV, Thoraxentlastung, Defibrillation, Kardioversion, Schrittmacher, endobronchiales Absaugen",
+  "NotSan (SAA Medikamente): 29 Wirkstoffe von ASS bis VEL",
+  "Kontraindikationen der SAA gelten als absolut, solange kein (Tele-)NA unterstützt",
+  "§ 2a NotSanG: eigenverantwortliche Heilkunde bei Lebensgefahr unter engen Voraussetzungen"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), Vorwort, S. 8–9; Inhaltsverzeichnis SAA",
+ "regional": true,
+ "tags": [
+  "Rettungssanitäter",
+  "Notfallsanitäter",
+  "Kompetenz",
+  "2a",
+  "2c"
+ ],
+ "titel": "RS und NotSan – wer macht was?"
+}

@@ -1,0 +1,301 @@
+{
+ "level": 1,
+ "patient": "Mann, 62 J. · steht im Restaurant, greift sich an den Hals, das Gesicht läuft blau an",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Ein Fleischstück lässt sich beim Wachen nicht absaugen."
+    },
+    "ansprechen": {
+     "ergebnis": "Kann nicht sprechen, hustet nur schwach",
+     "typ": "pflicht",
+     "warum": "Kann er sprechen oder kräftig husten? Das entscheidet über das Vorgehen."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Er ist wach – ein Guedel-Tubus hilft nicht gegen einen Fremdkörper."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Nach dem 5. Schlag noch keine Besserung",
+     "id": "ruecken",
+     "lebenswichtig": true,
+     "text": "5 Schläge auf den Rücken",
+     "typ": "pflicht",
+     "warum": "Husten ineffektiv: nach vorne beugen, mit der Handwurzel bis zu 5-mal zwischen die Schulterblätter schlagen."
+    },
+    {
+     "danach": {
+      "af": 22,
+      "hf": 108,
+      "spo2": 94
+     },
+     "ergebnis": "Das Fleischstück fliegt heraus, er hustet und atmet",
+     "id": "heimlich",
+     "lebenswichtig": true,
+     "text": "5 Oberbauchkompressionen (Heimlich-Manöver)",
+     "typ": "pflicht",
+     "warum": "Rückenschläge wirkungslos: bis zu 5 Oberbauchkompressionen. Bei Kindern unter 1 Jahr stattdessen Thoraxkompressionen."
+    },
+    {
+     "danach": {
+      "spo2": 76
+     },
+     "ergebnis": "",
+     "id": "finger",
+     "text": "Blind mit dem Finger im Rachen suchen",
+     "typ": "gefahr",
+     "warum": "Blindes Auswischen schiebt den Fremdkörper tiefer und verletzt."
+    }
+   ],
+   "eindruck": "Er würgt, bringt kein Wort heraus, nur ein leises Pfeifen.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Sofort Heimlich-Manöver",
+       "warum": "Laut BPR kommen erst die Rückenschläge."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Abwarten, er hustet es schon raus",
+       "warum": "Ein ineffektiver Hustenstoß reicht nicht."
+      }
+     ],
+     "frage": "Er kann nicht sprechen und hustet kaum. Was zuerst?",
+     "nach": "ansprechen",
+     "richtig": {
+      "text": "5 Schläge auf den Rücken",
+      "warum": "Ineffektiver Husten beim Wachen: zuerst bis zu 5 Rückenschläge, dann bis zu 5 Oberbauchkompressionen – im Wechsel."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Weiter Rückenschläge",
+       "warum": "Beim Bewusstlosen sind Thoraxkompressionen wirksamer."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Stabile Seitenlage",
+       "warum": "Ohne Atmung hilft keine Seitenlage."
+      }
+     ],
+     "frage": "Angenommen, er wird bewusstlos. Was dann?",
+     "nach": "",
+     "richtig": {
+      "text": "Sofort Reanimation beginnen (30 Kompressionen) – NotSan: Laryngoskopie und Magillzange",
+      "warum": "Beim bewusstlosen Erwachsenen sofort CPR. Bei Verdacht auf Fremdkörper unverzüglich laryngoskopieren."
+     },
+     "rolle": "ns"
+    },
+    {
+     "falsch": [
+      {
+       "text": "Weiter Rückenschläge",
+       "warum": "Beim Bewusstlosen sind Thoraxkompressionen wirksamer."
+      },
+      {
+       "schwer": "gefahr",
+       "text": "Stabile Seitenlage",
+       "warum": "Ohne Atmung hilft keine Seitenlage."
+      }
+     ],
+     "frage": "Angenommen, er wird bewusstlos. Was dann?",
+     "nach": "",
+     "richtig": {
+      "text": "Sofort Reanimation beginnen (30 Kompressionen), NA nachfordern",
+      "warum": "Beim bewusstlosen Erwachsenen sofort CPR. Die Thoraxkompressionen können den Fremdkörper lösen."
+     },
+     "rolle": "rs"
+    }
+   ]
+  },
+  "B": {
+   "aktionen": {
+    "auskultation": {
+     "ergebnis": "Seitengleich, kein Giemen",
+     "typ": "pflicht",
+     "warum": "Seitengleiches Atemgeräusch? Ein Rest kann im Bronchus stecken."
+    },
+    "o2": {
+     "danach": {
+      "spo2": 97
+     },
+     "ergebnis": "O₂ über Maske",
+     "typ": "sinnvoll",
+     "warum": "Bis sich die Sättigung erholt."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Erholung kontrollieren."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Jetzt atmet er hörbar, hustet noch.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Die Gesichtsfarbe kommt zurück.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, erschöpft.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Nach Entfernung immer in die Klinik: Reste und Verletzungen durch die Kompressionen sind möglich."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Er will sich wieder hinsetzen und weiteressen.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Okay, alles gut",
+       "warum": "Laut BPR ist der Transport erforderlich."
+      },
+      {
+       "text": "Er soll morgen zum Hausarzt",
+       "warum": "Innere Verletzungen können sich schnell verschlechtern."
+      }
+     ],
+     "frage": "Er will nicht mit, „es ist ja raus“. Was sagst du?",
+     "nach": "",
+     "richtig": {
+      "text": "Nach Oberbauchkompressionen und Aspiration muss er ärztlich untersucht werden",
+      "warum": "Es können Reste in den Atemwegen stecken und die Kompressionen können innere Organe verletzt haben."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR A-Problem bei Fremdkörperaspiration, S. 111–112",
+ "regional": "Laryngoskopie mit Magillzange ist eine NotSan-Maßnahme nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Kellnerin: Er hat sich beim Steak verschluckt. Er kann nicht sprechen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Plötzlich beim Essen",
+   "Kann nicht sprechen, greift an den Hals",
+   "Zyanose, Stridor"
+  ],
+  "kern": "5 Rücken – 5 Bauch",
+  "ns": [
+   "Bewusstlos: Laryngoskopie, Magillzange, Absaugen"
+  ],
+  "tun": [
+   "Husten effektiv: zum Husten auffordern",
+   "Ineffektiv: 5 Rückenschläge",
+   "Dann 5 Oberbauchkompressionen, im Wechsel",
+   "Bewusstlos: CPR",
+   "Immer Klinik"
+  ],
+  "vermeiden": [
+   "Blind im Mund suchen",
+   "Heimlich bei Säuglingen (dort Thoraxkompressionen)"
+  ]
+ },
+ "stichwort": "RD 2 · Atemnot",
+ "titel": "Fremdkörperaspiration",
+ "vitalwerte": {
+  "af": 30,
+  "bz": 110,
+  "dia": 92,
+  "gcs": 15,
+  "hf": 124,
+  "spo2": 82,
+  "sys": 158,
+  "temp": 36.7
+ },
+ "sh": {
+  "regional": "SH Algorithmus 27: Direkte Laryngoskopie und Magillzange beim Bewusstlosen unter Reanimation sind NotSan-Maßnahmen.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 27 Bolusgeschehen/Fremdkörperentfernung, S. 41",
+  "phasen": {
+   "A": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Sofort Heimlich-Manöver",
+        "warum": "Auch in SH (Algorithmus 27) kommen zuerst die Rückenschläge."
+       },
+       {
+        "schwer": "gefahr",
+        "text": "Abwarten, er hustet es schon raus",
+        "warum": "Ein ineffektiver Hustenstoß reicht nicht."
+       }
+      ],
+      "frage": "Er kann nicht sprechen und hustet kaum. Was zuerst?",
+      "nach": "ansprechen",
+      "richtig": {
+       "text": "5 Schläge auf den Rücken",
+       "warum": "Ineffektiver Husten beim Wachen: zuerst bis zu 5 Rückenschläge, dann bis zu 5 Oberbauchkompressionen – im Wechsel."
+      }
+     }
+    }
+   },
+   "E": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Okay, alles gut",
+        "warum": "In SH Algorithmus 27 folgt immer der Transport."
+       },
+       {
+        "text": "Er soll morgen zum Hausarzt",
+        "warum": "Innere Verletzungen können sich schnell verschlechtern."
+       }
+      ],
+      "frage": "Er will nicht mit, „es ist ja raus“. Was sagst du?",
+      "nach": "",
+      "richtig": {
+       "text": "Nach Oberbauchkompressionen und Aspiration muss er ärztlich untersucht werden",
+       "warum": "Es können Reste in den Atemwegen stecken und die Kompressionen können innere Organe verletzt haben."
+      }
+     }
+    }
+   }
+  }
+ }
+}

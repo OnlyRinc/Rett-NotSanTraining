@@ -1,0 +1,22 @@
+{
+ "kategorie": "Leitsymptome",
+ "kern": "Synkope, Krampf oder etwas anderes?",
+ "merke": "Ambulant nur bei zuvor Gesunden ohne Risikofaktoren mit unauffälligen Befunden und plausibler Orthostase.",
+ "punkte": [
+  "Synkope: vagal, orthostatisch oder kardial",
+  "Kardial: Rhythmusstörung, Ischämie, Lungenembolie, strukturelle Herzerkrankung",
+  "Immer 12-Kanal-EKG und BZ",
+  "Risikofaktoren: Synkope im Liegen oder unter Belastung, Herzrasen, Herzerkrankung, EKG-Pathologie",
+  "Krampf: Aura, Initialschrei, Zungenbiss meist seitlich, synchrone Krämpfe, Reorientierung > 5 Min",
+  "Synkope: Schwarzwerden, blass, asynchrones Zucken < 1 Min, sofort orientiert"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Kurzzeitige Bewusstlosigkeit, S. 100–101",
+ "regional": true,
+ "tags": [
+  "Synkope",
+  "Kollaps",
+  "TLOC",
+  "Ohnmacht"
+ ],
+ "titel": "Kurzzeitige Bewusstlosigkeit"
+}

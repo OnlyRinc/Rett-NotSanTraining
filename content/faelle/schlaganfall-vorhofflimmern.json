@@ -1,0 +1,437 @@
+{
+ "level": 1,
+ "patient": "Mann, 72 J. · sitzt im Sessel, der Mundwinkel hängt",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "absaugen": {
+     "ergebnis": "Speichel abgesaugt",
+     "typ": "sinnvoll",
+     "warum": "Hält den Atemweg frei und senkt die Aspirationsgefahr."
+    },
+    "ansprechen": {
+     "ergebnis": "Antwortet verwaschen, schwer zu verstehen",
+     "typ": "pflicht",
+     "warum": "Er spricht – der Atemweg ist frei, aber die Sprache ist gestört."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Er ist wach – ein Guedel-Tubus löst Würgen aus."
+    },
+    "mund": {
+     "ergebnis": "Viel Speichel im Mund, er schluckt schlecht",
+     "typ": "pflicht",
+     "warum": "Schluckstörung bedeutet Aspirationsgefahr."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Speichel läuft aus dem rechten Mundwinkel.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 96 % liegt im Zielbereich 94–98 % – Sauerstoff nur, wenn sie darunter fällt."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige, gleichmäßige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg3": {
+     "ergebnis": "Absolute Arrhythmie, HF 86/min",
+     "typ": "pflicht",
+     "warum": "Das EKG bestätigt den Verdacht auf Vorhofflimmern."
+    },
+    "puls": {
+     "ergebnis": "86/min, unregelmäßig",
+     "typ": "pflicht",
+     "warum": "Ein unregelmäßiger Puls lässt an Vorhofflimmern denken – eine häufige Schlaganfallursache."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Der Blutdruck entscheidet, ob gesenkt werden muss – erst ab 220/120 mmHg."
+    },
+    "schocklage": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Kein Schock – die Beine hochzulagern bringt hier nichts."
+    },
+    "zugang": {
+     "ergebnis": "Zugang am linken Arm liegt",
+     "typ": "pflicht",
+     "warum": "Laut BPR gehört der i.v.-Zugang dazu – am nicht gelähmten Arm, hier also links."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "dia": 84,
+      "sys": 150
+     },
+     "ergebnis": "",
+     "id": "urapidil",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Urapidil 5 mg i.v.",
+     "typ": "gefahr",
+     "warum": "Urapidil erst ab RRsys über 220 oder RRdia über 120 mmHg – und dann nur auf 180–200 systolisch. Zu starke Senkung verschlechtert die Hirndurchblutung.",
+     "mittel": [
+      {
+       "w": "urapidil",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Gesichtsfarbe rosig.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Ja, auf 120 systolisch",
+       "warum": "Eine starke Senkung verschlechtert die Durchblutung im gefährdeten Hirngewebe."
+      },
+      {
+       "text": "Beine hochlagern",
+       "warum": "Bringt beim Schlaganfall nichts."
+      }
+     ],
+     "frage": "Der Blutdruck liegt bei 182/100. Senken?",
+     "nach": "rr",
+     "richtig": {
+      "text": "Nein, nur dokumentieren",
+      "warum": "Laut BPR wird erst ab RRsys über 220 bzw. RRdia über 120 mmHg gesenkt – und dann nur auf 180–200 systolisch."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "text": "Ja, jeder Schlaganfall braucht einen Notarzt",
+       "warum": "Der BPR macht die Notarzt-Indikation an der Instabilität fest, nicht an der Diagnose."
+      },
+      {
+       "schwer": "abbruch",
+       "text": "Nein, er kann auch morgen zum Hausarzt",
+       "warum": "Ein Schlaganfall ist immer ein Notfall – Zeit ist Hirn."
+      }
+     ],
+     "frage": "Ist hier zwingend ein Notarzt nötig?",
+     "nach": "",
+     "regional": true,
+     "richtig": {
+      "text": "Nicht zwingend – er ist nach BPR stabil, zügiger Transport in die Stroke Unit hat Vorrang",
+      "warum": "Stabil heißt: GCS ≥ 11, kein starker Kopfschmerz, kein Krampfanfall, RRsys 120–220, keine relevante Rhythmusstörung, normaler BZ, keine Verletzung. Lokale Vorgaben beachten."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "befast": {
+     "ergebnis": "Mundwinkel hängt rechts, rechter Arm sinkt ab, Sprache verwaschen",
+     "typ": "pflicht",
+     "warum": "BE-FAST erkennt typische Schlaganfallzeichen."
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Eine Unterzuckerung kann einen Schlaganfall imitieren."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "glukose_oral": {
+     "danach": {
+      "spo2": 91
+     },
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Er hat eine Schluckstörung – Glukose oral führt zur Aspiration. Und der BZ ist normal."
+    },
+    "pupillen": {
+     "ergebnis": "Isokor, prompt lichtreagibel",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, aber er findet die Worte nicht.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "flach": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Flach liegend steigt die Aspirationsgefahr."
+    },
+    "oberkoerper": {
+     "ergebnis": "Oberkörper 30° hoch gelagert",
+     "typ": "pflicht",
+     "warum": "Laut BPR 30° Oberkörper-Hochlagerung – senkt die Aspirationsgefahr."
+    },
+    "sampler": {
+     "ergebnis": "Zuletzt gesund gesehen um 09:40. Vorhofflimmern bekannt, Blutverdünner unregelmäßig genommen.",
+     "typ": "pflicht",
+     "warum": "Zeitfenster und Gerinnungshemmer entscheiden über die Therapie in der Klinik."
+    },
+    "temp": {
+     "ergebnis": "36,6 °C",
+     "typ": "sinnvoll",
+     "warum": "Über 38 °C würde man laut BPR physikalisch senken."
+    },
+    "transport": {
+     "ergebnis": "Stroke Unit ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Voranmeldung mit Symptombeginn, Vormedikation, Vorerkrankungen, Alter und Erreichbarkeit der Angehörigen."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {
+      "spo2": 91
+     },
+     "ergebnis": "",
+     "id": "nuechtern",
+     "text": "Etwas zu trinken anbieten",
+     "typ": "gefahr",
+     "warum": "Er hat eine Schluckstörung – Trinken führt zur Aspiration. Nüchtern lassen."
+    }
+   ],
+   "eindruck": "Auf dem Tisch liegt eine Tablettenbox.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Nächste Klinik, Hauptsache schnell",
+       "warum": "Ohne Stroke Unit geht Zeit für die Verlegung verloren."
+      },
+      {
+       "schwer": "abbruch",
+       "text": "Hausarzt am nächsten Tag",
+       "warum": "Ein Schlaganfall ist ein Notfall – Zeit ist Hirn."
+      }
+     ],
+     "frage": "Wohin geht der Transport?",
+     "nach": "",
+     "regional": true,
+     "richtig": {
+      "text": "Stroke Unit, voranmelden",
+      "warum": "Ohne Stroke Unit droht eine zeitraubende Verlegung. Frühzeitig an einen RTH denken."
+     }
+    }
+   ]
+  },
+  "x": {
+   "aktionen": {
+    "tourniquet": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Keine Blutung – kein Tourniquet."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Keine Blutung zu sehen, er sitzt sicher im Sessel.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Schlaganfall, S. 155–156",
+ "regional": "Klinik nach regionalem Zuweisungskonzept (Stroke Unit). Notarzt-Indikation nach lokalen Vorgaben.",
+ "rhythmus": "afib",
+ "situation": "Die Ehefrau berichtet: Beim Frühstück konnte er plötzlich den rechten Arm nicht mehr heben.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "B · Balance/Schwindel",
+   "E · Sehstörung",
+   "F · Gesicht hängt",
+   "A · Armschwäche",
+   "S · Sprache",
+   "T · Zeit notieren"
+  ],
+  "kern": "Time is brain",
+  "ns": [
+   "i.v.-Zugang am nicht gelähmten Arm",
+   "RR > 220/120: Urapidil, Ziel 180–200 sys",
+   "RRsys < 120: 500 ml VEL",
+   "BZ < 60: 8–12 g Glucose i.v. (BPR; SAA Glucose: 8–10 g)"
+  ],
+  "tun": [
+   "BZ messen",
+   "Zuletzt gesund gesehen?",
+   "Oberkörper 30° hoch",
+   "SpO₂-Ziel 94–98 %",
+   "Nüchtern lassen",
+   "Stroke Unit voranmelden"
+  ],
+  "vermeiden": [
+   "Essen oder Trinken geben",
+   "RR senken, solange unter 220/120",
+   "Zeit vor Ort verlieren"
+  ]
+ },
+ "stichwort": "RD 2 · Sprachstörung",
+ "titel": "Schlaganfall",
+ "vitalwerte": {
+  "af": 16,
+  "bz": 128,
+  "dia": 100,
+  "gcs": 14,
+  "hf": 86,
+  "spo2": 96,
+  "sys": 182,
+  "temp": 36.6
+ },
+ "sh": {
+  "regional": "SH Algorithmus 9: Blutdruck erst ab > 220/120 senken (Algorithmus 8). Voranmeldung und Zuweisung nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 9 Schlaganfall, S. 22; Algorithmus 8, S. 21; Infotabelle Urapidil S. 107",
+  "steckbrief": {
+   "ns": [
+    "i.v.-Zugang am nicht gelähmten Arm",
+    "RR > 220/120: Urapidil (Algorithmus 8), max. 25 % senken, Ziel 180/100",
+    "RRsys < 120: kristalloider Volumenbolus",
+    "BZ < 60: Algorithmus 17, Glucose 10 g i.v.",
+    "V.a. SAB: NA, ggf. MAD 60–90"
+   ],
+   "tun": [
+    "BZ messen",
+    "Zuletzt gesund gesehen?",
+    "Oberkörper 30° hoch",
+    "SpO₂-Ziel ≥ 95 %",
+    "Nüchtern lassen",
+    "Stroke Unit voranmelden"
+   ]
+  },
+  "phasen": {
+   "B": {
+    "aktionen": {
+     "o2": {
+      "ergebnis": "",
+      "typ": "falsch",
+      "warum": "SpO₂ 96 % – in SH liegt das Ziel bei pulmonal Gesunden bei ≥ 95 %. Kein Sauerstoff nötig."
+     }
+    }
+   },
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang am linken Arm liegt",
+      "typ": "pflicht",
+      "warum": "i.v.-Zugang am nicht gelähmten Arm, hier also links."
+     },
+     "na": {
+      "typ": "pflicht",
+      "ergebnis": "Notarzt ist alarmiert",
+      "warum": "SH: Bei kritisch Erkrankten mit ABCDE-Problem NA nachfordern – das neurologische Defizit ist ein D-Problem. Den Transport darüber nicht verzögern.",
+      "regional": true
+     }
+    },
+    "eigene": {
+     "urapidil": {
+      "danach": {
+       "dia": 84,
+       "sys": 150
+      },
+      "ergebnis": "",
+      "id": "urapidil",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Urapidil 5 mg i.v.",
+      "typ": "gefahr",
+      "warum": "SH Algorithmus 9: erst ab RR > 220/120 senken, dann höchstens um 25 %, Zielwert 180/100. Bei 182/100 keine Senkung.",
+      "mittel": [
+       {
+        "w": "urapidil",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Ja, auf 120 systolisch",
+        "warum": "Eine starke Senkung verschlechtert die Durchblutung im gefährdeten Hirngewebe."
+       },
+       {
+        "text": "Beine hochlagern",
+        "warum": "Bringt beim Schlaganfall nichts."
+       }
+      ],
+      "frage": "Der Blutdruck liegt bei 182/100. Senken?",
+      "nach": "rr",
+      "richtig": {
+       "text": "Nein, nur dokumentieren",
+       "warum": "SH Algorithmus 9: erst ab > 220 systolisch oder > 120 diastolisch senken – höchstens um 25 %, Ziel 180/100."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "text": "Nein, ein Schlaganfall ist nie ein Notarztfall",
+        "warum": "Ein neurologisches Defizit ist ein D-Problem – in SH gehört dann der NA dazu."
+       },
+       {
+        "schwer": "abbruch",
+        "text": "Nein, er kann auch morgen zum Hausarzt",
+        "warum": "Ein Schlaganfall ist immer ein Notfall – Zeit ist Hirn."
+       }
+      ],
+      "frage": "Muss hier in SH ein Notarzt nachgefordert werden?",
+      "nach": "",
+      "regional": true,
+      "richtig": {
+       "text": "Ja – D-Problem mit neurologischem Defizit; NA nachfordern, Transport nicht verzögern",
+       "warum": "SH-Einleitung: Bei kritisch Erkrankten mit ABCDE-Problem ist ein Notarzt nachzufordern. Zügiger Transport in die Stroke Unit hat trotzdem Vorrang – lokale Vorgaben (z. B. Treffpunkt) beachten."
+      }
+     }
+    }
+   },
+   "E": {
+    "aktionen": {
+     "oberkoerper": {
+      "ergebnis": "Oberkörper 30° hoch gelagert",
+      "typ": "pflicht",
+      "warum": "30° Oberkörper-Hochlagerung senkt die Aspirationsgefahr."
+     },
+     "temp": {
+      "ergebnis": "36,6 °C",
+      "typ": "sinnvoll",
+      "warum": "Gehört zur Basisdiagnostik. SH: Wesensveränderung mit Hypotonie → an eine Sepsis denken."
+     },
+     "transport": {
+      "ergebnis": "Stroke Unit ist informiert",
+      "regional": true,
+      "typ": "pflicht",
+      "warum": "SH: Voranmeldung nach lokalem Protokoll mit V.a. Schlaganfall. Bezugspersonen mitnehmen oder ihre Erreichbarkeit dokumentieren."
+     }
+    }
+   }
+  }
+ }
+}

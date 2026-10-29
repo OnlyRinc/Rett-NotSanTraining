@@ -1,0 +1,19 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Schmerzanamnese in sechs Fragen",
+ "merke": "Schmerzstärke vor und nach jeder Maßnahme erneut abfragen.",
+ "punkte": [
+  "O – Onset: Wann und wie hat es angefangen?",
+  "P – Provocation: Was macht es besser oder schlechter?",
+  "Q – Quality: Wie fühlt es sich an (drückend, stechend, brennend)?",
+  "R – Radiation: Strahlt es aus?",
+  "S – Severity: Stärke auf der Skala 0–10",
+  "T – Time: Seit wann, dauerhaft oder wechselnd?"
+ ],
+ "tags": [
+  "Schmerz",
+  "Anamnese",
+  "NRS"
+ ],
+ "titel": "OPQRST"
+}

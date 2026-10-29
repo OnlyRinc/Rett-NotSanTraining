@@ -1,0 +1,298 @@
+{
+ "level": 3,
+ "patient": "Frau, 76 J. · sitzt im Sessel, das linke Bein ist blass und kalt",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "„Mein Bein tut so weh.“",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Spricht normal.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Normale Sättigung – kein Sauerstoff."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "ekg3": {
+     "ergebnis": "Absolute Arrhythmie, HF 96/min",
+     "typ": "sinnvoll",
+     "warum": "Bestätigt das Vorhofflimmern."
+    },
+    "puls": {
+     "ergebnis": "96/min, unregelmäßig",
+     "typ": "pflicht",
+     "warum": "Unregelmäßiger Puls: Vorhofflimmern ist der häufigste Grund für eine Embolie."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Venöser Zugang laut BPR."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Links: kein Fußpuls, blass, kalt, Kribbeln, Zehen kaum beweglich. Rechts unauffällig.",
+     "id": "6p",
+     "lebenswichtig": true,
+     "text": "Beide Beine vergleichen: Pulse, Haut, Motorik, Sensibilität",
+     "typ": "pflicht",
+     "warum": "Die 6 P: Pain, Pallor, Pulselessness, Paresthesia, Paralysis, Prostration. Der Seitenvergleich sichert den Verdacht."
+    },
+    {
+     "ergebnis": "Heparin ist gegeben",
+     "id": "heparin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Heparin 5.000 I.E. i.v.",
+     "typ": "pflicht",
+     "warum": "Verschluss wahrscheinlich: laut BPR Heparin 5.000 I.E. i.v.",
+     "mittel": [
+      {
+       "w": "heparin",
+       "d": "5.000 I.E. i.v."
+      }
+     ]
+    },
+    {
+     "ergebnis": "Kurzinfusion läuft über 15 Min",
+     "id": "paracetamol",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Paracetamol 1.000 mg als Kurzinfusion",
+     "typ": "sinnvoll",
+     "warum": "BPR Schmerzen: ab NRS ≥ 3 zuerst Paracetamol oder Ibuprofen.",
+     "mittel": [
+      {
+       "w": "paracetamol",
+       "d": "1.000 mg als Kurzinfusion"
+      }
+     ]
+    },
+    {
+     "ergebnis": "Schmerz sinkt auf NRS 4",
+     "id": "morphin",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Morphin 2 mg fraktioniert i.v.",
+     "typ": "sinnvoll",
+     "warum": "NRS 8 (≥ 6): zusätzlich ein Opioid, 2 mg alle 3–4 Min, max. 10 mg.",
+     "mittel": [
+      {
+       "w": "morphin",
+       "d": "2 mg i.v., fraktioniert"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Rosig im Gesicht.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "motorik": {
+     "ergebnis": "Linker Fuß kaum beweglich, sonst seitengleich",
+     "typ": "sinnvoll",
+     "warum": "Lähmung am betroffenen Bein ist ein Spätzeichen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Wach, orientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "opqrst": {
+     "ergebnis": "Schlagartig, stechend, NRS 8",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "sampler": {
+     "ergebnis": "Vorhofflimmern, Blutverdünner vor einer Woche abgesetzt",
+     "typ": "pflicht",
+     "warum": "Risikofaktoren: Vorhofflimmern, Infarkt, Gefäß-OP?"
+    },
+    "transport": {
+     "ergebnis": "Gefäßzentrum ist informiert",
+     "regional": true,
+     "typ": "pflicht",
+     "warum": "Zeitkritisch: Klinik mit Gefäßchirurgie."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Bein tief gelagert, mit Watte gepolstert",
+     "id": "tief",
+     "text": "Bein tief lagern, polstern und ruhigstellen",
+     "typ": "pflicht",
+     "warum": "Laut BPR Immobilisation und Tieflagerung der betroffenen Extremität."
+    },
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "hoch",
+     "text": "Bein hochlagern",
+     "typ": "gefahr",
+     "warum": "Hochlagern verschlechtert die ohnehin fehlende Durchblutung."
+    },
+    {
+     "ergebnis": "",
+     "id": "waermflasche",
+     "text": "Wärmflasche ans Bein legen",
+     "typ": "falsch",
+     "warum": "Keine aktive Wärme oder Kälte – das minderdurchblutete Gewebe nimmt Schaden. Passiv warm halten und polstern."
+    }
+   ],
+   "eindruck": "Das linke Bein liegt auf einem Hocker.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Akuter arterieller Verschluss, S. 120; SAA Heparin S. 56",
+ "regional": "Heparin und Opioide nur durch NotSan nach Freigabe deines ÄLRD. Zielklinik mit Gefäßchirurgie nach regionalem Konzept.",
+ "rhythmus": "afib",
+ "situation": "Seit einer Stunde plötzlich starke Schmerzen im linken Bein, jetzt kribbelt es und sie kann den Fuß kaum bewegen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Pain · Schmerz",
+   "Pallor · Blässe",
+   "Pulselessness · kein Puls",
+   "Paresthesia · Kribbeln",
+   "Paralysis · Lähmung",
+   "Prostration · Schock"
+  ],
+  "kern": "6 P – Bein tief",
+  "ns": [
+   "Venöser Zugang",
+   "Schmerztherapie",
+   "Verschluss wahrscheinlich: Heparin 5.000 I.E. i.v."
+  ],
+  "tun": [
+   "Seitenvergleich Pulse, Haut, Motorik",
+   "Bein tief lagern, polstern",
+   "Gefäßzentrum"
+  ],
+  "vermeiden": [
+   "Bein hochlagern",
+   "Wärmflasche oder Kühlung"
+  ]
+ },
+ "stichwort": "RD 1 · Schmerzen Bein",
+ "titel": "Akuter arterieller Verschluss",
+ "vitalwerte": {
+  "af": 16,
+  "bz": 124,
+  "dia": 82,
+  "gcs": 15,
+  "hf": 96,
+  "spo2": 96,
+  "sys": 146,
+  "temp": 36.6
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Heparin ist laut SH-Infotabelle auch beim arteriellen Gefäßverschluss indiziert. Schmerz: Algorithmus 20.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus; Infotabellen Heparin S. 88, Metamizol S. 92; Algorithmus 20 Schmerz, S. 33",
+  "steckbrief": {
+   "ns": [
+    "Venöser Zugang",
+    "Heparin 50–70 I.E./kg, üblich 5.000 I.E.",
+    "Schmerz: Metamizol 1 g Kurzinfusion, dann Opioid nach lokalem Protokoll"
+   ]
+  },
+  "phasen": {
+   "C": {
+    "aktionen": {
+     "zugang": {
+      "ergebnis": "Zugang liegt",
+      "typ": "pflicht",
+      "warum": "Venöser Zugang für Heparin und Schmerztherapie."
+     }
+    },
+    "eigene": {
+     "heparin": {
+      "ergebnis": "Heparin ist gegeben",
+      "id": "heparin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Heparin 5.000 I.E. i.v. (50–70 I.E./kg)",
+      "typ": "pflicht",
+      "warum": "SH-Infotabelle: arterieller Gefäßverschluss → 50–70 I.E./kg, beim Erwachsenen üblicherweise 5.000 I.E.",
+      "mittel": [
+       {
+        "w": "heparin",
+        "d": "5.000 I.E. i.v."
+       }
+      ]
+     },
+     "paracetamol": {
+      "ergebnis": "Kurzinfusion läuft über 10 Min, Patient liegt",
+      "id": "paracetamol",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Metamizol 1 g als Kurzinfusion",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 20: NRS > 4 → Metamizol (> 53 kg 1 g) als Kurzinfusion über 10 Min, liegend. Vorher Risiko- und Sicherungsaufklärung (Agranulozytose). KI u. a. RRsys < 100.",
+      "mittel": [
+       {
+        "w": "metamizol",
+        "d": "1 g als Kurzinfusion"
+       }
+      ]
+     },
+     "morphin": {
+      "ergebnis": "Schmerz sinkt auf NRS 4",
+      "id": "morphin",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Morphin 2 mg fraktioniert i.v.",
+      "typ": "sinnvoll",
+      "warum": "SH Algorithmus 20: Nach 15 Min keine Besserung → Opioid nach lokalem Protokoll.",
+      "mittel": [
+       {
+        "w": "morphin",
+        "d": "2 mg i.v., fraktioniert"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "ohneAlg": true
+ }
+}

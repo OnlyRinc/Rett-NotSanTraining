@@ -1,0 +1,33 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Lungenödem, hypertensiver Notfall mit kardialer Symptomatik, Infarkt (nicht routinemäßig)",
+ "merke": "Spray nicht schütteln.",
+ "punkte": [
+  "0,4 mg (1 Hub) sublingual, einmalige Repetition nach 5 Min",
+  "Vorher sicherer i.v.-Zugang",
+  "KI: RRsys < 100, Schock, RV-Infarkt, PDE-5-Hemmer, V.a. Hirndruck/ICB, HOCM",
+  "Abwägung bei RRsys ≤ 120",
+  "Nicht unter 12 Jahren"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Glyceroltrinitrat, S. 55",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Nitro",
+  "Lungenödem",
+  "ACS"
+ ],
+ "titel": "Glyceroltrinitrat (Nitro)",
+ "sh": {
+  "kern": "Angina pectoris, ACS, akute Linksherzinsuffizienz",
+  "punkte": [
+   "0,4–1,2 mg (1–3 Hübe) nach Blutdruck, Ziel < 140 mmHg",
+   "ST-Hebung in II, III, aVF: initial nur 1 Hub",
+   "KI: RRsys < 100, PDE-5-Hemmer in den letzten 48 h"
+  ],
+  "merke": "Beim Rechtsherzinfarkt hält SH Nitrate für vertretbar (vorsichtig) – SAA/BPR: kontraindiziert.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Glyceroltrinitrat S. 87"
+ }
+}

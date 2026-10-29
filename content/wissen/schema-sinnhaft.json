@@ -1,0 +1,22 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Strukturierte Übergabe in der Klinik",
+ "merke": "Gibt es kein A–E-Problem: „kein A–E-Problem, unauffällige Vitalparameter“.",
+ "punkte": [
+  "S – Start: Ruhe! Bereit? Möglichst keine Tätigkeiten am Patienten",
+  "I – Identifikation: Geschlecht, Name, Alter (Kinder: Gewicht)",
+  "N – Notfallereignis: Was? Wie? Wann? (Wo?)",
+  "N – Notfallpriorität: pathologische Befunde nach cABCDE",
+  "H – Handlung: Maßnahme, Dosis, Zeitpunkt, Wirkung",
+  "A – Anamnese: Allergien, Medikation, Vorerkrankungen, Infektionen, Soziales",
+  "F – Fazit: Das aufnehmende Team wiederholt",
+  "T – Teamfragen"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), Handreichung Übergabe – SINNHAFT, S. 83",
+ "tags": [
+  "Übergabe",
+  "Klinik",
+  "Kommunikation"
+ ],
+ "titel": "Übergabe – SINNHAFT"
+}

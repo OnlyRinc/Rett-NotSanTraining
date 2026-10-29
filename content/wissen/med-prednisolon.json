@@ -1,0 +1,31 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Anaphylaxie, Bronchialobstruktion, Pseudokrupp",
+ "merke": "Wirkt verzögert – erste Effekte nach 10–20 Min.",
+ "punkte": [
+  "Anaphylaxie: > 12 J 250 mg i.v. · 30–60 kg 100 mg · 15–30 kg 50 mg i.v. (oder 100 mg rektal)",
+  "Bronchialobstruktion: > 12 J 80 mg i.v. · ≤ 12 J 2 mg/kg (max. 80) oder 100 mg rektal",
+  "Pseudokrupp: Kleinkind 100 mg rektal"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Prednisolon, S. 66",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Cortison",
+  "Anaphylaxie",
+  "Asthma",
+  "Krupp"
+ ],
+ "titel": "Prednisolon",
+ "sh": {
+  "kern": "Bronchialobstruktion, Anaphylaxie, Krupp",
+  "punkte": [
+   "i.v. 50–100 mg nach lokalem Protokoll",
+   "Kinder: einmalig 100 mg rektal (Prednisolon oder Prednison)",
+   "Krupp: rektal gleichzeitig mit Adrenalin-Vernebelung"
+  ],
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabellen Prednisolon S. 101–102, Prednison S. 103"
+ }
+}

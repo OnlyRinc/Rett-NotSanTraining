@@ -1,0 +1,23 @@
+{
+ "kategorie": "Leitsymptome",
+ "titel": "Nasenbluten (Epistaxis)",
+ "kern": "Druck, vorbeugen, ausspucken",
+ "punkte": [
+  "Nasenflügel mindestens 30 Min zusammendrücken",
+  "Kopf nach vorn, Blut ausspucken, Kühlpack in den Nacken",
+  "Nach lokalem Protokoll: TXA 0,5 g pro Nasenloch über MAD",
+  "Massiv: NA, Tamponade",
+  "RR > 180: Algorithmus 8"
+ ],
+ "merke": "Transport immer bei Antikoagulation, über 60 J oder lange anhaltender Blutung.",
+ "tags": [
+  "SH",
+  "Nasenbluten",
+  "Blutung",
+  "TXA"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Algorithmus 40 S. 63",
+ "rolle": "",
+ "regional": true,
+ "nurRegion": "sh"
+}

@@ -1,0 +1,20 @@
+{
+ "kategorie": "Schemata",
+ "kern": "Eigenschutz zuerst – dann der Patient",
+ "merke": "Kein Heldentod im Einsatz: Ist eine Gefahr nicht kalkulierbar, Rückzug.",
+ "punkte": [
+  "Allgemeine Gefahren: Wasser, Wetter, Verkehr, Dunkelheit",
+  "AAAA-C-EEEE: Atemgifte, Ausbreitung, Atomare Gefahren, Angstreaktion, Chemische Stoffe, Explosion, Erkrankung/Verletzung, Elektrizität, Einsturz",
+  "Gefahrenabwehr: Ursache bekämpfen, Wirkung unterbrechen, Objekt entfernen, Rückzug",
+  "Fahrzeug: außerhalb Gefahrenbereich; mit Verkehrsabsicherung vor, sonst hinter die Einsatzstelle",
+  "Basismonitoring: EKG/HF, AF, SpO₂, RR"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), BPR Basismaßnahmen, S. 73–74",
+ "tags": [
+  "Eigenschutz",
+  "Gefahren",
+  "PSA",
+  "Monitoring"
+ ],
+ "titel": "Basismaßnahmen & Gefahren"
+}

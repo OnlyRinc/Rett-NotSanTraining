@@ -1,0 +1,19 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Reanimation: VF / pulslose VT (Alternative zu Amiodaron)",
+ "merke": "Achtung: 1 % und 2 % verfügbar.",
+ "punkte": [
+  "Erw.: 100 mg nach dem 3. Schock, 50 mg nach dem 5.",
+  "Kinder: 1 mg/kg, dann 0,5 mg/kg"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Lidocain, S. 59",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Reanimation"
+ ],
+ "titel": "Lidocain",
+ "nurRegion": "saa"
+}

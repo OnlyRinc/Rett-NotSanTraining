@@ -1,0 +1,236 @@
+{
+ "level": 2,
+ "patient": "Frau, 23 J. · liegt schläfrig im Bett, atmet tief und schnell",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Murmelt, schläfrig",
+     "typ": "pflicht",
+     "warum": "Sie reagiert – der Atemweg ist frei."
+    },
+    "mund": {
+     "ergebnis": "Trockene Mundschleimhaut, kein Erbrochenes",
+     "typ": "sinnvoll",
+     "warum": "Erbrochenes könnte den Atemweg gefährden."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie murmelt, der Atem riecht fruchtig wie Nagellack.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Tiefe, schnelle Atmung ist ein Leitzeichen."
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 97 % – die tiefe Atmung ist keine Sauerstoffnot, sondern Ausgleich der Übersäuerung."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Tiefe, schnelle Atemzüge.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Sie hat eine Lungenentzündung",
+       "warum": "Die Auskultation und die Sättigung passen nicht."
+      },
+      {
+       "text": "Panikattacke",
+       "warum": "Bei dieser Bewusstseinsstörung und diesem BZ bitte nicht."
+      }
+     ],
+     "frage": "Warum atmet sie so tief und schnell?",
+     "nach": "af",
+     "richtig": {
+      "text": "Sie atmet die Übersäuerung (Ketoazidose) ab – Kussmaul-Atmung",
+      "warum": "Der Körper versucht, über CO₂-Abatmung die metabolische Azidose auszugleichen."
+     }
+    }
+   ]
+  },
+  "C": {
+   "aktionen": {
+    "ekg12": {
+     "ergebnis": "Sinustachykardie",
+     "typ": "pflicht",
+     "warum": "Laut BPR bei kritischer Hyperglykämie ein 12-Kanal-EKG (Elektrolyte, Rhythmus)."
+    },
+    "puls": {
+     "ergebnis": "122/min",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "3 Sekunden",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "vel": {
+     "danach": {
+      "dia": 66,
+      "hf": 108,
+      "sys": 108
+     },
+     "ergebnis": "VEL läuft",
+     "typ": "pflicht",
+     "warum": "Kritische Hyperglykämie über 250 mg/dl: Volumen mit VEL."
+    },
+    "zugang": {
+     "ergebnis": "Zugang liegt",
+     "typ": "pflicht",
+     "warum": "Kritische Hyperglykämie: i.v.-Zugang."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Haut trocken, Puls schnell.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "bz": {
+     "ergebnis": "486 mg/dl",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Bei jeder Bewusstseinsstörung den Blutzucker messen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "glukose": {
+     "danach": {},
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Der BZ ist viel zu hoch – Glucose verschlimmert die Lage."
+    },
+    "glukose_oral": {
+     "danach": {},
+     "ergebnis": "",
+     "typ": "gefahr",
+     "warum": "Der BZ ist viel zu hoch – Zucker verschlimmert die Lage."
+    }
+   },
+   "eigene": [
+    {
+     "danach": {},
+     "ergebnis": "",
+     "id": "insulin",
+     "text": "Insulin aus ihrem Pen spritzen",
+     "typ": "gefahr",
+     "warum": "Insulin ist präklinisch schlecht steuerbar und kann einen gefährlichen Kaliumabfall auslösen – das macht die Klinik."
+    }
+   ],
+   "eindruck": "Somnolent.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Über 140 mg/dl",
+       "warum": "Das ist erhöht, aber nicht kritisch."
+      },
+      {
+       "text": "Erst über 600 mg/dl",
+       "warum": "Schon über 250 mg/dl mit Symptomen ist kritisch."
+      }
+     ],
+     "frage": "Ab welchem Wert spricht der BPR beim Erwachsenen von kritischer Hyperglykämie?",
+     "nach": "bz",
+     "richtig": {
+      "text": "Über 250 mg/dl (13 mmol/l) mit Symptomen",
+      "warum": "Bei Kindern schon über 200 mg/dl."
+     }
+    }
+   ]
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Wegen Erbrechen das Insulin weggelassen",
+     "typ": "pflicht",
+     "warum": "Erweiterte Anamnese: Neumanifestation, Infekt, Therapieänderung, Insulinpumpe?"
+    },
+    "temp": {
+     "ergebnis": "37,8 °C",
+     "typ": "pflicht",
+     "warum": "Laut BPR Temperatur messen – Infekte sind häufige Auslöser."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Klinik mit Intensivstation."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Eimer neben dem Bett.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {},
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Hyperglykämie, S. 129–130; SAA VEL S. 71",
+ "regional": "VEL nur durch NotSan nach Freigabe deines ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Mitbewohner: Sie hat Typ-1-Diabetes, seit zwei Tagen Magen-Darm, erbricht ständig und isst nichts.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "BZ > 250 mg/dl (Kinder > 200)",
+   "Durst, Polyurie, Erbrechen",
+   "Kussmaul-Atmung, Azetongeruch",
+   "Somnolenz bis Koma"
+  ],
+  "kern": "Volumen, nicht Insulin",
+  "ns": [
+   "i.v.-Zugang",
+   "VEL > 12 J 500–1.000 ml"
+  ],
+  "tun": [
+   "BZ, Temperatur, 12-Kanal-EKG",
+   "Anamnese: Infekt, Insulin vergessen, Pumpe?",
+   "Andere Ursachen für Bewusstseinsstörung bedenken"
+  ],
+  "vermeiden": [
+   "Insulin präklinisch",
+   "Glukose geben"
+  ]
+ },
+ "stichwort": "RD 1 · Bewusstseinsstörung",
+ "titel": "Hyperglykämie",
+ "vitalwerte": {
+  "af": 28,
+  "bz": 486,
+  "dia": 60,
+  "gcs": 13,
+  "hf": 122,
+  "spo2": 97,
+  "sys": 98,
+  "temp": 37.8
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Volumentherapie mit balancierter Vollelektrolytlösung nach lokalem Protokoll.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Hyperglykämie",
+  "ohneAlg": true
+ }
+}

@@ -1,0 +1,233 @@
+{
+ "level": 1,
+ "patient": "Frau, 88 J. · sitzt im Pflegeheimzimmer, wirkt verwirrt und matt",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Antwortet langsam, weiß den Tag nicht",
+     "typ": "pflicht",
+     "warum": "Atemweg frei."
+    },
+    "mund": {
+     "ergebnis": "Zunge trocken und borkig",
+     "typ": "pflicht",
+     "warum": "Trockene Schleimhäute und eine „borkige Zunge“ sind typische Zeichen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie spricht leise.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "SpO₂ 95 % – kein Sauerstoff nötig."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Ruhige Atmung.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "haut": {
+     "ergebnis": "Trocken, stehende Hautfalte",
+     "typ": "sinnvoll",
+     "warum": "Stehende Hautfalten, trockene Achseln."
+    },
+    "puls": {
+     "ergebnis": "108/min, schwach",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rekap": {
+     "ergebnis": "3 Sekunden",
+     "typ": "pflicht",
+     "warum": "Rekap über 2 Sekunden ist ein Zeichen."
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Hypotonie und Tachykardie sprechen für einen Flüssigkeitsmangel."
+    },
+    "vel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie ist wach und schluckfähig – laut BPR zuerst zum Trinken animieren. Bei alten Patienten droht Überwässerung."
+    },
+    "zugang": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie ist wach und schluckfähig – laut BPR zuerst zum Trinken animieren."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Faltige, trockene Haut.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "text": "Ja, jede Verwirrung ist Sepsis",
+       "warum": "Verwirrtheit allein reicht nicht."
+      },
+      {
+       "text": "Egal",
+       "warum": "Die Sepsis ist die gefährlichere Differenzialdiagnose und wird zuerst geprüft."
+      }
+     ],
+     "frage": "Gibt es Hinweise auf eine Sepsis?",
+     "nach": "",
+     "richtig": {
+      "text": "Nein – kein Fieber, kein Infektfokus",
+      "warum": "Laut BPR wird zuerst eine Sepsis ausgeschlossen. Läge ein Verdacht vor, gilt der BPR Sepsis."
+     }
+    }
+   ]
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Bei Verwirrtheit immer den BZ messen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Sie trinkt ein Glas Wasser in kleinen Schlucken",
+     "id": "trinken",
+     "text": "Zum Trinken animieren",
+     "typ": "pflicht",
+     "warum": "Wach und schluckfähig: laut BPR zum Trinken animieren."
+    }
+   ],
+   "eindruck": "Etwas desorientiert.",
+   "fragen": []
+  },
+  "E": {
+   "aktionen": {
+    "sampler": {
+     "ergebnis": "Trinkt seit Tagen kaum, nimmt Wassertabletten",
+     "typ": "pflicht",
+     "warum": "Trinkmenge, Durchfall, Wassertabletten, Schluckstörung?"
+    },
+    "temp": {
+     "ergebnis": "37,4 °C",
+     "typ": "pflicht",
+     "warum": "Fieber würde an eine Sepsis denken lassen."
+    },
+    "transport": {
+     "ergebnis": "Klinik ist informiert",
+     "typ": "pflicht",
+     "warum": "Weitere ärztliche Versorgung – Elektrolyte und Nierenwerte prüfen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Auf dem Nachttisch steht eine volle Wasserflasche.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Keine Verletzung",
+     "typ": "sinnvoll",
+     "warum": "Bei verwirrten Senioren einen unbemerkten Sturz ausschließen."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Keine Blutung.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Dehydratation, S. 125–126",
+ "regional": "Dieser BPR wird von den ÄLRD in Brandenburg nicht geführt. Prüfe die Vorgaben deines Rettungsdienstbereichs.",
+ "rhythmus": "sinus",
+ "situation": "Pflegekraft: Seit der Hitzewelle trinkt sie kaum, heute ist sie verwirrt. Kein Fieber gemessen.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Verwirrt, matt, Kopfschmerz",
+   "Trockene Haut, borkige Zunge",
+   "Rekap > 2 s, Tachykardie, Hypotonie",
+   "Wenig Durstgefühl im Alter"
+  ],
+  "kern": "Trinken, wenn sie schlucken kann",
+  "ns": [
+   "Nicht wach oder nicht schluckfähig: i.v.-Zugang + VEL"
+  ],
+  "tun": [
+   "Sepsis ausschließen",
+   "BZ und Temperatur",
+   "Wach + schluckt: Trinken",
+   "Klinik"
+  ],
+  "vermeiden": [
+   "Gleich Infusion bei wacher Patientin",
+   "Verwirrtheit als Demenz abtun"
+  ]
+ },
+ "stichwort": "RD 1 · Verwirrte Person",
+ "titel": "Dehydratation",
+ "vitalwerte": {
+  "af": 18,
+  "bz": 132,
+  "dia": 58,
+  "gcs": 14,
+  "hf": 108,
+  "spo2": 95,
+  "sys": 96,
+  "temp": 37.4
+ },
+ "sh": {
+  "regional": "SH: Kein eigener Algorithmus in den Handlungsempfehlungen – Inhalte nach SAA/BPR als Orientierung. Verbindlich ist das lokale Protokoll deines Trägers. Bei Sepsisverdacht gilt Algorithmus 25 (qSOFA).",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · kein Algorithmus Dehydratation; Algorithmus 25 Sepsis, S. 39",
+  "phasen": {
+   "C": {
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "text": "Ja, jede Verwirrung ist Sepsis",
+        "warum": "Verwirrtheit allein reicht nicht."
+       },
+       {
+        "text": "Egal",
+        "warum": "Die Sepsis ist die gefährlichere Differenzialdiagnose und wird zuerst geprüft."
+       }
+      ],
+      "frage": "Gibt es Hinweise auf eine Sepsis?",
+      "nach": "",
+      "richtig": {
+       "text": "Nein – kein Hinweis auf eine Infektion",
+       "warum": "SH Algorithmus 25 setzt einen Infektverdacht voraus – Fieber ist dafür nicht zwingend. qSOFA-Punkte (RRsys < 100, GCS < 15) erklärt hier der Volumenmangel."
+      }
+     }
+    }
+   }
+  },
+  "ohneAlg": true
+ }
+}

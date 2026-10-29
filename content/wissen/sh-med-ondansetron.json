@@ -1,0 +1,20 @@
+{
+ "kategorie": "Pharmakologie",
+ "titel": "Ondansetron",
+ "rolle": "ns",
+ "kern": "Opiat- oder chemoassoziierte Übelkeit, massive Übelkeit beim Erwachsenen",
+ "punkte": [
+  "4 mg langsam i.v. (über 30 s)",
+  "KI: Kinder < 12 J, Schwangerschaft, Long-QT, Apomorphin"
+ ],
+ "merke": "Algorithmus 21: zuerst Aromatherapie mit Isopropanol-Tupfer.",
+ "tags": [
+  "SH",
+  "Medikament",
+  "Übelkeit",
+  "Antiemetikum"
+ ],
+ "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Ondansetron S. 99; Algorithmus 21 S. 34",
+ "regional": true,
+ "nurRegion": "sh"
+}

@@ -1,0 +1,416 @@
+{
+ "level": 1,
+ "patient": "Frau, 67 J. · sitzt im Hausflur auf dem Boden, redet wirr",
+ "phasen": {
+  "A": {
+   "aktionen": {
+    "ansprechen": {
+     "ergebnis": "Antwortet verwaschen und gereizt, aber verständlich",
+     "typ": "pflicht",
+     "warum": "Sie spricht – der Atemweg ist frei."
+    },
+    "guedel": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie ist ansprechbar – ein Guedel-Tubus löst Würgen aus."
+    },
+    "mund": {
+     "ergebnis": "Kein Fremdkörper, kein Zungenbiss",
+     "typ": "sinnvoll",
+     "warum": "Ein Zungenbiss würde auf einen Krampfanfall hinweisen."
+    },
+    "sga": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Keine Atemwegssicherung bei einer ansprechbaren Patientin."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie murmelt vor sich hin.",
+   "fragen": []
+  },
+  "B": {
+   "aktionen": {
+    "af": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "o2": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Die Sättigung ist normal – Sauerstoff ist nicht nötig."
+    },
+    "spo2": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie atmet ruhig.",
+   "fragen": []
+  },
+  "C": {
+   "aktionen": {
+    "haut": {
+     "ergebnis": "Blass, feucht, kaltschweißig",
+     "typ": "pflicht",
+     "warum": "Schwitzen und schneller Puls passen zur Stressreaktion bei Unterzucker."
+    },
+    "puls": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "rr": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "schocklage": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Der Blutdruck ist stabil – keine Schocklage."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Sie wirkt blass.",
+   "fragen": []
+  },
+  "D": {
+   "aktionen": {
+    "avpu": {
+     "ergebnis": "V – reagiert auf Ansprache, desorientiert",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "befast": {
+     "ergebnis": "Kein seitenbetonter Ausfall",
+     "typ": "sinnvoll",
+     "warum": "Ein Schlaganfall kann ähnlich aussehen."
+    },
+    "bz": {
+     "ergebnis": "",
+     "typ": "pflicht",
+     "warum": "Bei jeder Bewusstseinsstörung immer den Blutzucker messen."
+    },
+    "gcs": {
+     "ergebnis": "",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "glukose": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Sie ist wach und schluckt sicher – laut SAA dann Glukose per os, nicht i.v."
+    },
+    "glukose_oral": {
+     "danach": {
+      "bz": 96,
+      "gcs": 15,
+      "hf": 92
+     },
+     "ergebnis": "Traubenzucker-Gel und Saft gegeben, sie schluckt sicher",
+     "lebenswichtig": true,
+     "typ": "pflicht",
+     "warum": "Wach und schluckfähig: Laut SAA soll Glukose dann per os gegeben werden."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "BZ 96 mg/dl",
+     "id": "bzkontrolle",
+     "text": "BZ nach ca. 10 Min erneut messen",
+     "typ": "pflicht",
+     "warum": "Nach oraler Gabe BZ-Kontrolle nach ca. 10 Minuten. Ziel laut BPR: über 90 mg/dl.",
+     "zeigt": [
+      "bz"
+     ]
+    },
+    {
+     "ergebnis": "",
+     "id": "glucagon",
+     "med": true,
+     "regional": true,
+     "rolle": "ns",
+     "text": "Glucagon 1 mg i.m.",
+     "typ": "falsch",
+     "warum": "Glucagon nur, wenn sie nicht wach oder nicht schluckfähig ist. Sie schluckt sicher – also oral.",
+     "mittel": [
+      {
+       "w": "glucagon",
+       "d": "*"
+      }
+     ]
+    }
+   ],
+   "eindruck": "Desorientiert, findet keine Worte für das Datum.",
+   "fragen": [
+    {
+     "falsch": [
+      {
+       "schwer": "abbruch",
+       "text": "Ihr eigenes Insulin geben",
+       "warum": "Insulin senkt den Blutzucker weiter – lebensgefährlich."
+      },
+      {
+       "text": "Erst einmal abwarten",
+       "warum": "Eine Hypoglykämie wird ohne Glukose schlimmer."
+      }
+     ],
+     "frage": "Der BZ liegt bei 38 mg/dl. Wie gibst du Glukose?",
+     "nach": "bz",
+     "richtig": {
+      "text": "Oral, weil sie wach ist und sicher schluckt",
+      "warum": "Wach und schluckfähig: orale Glukose, dann BZ-Kontrolle nach ca. 10 Minuten."
+     }
+    },
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Weiter Saft einflößen",
+       "warum": "Ohne Schutzreflexe läuft der Saft in die Lunge."
+      },
+      {
+       "text": "40 %ige Glucose unverdünnt in die Vene",
+       "warum": "Laut SAA maximal 20 %ig i.v., sonst drohen Venenreizung und Nekrosen."
+      }
+     ],
+     "frage": "Sie trübt plötzlich ein und schluckt nicht mehr. Was gilt jetzt?",
+     "nach": "",
+     "richtig": {
+      "text": "Nichts mehr oral – i.v.-Zugang, Glucose 8–10 g i.v. (max. 20 %ig), alternativ Glucagon 1 mg i.m.",
+      "warum": "Ohne Schluckfähigkeit Aspirationsgefahr. Glucose i.v. mit laufender VEL, BZ-Kontrolle nach ca. 5 Minuten."
+     },
+     "rolle": "ns"
+    },
+    {
+     "falsch": [
+      {
+       "schwer": "gefahr",
+       "text": "Weiter Saft einflößen",
+       "warum": "Ohne Schutzreflexe läuft der Saft in die Lunge."
+      },
+      {
+       "text": "Abwarten, bis sie wieder wach ist",
+       "warum": "Ohne Glukose wird die Hypoglykämie nicht besser."
+      }
+     ],
+     "frage": "Sie trübt plötzlich ein und schluckt nicht mehr. Was tust du als RS?",
+     "nach": "",
+     "richtig": {
+      "text": "Nichts mehr oral, Seitenlage, Atemweg sichern, NotSan oder NA für Glucose i.v. / Glucagon",
+      "warum": "Ohne Schluckfähigkeit Aspirationsgefahr. Glucose i.v. und Glucagon sind NotSan- oder NA-Maßnahmen."
+     },
+     "rolle": "rs"
+    }
+   ]
+  },
+  "E": {
+   "aktionen": {
+    "entkleiden": {
+     "ergebnis": "Schürfwunde am Knie, sonst unauffällig",
+     "typ": "sinnvoll",
+     "warum": ""
+    },
+    "sampler": {
+     "ergebnis": "Insulin heute früh gespritzt, das Frühstück ausgelassen. Keine Allergien.",
+     "typ": "pflicht",
+     "warum": "Ohne Ursache droht die nächste Unterzuckerung."
+    },
+    "transport": {
+     "ergebnis": "Klinik zur Abklärung, sie ist einverstanden",
+     "typ": "sinnvoll",
+     "warum": "Nach schwerer Hypoglykämie ärztlich abklären lassen."
+    }
+   },
+   "eigene": [
+    {
+     "ergebnis": "Wunde gereinigt und abgedeckt",
+     "id": "wunde",
+     "text": "Schürfwunde versorgen",
+     "typ": "sinnvoll",
+     "warum": "Kleine Wunden gehören in E, nicht in x."
+    }
+   ],
+   "eindruck": "Neben ihr liegt ihr Insulinpen.",
+   "fragen": []
+  },
+  "x": {
+   "aktionen": {
+    "bodycheck": {
+     "ergebnis": "Schürfwunde am Knie, sonst keine Verletzung tastbar",
+     "typ": "pflicht",
+     "warum": "Sie sitzt am Boden und ein Sturz ist nicht ausgeschlossen – deshalb einmal von Kopf bis Fuß abtasten."
+    },
+    "druckverband": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Die Schürfwunde blutet kaum – sie wird später in E versorgt."
+    },
+    "tourniquet": {
+     "ergebnis": "",
+     "typ": "falsch",
+     "warum": "Eine Schürfwunde ist keine kritische Blutung."
+    }
+   },
+   "eigene": [],
+   "eindruck": "Am Knie eine kleine Schürfwunde, sie blutet kaum. Unklar, ob sie gestürzt ist.",
+   "fragen": []
+  }
+ },
+ "quelle": "SAA und BPR 2025 (ÄLRD 6-Länder-AG: BW, BB, MV, NRW, SN, ST) · BPR Hypoglykämie, S. 133–134; SAA Glucose S. 54, Glucagon S. 53",
+ "regional": "Glucose i.v. und Glucagon sind NotSan-Maßnahmen nach Freigabe durch deinen ÄLRD.",
+ "rhythmus": "sinus",
+ "situation": "Die Nachbarin hat sie so gefunden. Sie sei Diabetikerin und heute „ganz komisch“.",
+ "status": "aktiv",
+ "steckbrief": {
+  "erkennen": [
+   "Verwirrt, gereizt, wirkt betrunken",
+   "Kaltschweißig, Zittern",
+   "Tachykardie",
+   "BZ < 60 mg/dl"
+  ],
+  "kern": "BZ bei jedem D messen",
+  "ns": [
+   "Nicht wach/schluckfähig: i.v.-Zugang",
+   "Glucose 8–10 g i.v., max. 20 %ig, mit laufender VEL",
+   "Alternative: Glucagon 1 mg i.m. (> 25 kg)",
+   "BZ-Kontrolle nach ca. 5 Min"
+  ],
+  "tun": [
+   "BZ messen",
+   "Wach & schluckt: Glukose oral",
+   "BZ-Kontrolle nach ca. 10 Min, Ziel > 90",
+   "Ursache klären"
+  ],
+  "vermeiden": [
+   "Essen/Trinken bei Bewusstlosen",
+   "„Betrunken“ ohne BZ-Messung"
+  ]
+ },
+ "stichwort": "RD 1 · Verwirrte Person",
+ "titel": "Hypoglykämie",
+ "vitalwerte": {
+  "af": 18,
+  "bz": 38,
+  "dia": 82,
+  "gcs": 13,
+  "hf": 112,
+  "spo2": 96,
+  "sys": 138,
+  "temp": 36.4
+ },
+ "sh": {
+  "regional": "SH Algorithmus 17: Die orale Glukosegabe (20 g) ist in SH als NotSan-Maßnahme gekennzeichnet. Glucose i.v. und Glucagon (nach lokalem Protokoll) durch NotSan.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 (Träger des RD SH, UAG AK ÄLRD) · Algorithmus 17 Hypoglykämie, S. 30; Infotabellen Glucagon S. 84, Glucose S. 85",
+  "steckbrief": {
+   "ns": [
+    "Wach, schluckt: 20 g Glucose oral",
+    "Sonst: Glucose 10 g i.v. (< 5 J 0,2 g/kg)",
+    "Alternative: Glucagon 3 mg nasal / 1 mg i.m. (lokales Protokoll)",
+    "BZ-Kontrolle nach 3 Min",
+    "Insulinpumpe: ggf. Zufuhr unterbrechen"
+   ],
+   "tun": [
+    "BZ messen",
+    "Wach & schluckt: 20 g Glucose oral",
+    "BZ-Kontrolle nach 3 Min",
+    "Danach komplexe Kohlenhydrate, Ursache klären"
+   ]
+  },
+  "phasen": {
+   "D": {
+    "aktionen": {
+     "glukose": {
+      "ergebnis": "",
+      "typ": "falsch",
+      "warum": "Sie ist wach und kann schlucken – in SH dann 20 g Glucose oral (Algorithmus 17)."
+     },
+     "glukose_oral": {
+      "danach": {
+       "bz": 96,
+       "gcs": 15,
+       "hf": 92
+      },
+      "ergebnis": "20 g Glukose getrunken (ca. 200 ml Saft)",
+      "lebenswichtig": true,
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 17: wach und orale Zufuhr möglich → 20 g Glucose oral, danach komplexe Kohlenhydrate."
+     }
+    },
+    "eigene": {
+     "bzkontrolle": {
+      "ergebnis": "BZ 96 mg/dl",
+      "id": "bzkontrolle",
+      "text": "BZ nach 3 Min erneut messen",
+      "typ": "pflicht",
+      "warum": "SH Algorithmus 17: BZ-Kontrolle nach 3 Minuten. Nicht ausgeglichen: Gabe wiederholen.",
+      "zeigt": [
+       "bz"
+      ]
+     },
+     "glucagon": {
+      "ergebnis": "",
+      "id": "glucagon",
+      "med": true,
+      "regional": true,
+      "rolle": "ns",
+      "text": "Glucagon 1 mg i.m.",
+      "typ": "falsch",
+      "warum": "Glucagon (3 mg nasal oder 1 mg i.m., nach lokalem Protokoll) nur, wenn die orale Gabe nicht möglich ist.",
+      "mittel": [
+       {
+        "w": "glucagon",
+        "d": "*"
+       }
+      ]
+     }
+    },
+    "fragen": {
+     "0": {
+      "falsch": [
+       {
+        "schwer": "abbruch",
+        "text": "Ihr eigenes Insulin geben",
+        "warum": "Insulin senkt den Blutzucker weiter – lebensgefährlich."
+       },
+       {
+        "text": "Erst einmal abwarten",
+        "warum": "Eine Hypoglykämie wird ohne Glukose schlimmer."
+       }
+      ],
+      "frage": "Der BZ liegt bei 38 mg/dl. Wie gibst du Glukose?",
+      "nach": "bz",
+      "richtig": {
+       "text": "Oral, weil sie wach ist und sicher schluckt",
+       "warum": "Wach und schluckfähig: 20 g Glucose oral, dann BZ-Kontrolle nach 3 Minuten (SH Algorithmus 17)."
+      }
+     },
+     "1": {
+      "falsch": [
+       {
+        "schwer": "gefahr",
+        "text": "Weiter Saft einflößen",
+        "warum": "Ohne Schutzreflexe läuft der Saft in die Lunge."
+       },
+       {
+        "text": "Glucose langsam ins Gewebe neben die Vene",
+        "warum": "Glucose wirkt nur intravenös. Ein Paravasat verursacht Nekrosen – sichere Lage prüfen."
+       }
+      ],
+      "frage": "Sie trübt plötzlich ein und schluckt nicht mehr. Was gilt jetzt?",
+      "nach": "",
+      "richtig": {
+       "text": "Nichts mehr oral – i.v.-Zugang, Glucose 10 g i.v., alternativ Glucagon 3 mg nasal oder 1 mg i.m.",
+       "warum": "SH: Glucose 10 g i.v. (G20 50 ml; G40 25 ml nur verdünnt oder zentralvenös), BZ-Kontrolle nach 3 Minuten, ggf. wiederholen. Glucagon nach lokalem Protokoll."
+      },
+      "rolle": "ns"
+     }
+    }
+   }
+  }
+ }
+}

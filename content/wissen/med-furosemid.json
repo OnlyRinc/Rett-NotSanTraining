@@ -1,0 +1,29 @@
+{
+ "kategorie": "Pharmakologie",
+ "kern": "Kardiales Lungenödem",
+ "merke": "Nicht mit anderen Medikamenten mischen.",
+ "punkte": [
+  "20 mg langsam i.v.",
+  "Einmalige Repetition nach 15 Min",
+  "Nicht unter 12 Jahren",
+  "KI: Hypovolämie, Anurie, schwere Hypokaliämie"
+ ],
+ "quelle": "SAA und BPR 2025 (ÄLRD BW, BB, MV, NRW, SN, ST), SAA Furosemid, S. 52",
+ "regional": true,
+ "rolle": "ns",
+ "tags": [
+  "SAA",
+  "Medikament",
+  "Lungenödem",
+  "Diuretikum"
+ ],
+ "titel": "Furosemid",
+ "sh": {
+  "punkte": [
+   "40 mg i.v.",
+   "KI: bekannte Hypokaliämie"
+  ],
+  "merke": "Beim Lungenödem parallel NIV.",
+  "quelle": "Handlungsempfehlungen für den Rettungsdienst in Schleswig-Holstein, V10.0, Stand 15.07.2025 · Infotabelle Furosemid S. 83; Algorithmus 2 S. 15"
+ }
+}
