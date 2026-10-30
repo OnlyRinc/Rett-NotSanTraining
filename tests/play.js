@@ -76,6 +76,17 @@ const TYPES = { html: 'text/html', js: 'text/javascript', css: 'text/css', json:
     const h3 = () => [...document.querySelectorAll('#wissen-body .wcard h3')].map(h => h.textContent);
     const sh = h3(); setRegion('saa'); const saa = h3();
     out.push({ check: 'Wissen', ok: sh.includes('Metamizol') && !sh.includes('Fentanyl') && saa.includes('Fentanyl') && !saa.includes('Metamizol') });
+    // Wache: jede freie Kachel erreichbar, Treppe EG → 2. OG und zurück
+    { let ok = true;
+      for (let fl = 0; fl < 3; fl++) { const st = fl ? STAIRS[fl - 1].top : STAIRS[0].bot;
+        for (const t of freeF[fl]) if (!(t[0] === st[0] && t[1] === st[1]) && !path(fl, st, t).length) ok = false; }
+      const f = { fl: 0, x: 9.5, y: 7.5, z: 0, path: [], dir: 1, anim: 0, wait: 0, goFl: 2 };
+      const keep = S.floors; S.floors = 3; crew.push(f); goStairs(f); let seen = new Set();
+      for (let i = 0; i < 2000 && (f.goFl != null || f.cl || f.path.length); i++) { tickCrew(1 / 60); seen.add(f.fl); }
+      ok = ok && f.fl === 2 && seen.has(1);
+      f.goFl = 0; goStairs(f); for (let i = 0; i < 2000 && (f.goFl != null || f.cl || f.path.length); i++) tickCrew(1 / 60);
+      ok = ok && f.fl === 0 && !f.cl; crew.splice(crew.indexOf(f), 1); S.floors = keep;
+      out.push({ check: 'Wache-Laufwege und Treppe', ok }); }
     // Bearbeitungsmodus: lokale Änderung, Zähler, Verwerfen
     Store.setEditing(true); CAN_EDIT = true;
     await Store.collection('wissen').doc('test-eintrag').set({ kategorie: 'Sonstiges', titel: 'Testeintrag' });
